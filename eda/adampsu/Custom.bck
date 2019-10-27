@@ -42,4 +42,10 @@ K Fixed Voltage Regulator 1A Positive LDO
 F https://www.diodes.com/assets/Datasheets/AZ1117.pdf
 $ENDCMP
 #
+$CMP BUK7880-55A_CUX
+D 7A Id, 55V Vds, N-Channel TrenchMOS MOSFET, 80mOhm Ron, 12nC Qqd, -55 to 155 °C, SOT-223 
+K Power MOSFET N-MOS
+F https://assets.nexperia.com/documents/data-sheet/BUK7880-55A.pdf
+$ENDCMP
+#
 #End Doc Library

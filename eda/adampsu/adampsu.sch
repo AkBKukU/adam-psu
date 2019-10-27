@@ -1,433 +1,541 @@
 EESchema Schematic File Version 4
+LIBS:adampsu-cache
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr User 9449 5527
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "AdamPSU"
+Date "2019-10-23"
+Rev "1"
+Comp "AkBKukU"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Barrel_Jack_Switch J1
+L adampsu-rescue:Barrel_Jack_Switch-Connector J1
 U 1 1 5DAFBEFA
-P 2200 3450
-F 0 "J1" H 2257 3767 50  0000 C CNN
-F 1 "Barrel_Jack_Switch" H 2257 3676 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2250 3410 50  0001 C CNN
-F 3 "~" H 2250 3410 50  0001 C CNN
-	1    2200 3450
+P 950 1500
+F 0 "J1" H 1007 1817 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 1007 1726 50  0000 C CNN
+F 2 "adampsu:BarrelJack_CUI_PJ-047AH_Horizontal" H 1000 1460 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/resource/pj-047ah.pdf" H 1000 1460 50  0001 C CNN
+F 4 "CP-047AH-ND" H 950 1500 50  0001 C CNN "dk"
+F 5 "PJ-047AH" H 950 1500 50  0001 C CNN "mfr"
+	1    950  1500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_SPDT SW1
+L adampsu-rescue:SW_Push_SPDT-Switch SW1
 U 1 1 5DAFC797
-P 3100 3350
-F 0 "SW1" H 3100 3635 50  0000 C CNN
-F 1 "SW_Push_SPDT" H 3100 3544 50  0000 C CNN
-F 2 "" H 3100 3350 50  0001 C CNN
-F 3 "~" H 3100 3350 50  0001 C CNN
-	1    3100 3350
+P 1700 1400
+F 0 "SW1" H 1700 1685 50  0000 C CNN
+F 1 "30V 300mA Latching Switch" H 1700 1594 50  0000 C CNN
+F 2 "adampsu:Switch-LC1258EENP" H 1700 1400 50  0001 C CNN
+F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/36/LC.pdf" H 1700 1400 50  0001 C CNN
+F 4 "EG5886-ND" H 1700 1400 50  0001 C CNN "dk"
+F 5 "LC1258EENP" H 1700 1400 50  0001 C CNN "mfr"
+	1    1700 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:B240 D1
+L adampsu-rescue:B240-Diode D1
 U 1 1 5DAFD20D
-P 7050 3200
-F 0 "D1" V 7004 3279 50  0000 L CNN
-F 1 "B240" V 7095 3279 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB" H 7050 3025 50  0001 C CNN
-F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 7050 3200 50  0001 C CNN
-	1    7050 3200
+P 6350 1350
+F 0 "D1" V 6304 1429 50  0000 L CNN
+F 1 "B240" V 6395 1429 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA-SMB_Universal_Handsoldering" H 6350 1175 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88894/b230la.pdf" H 6350 1350 50  0001 C CNN
+F 4 "B240A-E3/61TGICT-ND" H 6350 1350 50  0001 C CNN "dk"
+F 5 "B240A-E3/61T" H 6350 1350 50  0001 C CNN "mfr"
+	1    6350 1350
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:DB9_Female J3
+L adampsu-rescue:DB9_Female-Connector J3
 U 1 1 5DAFDC17
-P 8150 3250
-F 0 "J3" H 8330 3296 50  0000 L CNN
-F 1 "DB9_Female" H 8330 3205 50  0000 L CNN
-F 2 "" H 8150 3250 50  0001 C CNN
-F 3 " ~" H 8150 3250 50  0001 C CNN
-	1    8150 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_2Rows-09Pins J2
-U 1 1 5DB0152B
-P 2600 2200
-F 0 "J2" H 2650 2617 50  0000 C CNN
-F 1 "Conn_2Rows-09Pins" H 2650 2526 50  0000 C CNN
-F 2 "" H 2600 2200 50  0001 C CNN
-F 3 "~" H 2600 2200 50  0001 C CNN
-	1    2600 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_SwitchedCapacitor:LM27761 U1
-U 1 1 5DB02CDE
-P 4950 2300
-F 0 "U1" H 4950 2867 50  0000 C CNN
-F 1 "LM27761" H 4950 2776 50  0000 C CNN
-F 2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" H 5100 1800 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm27761.pdf" H 7450 1900 50  0001 C CNN
-	1    4950 2300
+P 7450 1400
+F 0 "J3" H 7630 1446 50  0000 L CNN
+F 1 "DB9_Female" H 7630 1355 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Female_Vertical_P2.77x2.84mm_MountingHoles" H 7450 1400 50  0001 C CNN
+F 3 "http://www.assmann-wsw.com/fileadmin/datasheets/ASS_4885_CO.pdf" H 7450 1400 50  0001 C CNN
+F 4 "AE10928-ND" H 7450 1400 50  0001 C CNN "dk"
+F 5 "A-DF 09 PP/Z" H 7450 1400 50  0001 C CNN "mfr"
+	1    7450 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 2850 7600 2850
+	7150 1000 6900 1000
 Wire Wire Line
-	7850 2950 7600 2950
+	7150 1100 6900 1100
 Wire Wire Line
-	7850 3150 7600 3150
+	7150 1300 6900 1300
 Wire Wire Line
-	7850 3450 7600 3450
+	7150 1600 6900 1600
 Wire Wire Line
-	7850 3650 7600 3650
-Text Label 7600 2850 0    50   ~ 0
+	7150 1800 6900 1800
+Text Label 6900 1000 0    50   ~ 0
 +12VL
-Text Label 7600 2950 0    50   ~ 0
+Text Label 6900 1100 0    50   ~ 0
 RESET
-Text Label 7600 3050 0    50   ~ 0
+Text Label 6900 1200 0    50   ~ 0
 +12VI
-Text Label 7600 3150 0    50   ~ 0
+Text Label 6900 1300 0    50   ~ 0
 DATA
-Text Label 7600 3350 0    50   ~ 0
+Text Label 6900 1500 0    50   ~ 0
 GND
-Text Label 7600 3450 0    50   ~ 0
+Text Label 6900 1600 0    50   ~ 0
 -5V
 Wire Wire Line
-	7050 3350 7850 3350
+	6350 1500 7150 1500
 Wire Wire Line
-	7050 3050 7850 3050
-Text Notes 4550 1650 0    50   ~ 0
--5V Inverter+Regulator
-Text Notes 4700 3750 0    50   ~ 0
+	6350 1200 7150 1200
+Text Notes 4150 850  0    50   ~ 0
 +5V Regulator
-Wire Wire Line
-	2500 3550 2800 3550
-Wire Wire Line
-	2500 3350 2900 3350
-Wire Wire Line
-	3300 3450 3450 3450
-Text Label 3000 2200 0    50   ~ 0
-RESET
-Text Label 2150 2300 0    50   ~ 0
-DATA
-Wire Wire Line
-	2150 2300 2400 2300
-Wire Wire Line
-	2900 2200 3000 2200
-Wire Wire Line
-	2900 2300 3000 2300
-Text Notes 2300 1700 0    50   ~ 0
-Printer Passthrough
 $Comp
-L power:GND #PWR0101
+L adampsu-rescue:GND-power #PWR0101
 U 1 1 5DB45BB6
-P 2800 3550
-F 0 "#PWR0101" H 2800 3300 50  0001 C CNN
-F 1 "GND" H 2805 3377 50  0000 C CNN
-F 2 "" H 2800 3550 50  0001 C CNN
-F 3 "" H 2800 3550 50  0001 C CNN
-	1    2800 3550
-	1    0    0    -1  
+P 2600 1200
+F 0 "#PWR0101" H 2600 950 50  0001 C CNN
+F 1 "GND" H 2605 1027 50  0000 C CNN
+F 2 "" H 2600 1200 50  0001 C CNN
+F 3 "" H 2600 1200 50  0001 C CNN
+	1    2600 1200
+	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0102
-U 1 1 5DB46D86
-P 3000 2300
-F 0 "#PWR0102" H 3000 2050 50  0001 C CNN
-F 1 "GND" H 3005 2127 50  0000 C CNN
-F 2 "" H 3000 2300 50  0001 C CNN
-F 3 "" H 3000 2300 50  0001 C CNN
-	1    3000 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0103
+L adampsu-rescue:GND-power #PWR0103
 U 1 1 5DB47D97
-P 7600 3650
-F 0 "#PWR0103" H 7600 3400 50  0001 C CNN
-F 1 "GND" H 7605 3477 50  0000 C CNN
-F 2 "" H 7600 3650 50  0001 C CNN
-F 3 "" H 7600 3650 50  0001 C CNN
-	1    7600 3650
+P 6900 1800
+F 0 "#PWR0103" H 6900 1550 50  0001 C CNN
+F 1 "GND" H 6905 1627 50  0000 C CNN
+F 2 "" H 6900 1800 50  0001 C CNN
+F 3 "" H 6900 1800 50  0001 C CNN
+	1    6900 1800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR0104
+L adampsu-rescue:+12V-power #PWR0104
 U 1 1 5DB4B022
-P 3450 3450
-F 0 "#PWR0104" H 3450 3300 50  0001 C CNN
-F 1 "+12V" H 3465 3623 50  0000 C CNN
-F 2 "" H 3450 3450 50  0001 C CNN
-F 3 "" H 3450 3450 50  0001 C CNN
-	1    3450 3450
+P 1350 1100
+F 0 "#PWR0104" H 1350 950 50  0001 C CNN
+F 1 "+12V" H 1365 1273 50  0000 C CNN
+F 2 "" H 1350 1100 50  0001 C CNN
+F 3 "" H 1350 1100 50  0001 C CNN
+	1    1350 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR0105
+L adampsu-rescue:+12V-power #PWR0105
 U 1 1 5DB4C962
-P 4350 4100
-F 0 "#PWR0105" H 4350 3950 50  0001 C CNN
-F 1 "+12V" H 4365 4273 50  0000 C CNN
-F 2 "" H 4350 4100 50  0001 C CNN
-F 3 "" H 4350 4100 50  0001 C CNN
-	1    4350 4100
+P 3800 1200
+F 0 "#PWR0105" H 3800 1050 50  0001 C CNN
+F 1 "+12V" H 3815 1373 50  0000 C CNN
+F 2 "" H 3800 1200 50  0001 C CNN
+F 3 "" H 3800 1200 50  0001 C CNN
+	1    3800 1200
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0106
+L adampsu-rescue:GND-power #PWR0106
 U 1 1 5DB5510C
-P 4950 4600
-F 0 "#PWR0106" H 4950 4350 50  0001 C CNN
-F 1 "GND" H 4955 4427 50  0000 C CNN
-F 2 "" H 4950 4600 50  0001 C CNN
-F 3 "" H 4950 4600 50  0001 C CNN
-	1    4950 4600
+P 4400 1700
+F 0 "#PWR0106" H 4400 1450 50  0001 C CNN
+F 1 "GND" H 4405 1527 50  0000 C CNN
+F 2 "" H 4400 1700 50  0001 C CNN
+F 3 "" H 4400 1700 50  0001 C CNN
+	1    4400 1700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0107
+L adampsu-rescue:+5V-power #PWR0107
 U 1 1 5DB56597
-P 7500 3250
-F 0 "#PWR0107" H 7500 3100 50  0001 C CNN
-F 1 "+5V" H 7515 3423 50  0000 C CNN
-F 2 "" H 7500 3250 50  0001 C CNN
-F 3 "" H 7500 3250 50  0001 C CNN
-	1    7500 3250
+P 6800 1400
+F 0 "#PWR0107" H 6800 1250 50  0001 C CNN
+F 1 "+5V" H 6815 1573 50  0000 C CNN
+F 2 "" H 6800 1400 50  0001 C CNN
+F 3 "" H 6800 1400 50  0001 C CNN
+	1    6800 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7500 3250 7850 3250
+	6800 1400 7150 1400
 $Comp
-L power:+5V #PWR0108
+L adampsu-rescue:+5V-power #PWR0108
 U 1 1 5DB57D87
-P 5550 4100
-F 0 "#PWR0108" H 5550 3950 50  0001 C CNN
-F 1 "+5V" H 5565 4273 50  0000 C CNN
-F 2 "" H 5550 4100 50  0001 C CNN
-F 3 "" H 5550 4100 50  0001 C CNN
-	1    5550 4100
+P 5000 1200
+F 0 "#PWR0108" H 5000 1050 50  0001 C CNN
+F 1 "+5V" H 5015 1373 50  0000 C CNN
+F 2 "" H 5000 1200 50  0001 C CNN
+F 3 "" H 5000 1200 50  0001 C CNN
+	1    5000 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 4100 5400 4100
+	4700 1200 4850 1200
 Wire Wire Line
-	4950 4400 4950 4500
+	4400 1500 4400 1600
 $Comp
-L Device:C C4
+L adampsu-rescue:C-Device C4
 U 1 1 5DB5C3B0
-P 5400 4250
-F 0 "C4" H 5515 4296 50  0000 L CNN
-F 1 "22uF" H 5515 4205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5438 4100 50  0001 C CNN
-F 3 "~" H 5400 4250 50  0001 C CNN
-	1    5400 4250
+P 4850 1350
+F 0 "C4" H 4965 1396 50  0000 L CNN
+F 1 "22uF" H 4965 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4888 1200 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL31B226KPHNNNE.jsp" H 4850 1350 50  0001 C CNN
+F 4 "1276-2769-1-ND" H 4850 1350 50  0001 C CNN "dk"
+F 5 "CL31B226KPHNNNE" H 4850 1350 50  0001 C CNN "mfr"
+	1    4850 1350
 	1    0    0    -1  
 $EndComp
-Connection ~ 5400 4100
+Connection ~ 4850 1200
 Wire Wire Line
-	5400 4100 5550 4100
-Connection ~ 4950 4500
+	4850 1200 5000 1200
+Connection ~ 4400 1600
 Wire Wire Line
-	4950 4500 4950 4600
+	4400 1600 4400 1700
 Wire Wire Line
-	5400 4400 5400 4500
+	4850 1500 4850 1600
 Wire Wire Line
-	5400 4500 4950 4500
+	4850 1600 4400 1600
 Wire Wire Line
-	4500 4100 4650 4100
-Connection ~ 4500 4100
+	3950 1200 4100 1200
+Connection ~ 3950 1200
 Wire Wire Line
-	4350 4100 4500 4100
+	3800 1200 3950 1200
 Wire Wire Line
-	4500 4500 4950 4500
+	3950 1600 4400 1600
 Wire Wire Line
-	4500 4400 4500 4500
+	3950 1500 3950 1600
 $Comp
-L Device:C C3
+L adampsu-rescue:C-Device C3
 U 1 1 5DB59A2E
-P 4500 4250
-F 0 "C3" H 4386 4296 50  0000 R CNN
-F 1 "10uF" H 4386 4205 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4538 4100 50  0001 C CNN
-F 3 "~" H 4500 4250 50  0001 C CNN
-	1    4500 4250
+P 3950 1350
+F 0 "C3" H 3836 1396 50  0000 R CNN
+F 1 "10uF" H 3836 1305 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3988 1200 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL31B106MOHNNNE.jsp" H 3950 1350 50  0001 C CNN
+F 4 "1276-6641-1-ND" H 3950 1350 50  0001 C CNN "dk"
+F 5 "CL31B106MOHNNNE" H 3950 1350 50  0001 C CNN "mfr"
+	1    3950 1350
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0109
-U 1 1 5DB72730
-P 4950 2950
-F 0 "#PWR0109" H 4950 2700 50  0001 C CNN
-F 1 "GND" H 4955 2777 50  0000 C CNN
-F 2 "" H 4950 2950 50  0001 C CNN
-F 3 "" H 4950 2950 50  0001 C CNN
-	1    4950 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 2800 4950 2950
-$Comp
-L power:+5V #PWR0110
-U 1 1 5DB766D7
-P 4000 2000
-F 0 "#PWR0110" H 4000 1850 50  0001 C CNN
-F 1 "+5V" H 4015 2173 50  0000 C CNN
-F 2 "" H 4000 2000 50  0001 C CNN
-F 3 "" H 4000 2000 50  0001 C CNN
-	1    4000 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 2000 4550 2000
-$Comp
-L power:GND #PWR0111
-U 1 1 5DB7B3D4
-P 4000 2300
-F 0 "#PWR0111" H 4000 2050 50  0001 C CNN
-F 1 "GND" H 4005 2127 50  0000 C CNN
-F 2 "" H 4000 2300 50  0001 C CNN
-F 3 "" H 4000 2300 50  0001 C CNN
-	1    4000 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 5DB80B6B
-P 4000 2150
-F 0 "C1" H 4115 2196 50  0000 L CNN
-F 1 "4.7uF" H 4115 2105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4038 2000 50  0001 C CNN
-F 3 "~" H 4000 2150 50  0001 C CNN
-	1    4000 2150
-	1    0    0    -1  
-$EndComp
-Connection ~ 4000 2000
-$Comp
-L Device:C C2
-U 1 1 5DB81FEA
-P 4450 2450
-F 0 "C2" H 4335 2496 50  0000 R CNN
-F 1 "1uF" H 4335 2405 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4488 2300 50  0001 C CNN
-F 3 "~" H 4450 2450 50  0001 C CNN
-	1    4450 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 2300 4450 2300
-Wire Wire Line
-	4550 2600 4450 2600
-$Comp
-L power:GND #PWR0112
-U 1 1 5DB98382
-P 5450 2700
-F 0 "#PWR0112" H 5450 2450 50  0001 C CNN
-F 1 "GND" H 5455 2527 50  0000 C CNN
-F 2 "" H 5450 2700 50  0001 C CNN
-F 3 "" H 5450 2700 50  0001 C CNN
-	1    5450 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C5
-U 1 1 5DB98388
-P 5450 2550
-F 0 "C5" H 5565 2596 50  0000 L CNN
-F 1 "4.7uF" H 5565 2505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5488 2400 50  0001 C CNN
-F 3 "~" H 5450 2550 50  0001 C CNN
-	1    5450 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 2400 5450 2400
-$Comp
-L power:GND #PWR0113
-U 1 1 5DBA101C
-P 6350 2300
-F 0 "#PWR0113" H 6350 2050 50  0001 C CNN
-F 1 "GND" H 6355 2127 50  0000 C CNN
-F 2 "" H 6350 2300 50  0001 C CNN
-F 3 "" H 6350 2300 50  0001 C CNN
-	1    6350 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 5DBA1022
-P 6350 2150
-F 0 "C6" H 6465 2196 50  0000 L CNN
-F 1 "4.7uF" H 6465 2105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6388 2000 50  0001 C CNN
-F 3 "~" H 6350 2150 50  0001 C CNN
-	1    6350 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 2000 6000 2000
-$Comp
-L Device:R R1
-U 1 1 5DBA3553
-P 6000 2150
-F 0 "R1" H 6070 2196 50  0000 L CNN
-F 1 "1.55M" H 6070 2105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5930 2150 50  0001 C CNN
-F 3 "~" H 6000 2150 50  0001 C CNN
-	1    6000 2150
-	1    0    0    -1  
-$EndComp
-Connection ~ 6000 2000
-Wire Wire Line
-	6000 2000 6350 2000
-$Comp
-L Device:R R2
-U 1 1 5DBA6045
-P 6000 2450
-F 0 "R2" H 6070 2496 50  0000 L CNN
-F 1 "500k" H 6070 2405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5930 2450 50  0001 C CNN
-F 3 "~" H 6000 2450 50  0001 C CNN
-	1    6000 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 2200 5750 2200
-Wire Wire Line
-	5750 2200 5750 2300
-Wire Wire Line
-	5750 2300 6000 2300
-Connection ~ 6000 2300
-Wire Wire Line
-	6000 2600 6000 2700
-$Comp
-L power:GND #PWR0114
-U 1 1 5DB9BE0C
-P 6000 2700
-F 0 "#PWR0114" H 6000 2450 50  0001 C CNN
-F 1 "GND" H 6005 2527 50  0000 C CNN
-F 2 "" H 6000 2700 50  0001 C CNN
-F 3 "" H 6000 2700 50  0001 C CNN
-	1    6000 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:LT1084-5.0 U2
+L adampsu-rescue:LT1084-5.0-Regulator_Linear U2
 U 1 1 5DBC1162
-P 4950 4100
-F 0 "U2" H 4950 4342 50  0000 C CNN
-F 1 "LT1084-5.0" H 4950 4251 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4950 4350 50  0001 C CIN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1083ffe.pdf" H 4950 4100 50  0001 C CNN
-	1    4950 4100
+P 4400 1200
+F 0 "U2" H 4400 1442 50  0000 C CNN
+F 1 "LT1084-5.0" H 4400 1351 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4400 1450 50  0001 C CIN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1083ffe.pdf" H 4400 1200 50  0001 C CNN
+	1    4400 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1400 1350 1400
+Wire Wire Line
+	1350 1400 1350 1100
+$Comp
+L Custom:BUK7880-55A_CUX Q1
+U 1 1 5DB2BA3D
+P 2500 1500
+F 0 "Q1" H 2706 1546 50  0000 L CNN
+F 1 "BUK7880-55A_CUX" H 2706 1455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2700 1425 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BUK7880-55A.pdf" V 2500 1500 50  0001 L CNN
+F 4 "1727-2222-1-ND" H 2500 1500 50  0001 C CNN "dk"
+F 5 "BUK7880-55A/CUX" H 2500 1500 50  0001 C CNN "mfr"
+	1    2500 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1400 1500 1400
+Connection ~ 1350 1400
+Wire Wire Line
+	2600 1200 2600 1300
+$Comp
+L Device:R R3
+U 1 1 5DB74A11
+P 2100 1500
+F 0 "R3" V 1893 1500 50  0000 C CNN
+F 1 "1k" V 1984 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2030 1500 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 2100 1500 50  0001 C CNN
+F 4 "311-1.0KGRCT-ND" H 2100 1500 50  0001 C CNN "dk"
+F 5 "RC0603JR-071KL" H 2100 1500 50  0001 C CNN "mfr"
+	1    2100 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 1500 1950 1500
+Wire Wire Line
+	2250 1500 2300 1500
+$Comp
+L Device:R R4
+U 1 1 5DBAB23A
+P 2300 1750
+F 0 "R4" H 2370 1796 50  0000 L CNN
+F 1 "10k" H 2370 1705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2230 1750 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 2300 1750 50  0001 C CNN
+F 4 "311-10KGRCT-ND" H 2300 1750 50  0001 C CNN "dk"
+F 5 "RC0603JR-0710KL" H 2300 1750 50  0001 C CNN "mfr"
+	1    2300 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1500 2300 1600
+Connection ~ 2300 1500
+Wire Wire Line
+	2600 1700 2600 1900
+Wire Wire Line
+	2600 1900 2300 1900
+Wire Wire Line
+	2300 1900 1250 1900
+Wire Wire Line
+	1250 1900 1250 1600
+Connection ~ 2300 1900
+Text Label 1300 1900 0    50   ~ 0
+GND-F
+Text Label 2600 1250 0    50   ~ 0
+GND
+Text Notes 1250 850  0    50   ~ 0
+12V Power in and low side switch
+Text Notes 6250 1600 1    50   ~ 0
+Inductive load \nflyback diode
+Text Notes 6450 750  0    50   ~ 0
+Connection to computer
+$Comp
+L adampsu-rescue:GND-power #PWR0114
+U 1 1 5DB9BE0C
+P 5300 3300
+F 0 "#PWR0114" H 5300 3050 50  0001 C CNN
+F 1 "GND" H 5305 3127 50  0000 C CNN
+F 2 "" H 5300 3300 50  0001 C CNN
+F 3 "" H 5300 3300 50  0001 C CNN
+	1    5300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3200 5300 3300
+Connection ~ 5300 2900
+Wire Wire Line
+	5050 2900 5300 2900
+Wire Wire Line
+	5050 2800 5050 2900
+Wire Wire Line
+	4800 2800 5050 2800
+$Comp
+L adampsu-rescue:R-Device R2
+U 1 1 5DBA6045
+P 5300 3050
+F 0 "R2" H 5370 3096 50  0000 L CNN
+F 1 "500k" H 5370 3005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5230 3050 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 5300 3050 50  0001 C CNN
+F 4 "RMCF0603FT499KCT-ND" H 5300 3050 50  0001 C CNN "dk"
+F 5 "RMCF0603FT499K" H 5300 3050 50  0001 C CNN "mfr"
+	1    5300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2600 5650 2600
+Connection ~ 5300 2600
+$Comp
+L adampsu-rescue:R-Device R1
+U 1 1 5DBA3553
+P 5300 2750
+F 0 "R1" H 5370 2796 50  0000 L CNN
+F 1 "1.55M" H 5370 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5230 2750 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 5300 2750 50  0001 C CNN
+F 4 "541-1.54MLCT-ND" H 5300 2750 50  0001 C CNN "dk"
+F 5 "CRCW04021M54FKED" H 5300 2750 50  0001 C CNN "mfr"
+	1    5300 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2600 5300 2600
+$Comp
+L adampsu-rescue:C-Device C6
+U 1 1 5DBA1022
+P 5650 2750
+F 0 "C6" H 5765 2796 50  0000 L CNN
+F 1 "4.7uF" H 5765 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5688 2600 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B475KQ8NQNC.jsp" H 5650 2750 50  0001 C CNN
+F 4 "1276-2087-1-ND" H 5650 2750 50  0001 C CNN "dk"
+F 5 "CL10B475KQ8NQNC" H 5650 2750 50  0001 C CNN "mfr"
+	1    5650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L adampsu-rescue:GND-power #PWR0113
+U 1 1 5DBA101C
+P 5650 2900
+F 0 "#PWR0113" H 5650 2650 50  0001 C CNN
+F 1 "GND" H 5655 2727 50  0000 C CNN
+F 2 "" H 5650 2900 50  0001 C CNN
+F 3 "" H 5650 2900 50  0001 C CNN
+	1    5650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3000 4900 3000
+$Comp
+L adampsu-rescue:C-Device C5
+U 1 1 5DB98388
+P 4900 3150
+F 0 "C5" H 5015 3196 50  0000 L CNN
+F 1 "4.7uF" H 5015 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4938 3000 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B475KQ8NQNC.jsp" H 4900 3150 50  0001 C CNN
+F 4 "1276-2087-1-ND" H 4900 3150 50  0001 C CNN "dk"
+F 5 "CL10B475KQ8NQNC" H 4900 3150 50  0001 C CNN "mfr"
+	1    4900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L adampsu-rescue:GND-power #PWR0112
+U 1 1 5DB98382
+P 4900 3300
+F 0 "#PWR0112" H 4900 3050 50  0001 C CNN
+F 1 "GND" H 4905 3127 50  0000 C CNN
+F 2 "" H 4900 3300 50  0001 C CNN
+F 3 "" H 4900 3300 50  0001 C CNN
+	1    4900 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3200 3900 3200
+Wire Wire Line
+	4000 2900 3900 2900
+$Comp
+L adampsu-rescue:C-Device C2
+U 1 1 5DB81FEA
+P 3900 3050
+F 0 "C2" H 3785 3096 50  0000 R CNN
+F 1 "1uF" H 3785 3005 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3938 2900 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B105MO8NNWC.pdf" H 3900 3050 50  0001 C CNN
+F 4 "1276-6524-1-ND" H 3900 3050 50  0001 C CNN "dk"
+F 5 "CL10B105MO8NNWC" H 3900 3050 50  0001 C CNN "mfr"
+	1    3900 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3450 2600
+$Comp
+L adampsu-rescue:C-Device C1
+U 1 1 5DB80B6B
+P 3450 2750
+F 0 "C1" H 3565 2796 50  0000 L CNN
+F 1 "4.7uF" H 3565 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3488 2600 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B475KQ8NQNC.jsp" H 3450 2750 50  0001 C CNN
+F 4 "1276-2087-1-ND" H 3450 2750 50  0001 C CNN "dk"
+F 5 "CL10B475KQ8NQNC" H 3450 2750 50  0001 C CNN "mfr"
+	1    3450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L adampsu-rescue:GND-power #PWR0111
+U 1 1 5DB7B3D4
+P 3450 2900
+F 0 "#PWR0111" H 3450 2650 50  0001 C CNN
+F 1 "GND" H 3455 2727 50  0000 C CNN
+F 2 "" H 3450 2900 50  0001 C CNN
+F 3 "" H 3450 2900 50  0001 C CNN
+	1    3450 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2600 4000 2600
+$Comp
+L adampsu-rescue:+5V-power #PWR0110
+U 1 1 5DB766D7
+P 3450 2600
+F 0 "#PWR0110" H 3450 2450 50  0001 C CNN
+F 1 "+5V" H 3465 2773 50  0000 C CNN
+F 2 "" H 3450 2600 50  0001 C CNN
+F 3 "" H 3450 2600 50  0001 C CNN
+	1    3450 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3400 4400 3550
+$Comp
+L adampsu-rescue:GND-power #PWR0109
+U 1 1 5DB72730
+P 4400 3550
+F 0 "#PWR0109" H 4400 3300 50  0001 C CNN
+F 1 "GND" H 4405 3377 50  0000 C CNN
+F 2 "" H 4400 3550 50  0001 C CNN
+F 3 "" H 4400 3550 50  0001 C CNN
+	1    4400 3550
+	1    0    0    -1  
+$EndComp
+Text Notes 4000 2250 0    50   ~ 0
+-5V Inverter+Regulator
+$Comp
+L adampsu-rescue:LM27761-Regulator_SwitchedCapacitor U1
+U 1 1 5DB02CDE
+P 4400 2900
+F 0 "U1" H 4400 3467 50  0000 C CNN
+F 1 "LM27761" H 4400 3376 50  0000 C CNN
+F 2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" H 4550 2400 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm27761.pdf" H 6900 2500 50  0001 C CNN
+F 4 "296-44379-1-ND" H 4400 2900 50  0001 C CNN "dk"
+F 5 "LM27761DSGR" H 4400 2900 50  0001 C CNN "mfr"
+	1    4400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L adampsu-rescue:GND-power #PWR0102
+U 1 1 5DB46D86
+P 2250 2850
+F 0 "#PWR0102" H 2250 2600 50  0001 C CNN
+F 1 "GND" H 2255 2677 50  0000 C CNN
+F 2 "" H 2250 2850 50  0001 C CNN
+F 3 "" H 2250 2850 50  0001 C CNN
+	1    2250 2850
+	1    0    0    -1  
+$EndComp
+Text Notes 1550 2250 0    50   ~ 0
+Printer Passthrough
+Wire Wire Line
+	2150 2850 2250 2850
+Wire Wire Line
+	2150 2750 2250 2750
+Wire Wire Line
+	1400 2850 1650 2850
+Text Label 1400 2850 0    50   ~ 0
+DATA
+Text Label 2250 2750 0    50   ~ 0
+RESET
+$Comp
+L adampsu-rescue:Conn_2Rows-09Pins-Connector_Generic J2
+U 1 1 5DB0152B
+P 1850 2750
+F 0 "J2" H 1900 3167 50  0000 C CNN
+F 1 "Conn_2Rows-09Pins" H 1900 3076 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 1850 2750 50  0001 C CNN
+F 3 "~" H 1850 2750 50  0001 C CNN
+	1    1850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom:PlungerCap PC?
+U 1 1 5DB6E86E
+P 1550 1700
+F 0 "PC?" H 1728 1746 50  0000 L CNN
+F 1 "PlungerCap" H 1728 1655 50  0000 L CNN
+F 2 "adampsu:PlungerCap-4JWHT" H 1300 1700 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/e-switch/4JWHT/EG1077-ND/45809" H 1300 1700 50  0001 C CNN
+F 4 "EG1077-ND" H 1550 1700 50  0001 C CNN "dk"
+F 5 "4JWHT" H 1550 1700 50  0001 C CNN "mfr"
+	1    1550 1700
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name adampsu)(type KiCad)(uri ${KIPRJMOD}/adampsu.pretty)(options "")(descr ""))
+)

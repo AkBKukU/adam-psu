@@ -1,0 +1,13 @@
+(module PlungerCap-4JWHT (layer F.Cu) (tedit 5DB5DA07)
+  (descr Drawing)
+  (fp_text reference REF** (at 10 3) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value PlungerCap-4JWHT (at 0 6) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text user http://spec_sheets.e-switch.com/specs/P001052.pdf (at 0 12) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_poly (pts (xy -6 0) (xy -6 4) (xy 6 4) (xy 6 0)) (layer Dwgs.User) (width 0.1))
+)

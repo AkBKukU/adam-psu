@@ -1,11 +1,125 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Barrel_Jack_Switch
+# Custom_BUK7880-55A_CUX
 #
-DEF Connector_Barrel_Jack_Switch J 0 20 Y N 1 F N
+DEF Custom_BUK7880-55A_CUX Q 0 20 Y N 1 F N
+F0 "Q" 200 75 50 H V L CNN
+F1 "Custom_BUK7880-55A_CUX" 200 0 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" 200 -75 50 H I L CIN
+F3 "" 0 0 50 V I L CNN
+$FPLIST
+ SOT-223*
+$ENDFPLIST
+DRAW
+C 65 0 111 0 1 10 N
+C 100 -70 11 0 1 0 F
+C 100 70 11 0 1 0 F
+P 2 0 1 0 -100 0 0 0 N
+P 2 0 1 0 30 -70 100 -70 N
+P 2 0 1 10 30 -50 30 -90 N
+P 2 0 1 0 30 0 100 0 N
+P 2 0 1 10 30 20 30 -20 N
+P 2 0 1 0 30 70 100 70 N
+P 2 0 1 10 30 90 30 50 N
+P 2 0 1 0 100 -70 100 -100 N
+P 2 0 1 0 100 -70 100 0 N
+P 2 0 1 0 100 100 100 70 N
+P 3 0 1 10 10 75 10 -75 10 -75 N
+P 4 0 1 0 40 0 80 15 80 -15 40 0 F
+P 4 0 1 0 100 -70 130 -70 130 70 100 70 N
+P 4 0 1 0 110 20 115 15 145 15 150 10 N
+P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
+X G 1 -200 0 100 R 50 50 1 1 P
+X D 2 100 200 100 D 50 50 1 1 P
+X S 3 100 -200 100 U 50 50 1 1 P N
+X D 4 100 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Custom_PlungerCap
+#
+DEF Custom_PlungerCap PC 0 40 Y Y 1 F N
+F0 "PC" -250 0 50 H V C CNN
+F1 "Custom_PlungerCap" 100 -100 50 H V C CNN
+F2 "" -250 0 50 H I C CNN
+F3 "" -250 0 50 H I C CNN
+DRAW
+P 9 0 1 0 -150 -50 150 -50 150 50 50 50 50 0 -50 0 -50 50 -150 50 -150 -50 N
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# adampsu-rescue_+12V-power
+#
+DEF adampsu-rescue_+12V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "adampsu-rescue_+12V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +12V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# adampsu-rescue_+5V-power
+#
+DEF adampsu-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "adampsu-rescue_+5V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# adampsu-rescue_B240-Diode
+#
+DEF adampsu-rescue_B240-Diode D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "adampsu-rescue_B240-Diode" 0 -100 50 H V C CNN
+F2 "Diode_SMD:D_SMB" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ D*SMB*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 8 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# adampsu-rescue_Barrel_Jack_Switch-Connector
+#
+DEF adampsu-rescue_Barrel_Jack_Switch-Connector J 0 20 Y N 1 F N
 F0 "J" 0 210 50 H V C CNN
-F1 "Connector_Barrel_Jack_Switch" 0 -200 50 H V C CNN
+F1 "adampsu-rescue_Barrel_Jack_Switch-Connector" 0 -200 50 H V C CNN
 F2 "" 50 -40 50 H I C CNN
 F3 "" 50 -40 50 H I C CNN
 $FPLIST
@@ -26,11 +140,63 @@ X ~ 3 300 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_DB9_Female
+# adampsu-rescue_C-Device
 #
-DEF Connector_DB9_Female J 0 40 Y N 1 F N
+DEF adampsu-rescue_C-Device C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "adampsu-rescue_C-Device" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# adampsu-rescue_Conn_2Rows-09Pins-Connector_Generic
+#
+DEF adampsu-rescue_Conn_2Rows-09Pins-Connector_Generic J 0 40 Y N 1 F N
+F0 "J" 50 300 50 H V C CNN
+F1 "adampsu-rescue_Conn_2Rows-09Pins-Connector_Generic" 50 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*2Rows*Pins__*
+ *FCC*2Rows*Pins__*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 150 -250 1 1 10 f
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+S 150 205 100 195 1 1 6 N
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_2 2 300 200 150 L 50 50 1 1 P
+X Pin_3 3 -200 100 150 R 50 50 1 1 P
+X Pin_4 4 300 100 150 L 50 50 1 1 P
+X Pin_5 5 -200 0 150 R 50 50 1 1 P
+X Pin_6 6 300 0 150 L 50 50 1 1 P
+X Pin_7 7 -200 -100 150 R 50 50 1 1 P
+X Pin_8 8 300 -100 150 L 50 50 1 1 P
+X Pin_9 9 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# adampsu-rescue_DB9_Female-Connector
+#
+DEF adampsu-rescue_DB9_Female-Connector J 0 40 Y N 1 F N
 F0 "J" 0 550 50 H V C CNN
-F1 "Connector_DB9_Female" 0 -575 50 H V C CNN
+F1 "adampsu-rescue_DB9_Female-Connector" 0 -575 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -68,120 +234,24 @@ X 9 9 -300 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_2Rows-09Pins
+# adampsu-rescue_GND-power
 #
-DEF Connector_Generic_Conn_2Rows-09Pins J 0 40 Y N 1 F N
-F0 "J" 50 300 50 H V C CNN
-F1 "Connector_Generic_Conn_2Rows-09Pins" 50 -300 50 H V C CNN
+DEF adampsu-rescue_GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "adampsu-rescue_GND-power" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*2Rows*Pins__*
- *FCC*2Rows*Pins__*
-$ENDFPLIST
 DRAW
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 205 0 195 1 1 6 N
-S -50 250 150 -250 1 1 10 f
-S 150 -95 100 -105 1 1 6 N
-S 150 5 100 -5 1 1 6 N
-S 150 105 100 95 1 1 6 N
-S 150 205 100 195 1 1 6 N
-X Pin_1 1 -200 200 150 R 50 50 1 1 P
-X Pin_2 2 300 200 150 L 50 50 1 1 P
-X Pin_3 3 -200 100 150 R 50 50 1 1 P
-X Pin_4 4 300 100 150 L 50 50 1 1 P
-X Pin_5 5 -200 0 150 R 50 50 1 1 P
-X Pin_6 6 300 0 150 L 50 50 1 1 P
-X Pin_7 7 -200 -100 150 R 50 50 1 1 P
-X Pin_8 8 300 -100 150 L 50 50 1 1 P
-X Pin_9 9 -200 -200 150 R 50 50 1 1 P
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Device_C
+# adampsu-rescue_LM27761-Regulator_SwitchedCapacitor
 #
-DEF Device_C C 0 10 N Y 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "Device_C" 25 -100 50 H V L CNN
-F2 "" 38 -150 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
-DRAW
-P 2 0 1 20 -80 -30 80 -30 N
-P 2 0 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_R
-#
-DEF Device_R R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "Device_R" 0 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-S -40 -100 40 100 0 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Diode_B240
-#
-DEF Diode_B240 D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Diode_B240" 0 -100 50 H V C CNN
-F2 "Diode_SMD:D_SMB" 0 -175 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS B230 B240 B250 B260
-$FPLIST
- D*SMB*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
-P 6 0 1 8 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Regulator_Linear_LT1084-5.0
-#
-DEF Regulator_Linear_LT1084-5.0 U 0 10 Y Y 1 F N
-F0 "U" -150 125 50 H V C CNN
-F1 "Regulator_Linear_LT1084-5.0" 0 125 50 H V L CNN
-F2 "" 0 250 50 H I C CIN
-F3 "" 0 0 50 H I C CNN
-ALIAS LM1084-5.0 LM1085-3.3 LM1085-5.0 LM1085-12 LT1086-2.85 LT1086-3.3 LT1086-3.6 LT1086-5.0 LT1086-12 LT1083-3.3 LT1083-3.6 LT1083-5.0 LT1083-12 LT1084-3.3 LT1084-3.6 LT1084-5.0 LT1084-12 LT1085-3.3 LT1085-3.6 LT1085-5.0 LT1085-12
-$FPLIST
- TO?220*
- TO?263*
-$ENDFPLIST
-DRAW
-S -200 75 200 -200 0 1 10 f
-X GND 1 0 -300 100 U 50 50 1 1 W
-X VO 2 300 0 100 L 50 50 1 1 w
-X VI 3 -300 0 100 R 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# Regulator_SwitchedCapacitor_LM27761
-#
-DEF Regulator_SwitchedCapacitor_LM27761 U 0 20 Y Y 1 F N
+DEF adampsu-rescue_LM27761-Regulator_SwitchedCapacitor U 0 20 Y Y 1 F N
 F0 "U" -250 450 50 H V C CNN
-F1 "Regulator_SwitchedCapacitor_LM27761" 130 450 50 H V C CNN
+F1 "adampsu-rescue_LM27761-Regulator_SwitchedCapacitor" 130 450 50 H V C CNN
 F2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" 150 -500 50 H I L CNN
 F3 "" 2500 -400 50 H I C CNN
 $FPLIST
@@ -201,11 +271,47 @@ X PAD 9 100 -500 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_Push_SPDT
+# adampsu-rescue_LT1084-5.0-Regulator_Linear
 #
-DEF Switch_SW_Push_SPDT SW 0 0 Y N 1 F N
+DEF adampsu-rescue_LT1084-5.0-Regulator_Linear U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "adampsu-rescue_LT1084-5.0-Regulator_Linear" 0 125 50 H V L CNN
+F2 "" 0 250 50 H I C CIN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO?220*
+ TO?263*
+$ENDFPLIST
+DRAW
+S -200 75 200 -200 0 1 10 f
+X GND 1 0 -300 100 U 50 50 1 1 W
+X VO 2 300 0 100 L 50 50 1 1 w
+X VI 3 -300 0 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# adampsu-rescue_R-Device
+#
+DEF adampsu-rescue_R-Device R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "adampsu-rescue_R-Device" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# adampsu-rescue_SW_Push_SPDT-Switch
+#
+DEF adampsu-rescue_SW_Push_SPDT-Switch SW 0 0 Y N 1 F N
 F0 "SW" 0 170 50 H V C CNN
-F1 "Switch_SW_Push_SPDT" 0 -200 50 H V C CNN
+F1 "adampsu-rescue_SW_Push_SPDT-Switch" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -217,49 +323,6 @@ P 2 0 1 0 -60 10 100 80 N
 X A 1 200 100 100 L 50 50 1 1 P
 X B 2 -200 0 100 R 50 50 1 1 P
 X C 3 200 -100 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# power_+12V
-#
-DEF power_+12V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+12V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +12V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+5V
-#
-DEF power_+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
