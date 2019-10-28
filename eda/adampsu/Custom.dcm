@@ -6,4 +6,16 @@ K Power MOSFET N-MOS
 F https://assets.nexperia.com/documents/data-sheet/BUK7880-55A.pdf
 $ENDCMP
 #
+$CMP TPS5431DDA
+D 3A, Step Down Swift Converter, Adjustable Output Voltage, 5.5-23V Input Voltage, PowerSO-8
+K Step-Down DC-DC Switching Regulator
+F http://www.ti.com/lit/ds/symlink/tps5430.pdf
+$ENDCMP
+#
+$CMP TPS54531DDAR
+D 5A, Step Down Swift Converter, Adjustable Output Voltage, 5.5-36V Input Voltage, PowerSO-8
+K Step-Down DC-DC Switching Regulator
+F http://www.ti.com/lit/ds/symlink/tps54531.pdf
+$ENDCMP
+#
 #End Doc Library
