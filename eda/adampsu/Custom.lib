@@ -37,6 +37,20 @@ X D 4 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# HandLabel_SN
+#
+DEF HandLabel_SN LB 0 40 Y Y 1 F N
+F0 "LB" 0 -200 50 H V C CNN
+F1 "HandLabel_SN" 0 200 50 H V C CNN
+F2 "adampsu:adamlabel" 0 150 50 H I C CNN
+F3 "" 0 150 50 H I C CNN
+DRAW
+T 0 -100 0 50 0 0 0 Label Normal 0 C C
+S 0 100 -200 -100 0 1 0 N
+S 200 100 0 -100 0 1 0 F
+ENDDRAW
+ENDDEF
+#
 # PlungerCap
 #
 DEF PlungerCap PC 0 40 Y Y 1 F N

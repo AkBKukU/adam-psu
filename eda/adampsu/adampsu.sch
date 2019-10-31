@@ -93,7 +93,7 @@ Wire Wire Line
 	7150 1600 7950 1600
 Wire Wire Line
 	7150 1300 7950 1300
-Text Notes 4400 2350 0    50   ~ 0
+Text Notes 4450 2450 0    50   ~ 0
 +5V Regulator
 $Comp
 L adampsu-rescue:GND-power #PWR0101
@@ -965,4 +965,135 @@ Wire Wire Line
 Wire Wire Line
 	6250 4300 5250 4300
 Connection ~ 6450 3750
+$Comp
+L Custom:HandLabel_SN LB1
+U 1 1 5DB90AE2
+P 8150 5950
+F 0 "LB1" H 8378 5996 50  0000 L CNN
+F 1 "HandLabel_SN" H 8378 5905 50  0000 L CNN
+F 2 "adampsu:adamlabel" H 8150 6100 50  0001 C CNN
+F 3 "" H 8150 6100 50  0001 C CNN
+	1    8150 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5DB93DBC
+P 7950 3250
+F 0 "TP1" V 7904 3438 50  0000 L CNN
+F 1 "TestPoint" V 7995 3438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8150 3250 50  0001 C CNN
+F 3 "~" H 8150 3250 50  0001 C CNN
+	1    7950 3250
+	0    1    1    0   
+$EndComp
+Text Label 7700 1500 0    50   ~ 0
++5V
+Wire Wire Line
+	7950 3250 7700 3250
+Wire Wire Line
+	7950 3350 7700 3350
+Wire Wire Line
+	7950 3550 7700 3550
+Wire Wire Line
+	7950 3850 7700 3850
+Text Label 7700 3250 0    50   ~ 0
++12VL
+Text Label 7700 3350 0    50   ~ 0
+RESET
+Text Label 7700 3450 0    50   ~ 0
++12VI
+Text Label 7700 3550 0    50   ~ 0
+DATA
+Text Label 7700 3750 0    50   ~ 0
+GND
+Text Label 7700 3850 0    50   ~ 0
+-5V
+Wire Wire Line
+	7700 3750 7950 3750
+$Comp
+L adampsu-rescue:+5V-power #PWR0121
+U 1 1 5DBAFCDE
+P 7600 3650
+F 0 "#PWR0121" H 7600 3500 50  0001 C CNN
+F 1 "+5V" H 7615 3823 50  0000 C CNN
+F 2 "" H 7600 3650 50  0001 C CNN
+F 3 "" H 7600 3650 50  0001 C CNN
+	1    7600 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3650 7950 3650
+Text Label 7700 3650 0    50   ~ 0
++5V
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5DBBA2C9
+P 7950 3350
+F 0 "TP2" V 7904 3538 50  0000 L CNN
+F 1 "TestPoint" V 7995 3538 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8150 3350 50  0001 C CNN
+F 3 "~" H 8150 3350 50  0001 C CNN
+	1    7950 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5DBBA671
+P 7950 3450
+F 0 "TP3" V 7904 3638 50  0000 L CNN
+F 1 "TestPoint" V 7995 3638 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8150 3450 50  0001 C CNN
+F 3 "~" H 8150 3450 50  0001 C CNN
+	1    7950 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5DBBA974
+P 7950 3550
+F 0 "TP4" V 7904 3738 50  0000 L CNN
+F 1 "TestPoint" V 7995 3738 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8150 3550 50  0001 C CNN
+F 3 "~" H 8150 3550 50  0001 C CNN
+	1    7950 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5DBBAC81
+P 7950 3650
+F 0 "TP5" V 7904 3838 50  0000 L CNN
+F 1 "TestPoint" V 7995 3838 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8150 3650 50  0001 C CNN
+F 3 "~" H 8150 3650 50  0001 C CNN
+	1    7950 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5DBBAFC4
+P 7950 3750
+F 0 "TP6" V 7904 3938 50  0000 L CNN
+F 1 "TestPoint" V 7995 3938 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8150 3750 50  0001 C CNN
+F 3 "~" H 8150 3750 50  0001 C CNN
+	1    7950 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5DBBB3BE
+P 7950 3850
+F 0 "TP7" V 7904 4038 50  0000 L CNN
+F 1 "TestPoint" V 7995 4038 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8150 3850 50  0001 C CNN
+F 3 "~" H 8150 3850 50  0001 C CNN
+	1    7950 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 3450 7950 3450
+Text Notes 7750 3050 0    50   ~ 0
+Test Ponits
 $EndSCHEMATC
