@@ -12,6 +12,7 @@ J1 ,1,"Barrel_Jack_Switch","adampsu:BarrelJack_CUI_PJ-047AH_Horizontal","https:/
 J2 ,1,"Conn_2Rows-09Pins","Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical","~","1849-1002-ND","PR20205VBDN","",""
 J3 ,1,"DB9_Female","Connector_Dsub:DSUB-9_Female_Vertical_P2.77x2.84mm_MountingHoles","http://www.assmann-wsw.com/fileadmin/datasheets/ASS_4885_CO.pdf","AE10928-ND","A-DF 09 PP/Z","",""
 L1 L2 ,2,"4.7uH","adampsu:L_11.5x10.3_H4.8","http://productfinder.pulseeng.com/products/datasheets/P769.pdf","553-3001-1-ND","PA4342.472NLT","","15.5mOhm"
+LB1 ,1,"HandLabel_SN","adampsu:adamlabel",""
 PC1 ,1,"PlungerCap","adampsu:PlungerCap-4JWHT","https://www.digikey.com/product-detail/en/e-switch/4JWHT/EG1077-ND/45809","EG1077-ND","4JWHT","",""
 Q1 ,1,"BUK7880-55A_CUX","Package_TO_SOT_SMD:SOT-223-3_TabPin2","https://assets.nexperia.com/documents/data-sheet/BUK7880-55A.pdf","1727-2222-1-ND","BUK7880-55A/CUX","",""
 R10 R14 ,2,"1.96k","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf","311-1.96KHRCT-ND","RC0603FR-071K96L","",""
@@ -23,4 +24,5 @@ R7 R11 ,2,"37.4k","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","ht
 R8 R12 ,2,"51.1","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf","311-51.1HRCT-ND","RC0603FR-0751R1L","",""
 R9 R13 ,2,"10.2k","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf","RMCF0603FT10K2CT-ND","RMCF0603FT10K2","",""
 SW1 ,1,"30V 300mA Latching Switch","adampsu:Switch-LC1258EENP","https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/36/LC.pdf","EG5886-ND","LC1258EENP","",""
+TP1 TP2 TP3 TP4 TP5 TP6 TP7 TP10 TP11 TP8 TP9 ,11,"TestPoint","TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm","~"
 U2 U1 ,2,"TPS54531DDAR","Package_SO:TI_SO-PowerPAD-8_ThermalVias","http://www.ti.com/lit/ds/symlink/tps54531.pdf","296-40801-2-ND","TPS54531DDAR","",""

@@ -342,47 +342,6 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# adampsu-rescue_LM27761-Regulator_SwitchedCapacitor
-#
-DEF adampsu-rescue_LM27761-Regulator_SwitchedCapacitor U 0 20 Y Y 1 F N
-F0 "U" -250 450 50 H V C CNN
-F1 "adampsu-rescue_LM27761-Regulator_SwitchedCapacitor" 130 450 50 H V C CNN
-F2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" 150 -500 50 H I L CNN
-F3 "" 2500 -400 50 H I C CNN
-$FPLIST
- WSON*1EP?2x2mm*P0.5mm*
-$ENDFPLIST
-DRAW
-S -300 400 300 -400 0 1 10 f
-X VIN 1 -400 300 100 R 50 50 1 1 W
-X GND 2 0 -500 100 U 50 50 1 1 W
-X CPOUT 3 400 -100 100 L 50 50 1 1 w
-X VOUT 4 400 300 100 L 50 50 1 1 w
-X VFB 5 400 100 100 L 50 50 1 1 I
-X EN 6 -400 200 100 R 50 50 1 1 I
-X C- 7 -400 -300 100 R 50 50 1 1 P
-X C+ 8 -400 0 100 R 50 50 1 1 P
-X PAD 9 100 -500 100 U 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# adampsu-rescue_R-Device
-#
-DEF adampsu-rescue_R-Device R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "adampsu-rescue_R-Device" 0 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-S -40 -100 40 100 0 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # adampsu-rescue_SW_Push_SPDT-Switch
 #
 DEF adampsu-rescue_SW_Push_SPDT-Switch SW 0 0 Y N 1 F N
