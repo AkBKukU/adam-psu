@@ -1,4 +1,4 @@
-16287315618404464
+16292034897012464
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72905,6 +72905,20 @@ capacitor handsolder
 2
 2
 adampsu
+DB9-SpotMount
+
+
+0
+0
+0
+adampsu
+D_SOD-128
+SOD-123
+SOD-123
+0
+2
+2
+adampsu
 L_11.5x10.3_H4.8
 Choke, SMD, 10.4x10.4mm 4.8mm height
 Choke SMD
@@ -72925,6 +72939,13 @@ Switch-LC1258EENP
 0
 5
 4
+adampsu
+TestPoint_Labeled
+THT rectangular pad as test Point, square 1.0mm side length, hole diameter 0.5mm
+test point THT pad rectangle square
+0
+1
+1
 adampsu
 adamlabel
 

@@ -24,6 +24,7 @@ F 2 "adampsu:BarrelJack_CUI_PJ-047AH_Horizontal" H 1000 1460 50  0001 C CNN
 F 3 "https://www.cuidevices.com/product/resource/pj-047ah.pdf" H 1000 1460 50  0001 C CNN
 F 4 "CP-047AH-ND" H 950 1500 50  0001 C CNN "dk"
 F 5 "PJ-047AH" H 950 1500 50  0001 C CNN "mfr"
+F 6 " 490-PJ-047AH" H 950 1500 50  0001 C CNN "mouser"
 	1    950  1500
 	1    0    0    -1  
 $EndComp
@@ -37,6 +38,7 @@ F 2 "adampsu:Switch-LC1258EENP" H 1700 1400 50  0001 C CNN
 F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/36/LC.pdf" H 1700 1400 50  0001 C CNN
 F 4 "EG5886-ND" H 1700 1400 50  0001 C CNN "dk"
 F 5 "LC1258EENP" H 1700 1400 50  0001 C CNN "mfr"
+F 6 "612-LC1258EENP" H 1700 1400 50  0001 C CNN "mouser"
 	1    1700 1400
 	1    0    0    -1  
 $EndComp
@@ -46,11 +48,12 @@ U 1 1 5DAFD20D
 P 7150 1450
 F 0 "D1" V 7104 1529 50  0000 L CNN
 F 1 "D_Schottky" V 7195 1529 50  0000 L CNN
-F 2 "Diode_SMD:D_SMC_Handsoldering" H 7150 1275 50  0001 C CNN
-F 3 "http://www.comchiptech.com/admin/files/product/CDBC520-HF%20Thru195217.%20CDBC5100-HF%20RevB.pdf" H 7150 1450 50  0001 C CNN
-F 4 "641-1126-1-ND" H 7150 1450 50  0001 C CNN "dk"
-F 5 "CDBC540-G" H 7150 1450 50  0001 C CNN "mfr"
+F 2 "adampsu:D_SOD-128" H 7150 1275 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/916/PMEG4050EP-1320387.pdf" H 7150 1450 50  0001 C CNN
+F 4 "1727-5842-1-ND" H 7150 1450 50  0001 C CNN "dk"
+F 5 "PMEG4050EP,115" H 7150 1450 50  0001 C CNN "mfr"
 F 6 "40" H 7150 1450 50  0001 C CNN "maxV"
+F 7 "963-EMK325B7226MM-TR " H 7150 1450 50  0001 C CNN "mouser"
 	1    7150 1450
 	0    1    1    0   
 $EndComp
@@ -64,11 +67,10 @@ F 2 "Connector_Dsub:DSUB-9_Female_Vertical_P2.77x2.84mm_MountingHoles" H 8250 15
 F 3 "http://www.assmann-wsw.com/fileadmin/datasheets/ASS_4885_CO.pdf" H 8250 1500 50  0001 C CNN
 F 4 "AE10928-ND" H 8250 1500 50  0001 C CNN "dk"
 F 5 "A-DF 09 PP/Z" H 8250 1500 50  0001 C CNN "mfr"
+F 6 "636-171-009-203L001" H 8250 1500 50  0001 C CNN "mouser"
 	1    8250 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7950 1100 7700 1100
 Wire Wire Line
 	7950 1200 7700 1200
 Wire Wire Line
@@ -93,7 +95,7 @@ Wire Wire Line
 	7150 1600 7950 1600
 Wire Wire Line
 	7150 1300 7950 1300
-Text Notes 4400 2000 0    50   ~ 0
+Text Notes 3600 2050 0    50   ~ 0
 +5V Regulator
 $Comp
 L adampsu-rescue:GND-power #PWR0101
@@ -160,6 +162,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2030 1500 50  0
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 2100 1500 50  0001 C CNN
 F 4 "311-1.0KGRCT-ND" H 2100 1500 50  0001 C CNN "dk"
 F 5 "RC0603JR-071KL" H 2100 1500 50  0001 C CNN "mfr"
+F 6 "603-RC0603JR-071KL" H 2100 1500 50  0001 C CNN "mouser"
 	1    2100 1500
 	0    1    1    0   
 $EndComp
@@ -177,6 +180,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2230 1750 50  0
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 2300 1750 50  0001 C CNN
 F 4 "311-10KGRCT-ND" H 2300 1750 50  0001 C CNN "dk"
 F 5 "RC0603JR-0710KL" H 2300 1750 50  0001 C CNN "mfr"
+F 6 "603-RC0603JR-0710KL" H 2300 1750 50  0001 C CNN "mouser"
 	1    2300 1750
 	1    0    0    -1  
 $EndComp
@@ -202,7 +206,7 @@ Text Notes 7050 1700 1    50   ~ 0
 Inductive load \nflyback diode
 Text Notes 7250 850  0    50   ~ 0
 Connection to computer
-Text Notes 4200 4150 0    50   ~ 0
+Text Notes 5050 4300 0    50   ~ 0
 -5V Inverter/Regulator
 $Comp
 L adampsu-rescue:GND-power #PWR0102
@@ -250,6 +254,7 @@ F 2 "adampsu:PlungerCap-4JWHT" H 500 1950 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/e-switch/4JWHT/EG1077-ND/45809" H 500 1950 50  0001 C CNN
 F 4 "EG1077-ND" H 750 1950 50  0001 C CNN "dk"
 F 5 "4JWHT" H 750 1950 50  0001 C CNN "mfr"
+F 6 " 612-4J-WH" H 750 1950 50  0001 C CNN "mouser"
 	1    750  1950
 	1    0    0    -1  
 $EndComp
@@ -263,6 +268,7 @@ F 2 "Package_SO:TI_SO-PowerPAD-8_ThermalVias" H 4750 2550 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tps54531.pdf" H 4700 2900 50  0001 C CNN
 F 4 "296-40801-2-ND" H 4700 2900 50  0001 C CNN "dk"
 F 5 "TPS54531DDAR" H 4700 2900 50  0001 C CNN "mfr"
+F 6 "595-TPS54531DDAR" H 4700 2900 50  0001 C CNN "mouser"
 	1    4700 2900
 	1    0    0    -1  
 $EndComp
@@ -272,12 +278,13 @@ U 1 1 5DB79F94
 P 3100 3000
 F 0 "C7" H 2986 3046 50  0000 R CNN
 F 1 "4.7uF" H 2986 2955 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3138 2850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3138 2850 50  0001 C CNN
 F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=UMK316AB7475KL-T%20%20&u=M" H 3100 3000 50  0001 C CNN
-F 4 "GRM32ER71H475KA88L" H 3100 3000 50  0001 C CNN "dk"
-F 5 "UMK316AB7475KL-T" H 3100 3000 50  0001 C CNN "mfr"
+F 4 " 490-14466-2-ND" H 3100 3000 50  0001 C CNN "dk"
+F 5 "GRM21BR71C475KE51L" H 3100 3000 50  0001 C CNN "mfr"
 F 6 "XR7" H 3100 3000 50  0001 C CNN "rating"
 F 7 "50" H 3100 3000 50  0001 C CNN "maxV"
+F 8 "81-GRM21BR71C475KE1L" H 3100 3000 50  0001 C CNN "mouser"
 	1    3100 3000
 	1    0    0    -1  
 $EndComp
@@ -297,6 +304,7 @@ F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C103M5RACTU.pd
 F 4 "399-7842-1-ND" H 3600 3000 50  0001 C CNN "dk"
 F 5 "C0603C103M5RACTU" H 3600 3000 50  0001 C CNN "mfr"
 F 6 "XR7" H 3600 3000 50  0001 C CNN "rating"
+F 7 "80-C0603C103M5R" H 3600 3000 50  0001 C CNN "mouser"
 	1    3600 3000
 	1    0    0    -1  
 $EndComp
@@ -329,6 +337,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3880 3100 50  0
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 3950 3100 50  0001 C CNN
 F 4 "311-665KHRCT-ND" H 3950 3100 50  0001 C CNN "dk"
 F 5 "RC0603FR-07665KL" H 3950 3100 50  0001 C CNN "mfr"
+F 6 "603-RC0603FR-07665KL" H 3950 3100 50  0001 C CNN "mouser"
 	1    3950 3100
 	1    0    0    -1  
 $EndComp
@@ -342,6 +351,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3880 3400 50  0
 F 3 "http://www.koaspeer.com/catimages/Products/RK73B/RK73B.pdf" H 3950 3400 50  0001 C CNN
 F 4 "2019-RK73B1JTTD134JCT-ND" H 3950 3400 50  0001 C CNN "dk"
 F 5 "RK73B1JTTD134J" H 3950 3400 50  0001 C CNN "mfr"
+F 6 "660-RK73B1JTTD134J" H 3950 3400 50  0001 C CNN "mouser"
 	1    3950 3400
 	1    0    0    -1  
 $EndComp
@@ -377,6 +387,7 @@ F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C103M5RACTU.pd
 F 4 "399-7842-1-ND" H 4200 3450 50  0001 C CNN "dk"
 F 5 "C0603C103M5RACTU" H 4200 3450 50  0001 C CNN "mfr"
 F 6 "XR7" H 4200 3450 50  0001 C CNN "rating"
+F 7 "80-C0603C103M5R" H 4200 3450 50  0001 C CNN "mouser"
 	1    4200 3450
 	1    0    0    -1  
 $EndComp
@@ -414,6 +425,7 @@ F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2700 1425 50  0001 L CIN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BUK7880-55A.pdf" V 2500 1500 50  0001 L CNN
 F 4 "1727-2222-1-ND" H 2500 1500 50  0001 C CNN "dk"
 F 5 "BUK7880-55A/CUX" H 2500 1500 50  0001 C CNN "mfr"
+F 6 "771-BUK7880-55A/CUX" H 2500 1500 50  0001 C CNN "mouser"
 	1    2500 1500
 	1    0    0    -1  
 $EndComp
@@ -429,6 +441,7 @@ F 4 "25" H 4100 2400 50  0001 C CNN "maxV"
 F 5 "XR7" H 4100 2400 50  0001 C CNN "rating"
 F 6 "490-4346-1-ND" H 4100 2400 50  0001 C CNN "dk"
 F 7 "LLL216R71E104MA01L" H 4100 2400 50  0001 C CNN "mfr"
+F 8 " 81-LLL216R71E104MA1L" H 4100 2400 50  0001 C CNN "mouser"
 	1    4100 2400
 	1    0    0    -1  
 $EndComp
@@ -452,6 +465,7 @@ F 4 "25" H 1900 1650 50  0001 C CNN "maxV"
 F 5 "XR7" H 1900 1650 50  0001 C CNN "rating"
 F 6 "1276-1012-2-ND" H 1900 1650 50  0001 C CNN "dk"
 F 7 "CL10F104ZB8NNNC" H 1900 1650 50  0001 C CNN "mfr"
+F 8 "603-CC603KRX7R9BB104" H 1900 1650 50  0001 C CNN "mouser"
 	1    1900 1650
 	1    0    0    -1  
 $EndComp
@@ -475,6 +489,7 @@ F 3 "http://productfinder.pulseeng.com/products/datasheets/P769.pdf" H 5650 2250
 F 4 "553-3001-1-ND" H 5650 2250 50  0001 C CNN "dk"
 F 5 "PA4342.472NLT" H 5650 2250 50  0001 C CNN "mfr"
 F 6 "15.5mOhm" H 5650 2250 50  0001 C CNN "rating"
+F 7 "673-PA4342.472NLT" H 5650 2250 50  0001 C CNN "mouser"
 	1    5650 2250
 	1    0    0    -1  
 $EndComp
@@ -506,51 +521,54 @@ $EndComp
 $Comp
 L Device:R R8
 U 1 1 5DC5FD46
-P 6400 2850
-F 0 "R8" H 6470 2896 50  0000 L CNN
-F 1 "51.1" H 6470 2805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6330 2850 50  0001 C CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 6400 2850 50  0001 C CNN
-F 4 "311-51.1HRCT-ND" H 6400 2850 50  0001 C CNN "dk"
-F 5 "RC0603FR-0751R1L" H 6400 2850 50  0001 C CNN "mfr"
-	1    6400 2850
+P 7000 3000
+F 0 "R8" H 7070 3046 50  0000 L CNN
+F 1 "51.1" H 7070 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6930 3000 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 7000 3000 50  0001 C CNN
+F 4 "311-51.1HRCT-ND" H 7000 3000 50  0001 C CNN "dk"
+F 5 "RC0603FR-0751R1L" H 7000 3000 50  0001 C CNN "mfr"
+F 6 "603-RC0603FR-0751R1L" H 7000 3000 50  0001 C CNN "mouser"
+	1    7000 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R10
 U 1 1 5DC62610
-P 6400 3450
-F 0 "R10" H 6470 3496 50  0000 L CNN
-F 1 "1.96k" H 6470 3405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6330 3450 50  0001 C CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 6400 3450 50  0001 C CNN
-F 4 "311-1.96KHRCT-ND" H 6400 3450 50  0001 C CNN "dk"
-F 5 "RC0603FR-071K96L" H 6400 3450 50  0001 C CNN "mfr"
-	1    6400 3450
+P 7000 3600
+F 0 "R10" H 7070 3646 50  0000 L CNN
+F 1 "1.96k" H 7070 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6930 3600 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 7000 3600 50  0001 C CNN
+F 4 "311-1.96KHRCT-ND" H 7000 3600 50  0001 C CNN "dk"
+F 5 "RC0603FR-071K96L" H 7000 3600 50  0001 C CNN "mfr"
+F 6 "603-RC0603FR-071K96L" H 7000 3600 50  0001 C CNN "mouser"
+	1    7000 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R9
 U 1 1 5DC61F6F
-P 6400 3150
-F 0 "R9" H 6470 3196 50  0000 L CNN
-F 1 "10.2k" H 6470 3105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6330 3150 50  0001 C CNN
-F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 6400 3150 50  0001 C CNN
-F 4 "RMCF0603FT10K2CT-ND" H 6400 3150 50  0001 C CNN "dk"
-F 5 "RMCF0603FT10K2" H 6400 3150 50  0001 C CNN "mfr"
-	1    6400 3150
+P 7000 3300
+F 0 "R9" H 7070 3346 50  0000 L CNN
+F 1 "10.2k" H 7070 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6930 3300 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 7000 3300 50  0001 C CNN
+F 4 "RMCF0603FT10K2CT-ND" H 7000 3300 50  0001 C CNN "dk"
+F 5 "RMCF0603FT10K2" H 7000 3300 50  0001 C CNN "mfr"
+F 6 "667-ERJ-3EKF1022V" H 7000 3300 50  0001 C CNN "mouser"
+	1    7000 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L adampsu-rescue:GND-power #PWR0118
 U 1 1 5DC8E875
-P 6400 3600
-F 0 "#PWR0118" H 6400 3350 50  0001 C CNN
-F 1 "GND" H 6405 3427 50  0000 C CNN
-F 2 "" H 6400 3600 50  0001 C CNN
-F 3 "" H 6400 3600 50  0001 C CNN
-	1    6400 3600
+P 7000 3750
+F 0 "#PWR0118" H 7000 3500 50  0001 C CNN
+F 1 "GND" H 7005 3577 50  0000 C CNN
+F 2 "" H 7000 3750 50  0001 C CNN
+F 3 "" H 7000 3750 50  0001 C CNN
+	1    7000 3750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -565,6 +583,7 @@ F 4 "XR7" H 5350 3150 50  0001 C CNN "rating"
 F 5 "399-17586-1-ND" H 5350 3150 50  0001 C CNN "dk"
 F 6 "50" H 5350 3150 50  0001 C CNN "maxV"
 F 7 "C0603C222K5RAC7411" H 5350 3150 50  0001 C CNN "mfr"
+F 8 "80-C0603C222K5R7411" H 5350 3150 50  0001 C CNN "mouser"
 	1    5350 3150
 	1    0    0    -1  
 $EndComp
@@ -578,6 +597,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5280 3450 50  0
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 5350 3450 50  0001 C CNN
 F 4 "311-37.4KHRCT-ND" H 5350 3450 50  0001 C CNN "dk"
 F 5 "RC0603FR-0737K4L" H 5350 3450 50  0001 C CNN "mfr"
+F 6 "603-RC0603FR-0737K4L" H 5350 3450 50  0001 C CNN "mouser"
 	1    5350 3450
 	1    0    0    -1  
 $EndComp
@@ -595,50 +615,10 @@ F 4 "XR7" H 5750 3350 50  0001 C CNN "rating"
 F 5 "478-6204-1-ND" H 5750 3350 50  0001 C CNN "dk"
 F 6 "50" H 5750 3350 50  0001 C CNN "maxV"
 F 7 "06035C220JAT2A" H 5750 3350 50  0001 C CNN "mfr"
+F 8 " 581-06035C220JAT2A" H 5750 3350 50  0001 C CNN "mouser"
 	1    5750 3350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6350 2550 5950 2550
-Wire Wire Line
-	5950 2250 6350 2250
-$Comp
-L adampsu-rescue:C-Device C14
-U 1 1 5DC5652F
-P 6350 2400
-F 0 "C14" H 6236 2446 50  0000 R CNN
-F 1 "47uF" H 6236 2355 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 6388 2250 50  0001 C CNN
-F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=LMK325B7476MM-PR%20&u=M" H 6350 2400 50  0001 C CNN
-F 4 "587-5922-1-ND" H 6350 2400 50  0001 C CNN "dk"
-F 5 "LMK325B7476MM-PR" H 6350 2400 50  0001 C CNN "mfr"
-F 6 "XR7" H 6350 2400 50  0001 C CNN "rating"
-F 7 "10+" H 6350 2400 50  0001 C CNN "maxV"
-	1    6350 2400
-	1    0    0    -1  
-$EndComp
-Connection ~ 6350 2250
-Connection ~ 6350 2550
-Wire Wire Line
-	6350 2550 6850 2550
-$Comp
-L adampsu-rescue:C-Device C13
-U 1 1 5DC4E918
-P 5950 2400
-F 0 "C13" H 5836 2446 50  0000 R CNN
-F 1 "47uF" H 5836 2355 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 5988 2250 50  0001 C CNN
-F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=LMK325B7476MM-PR%20&u=M" H 5950 2400 50  0001 C CNN
-F 4 "587-5922-1-ND" H 5950 2400 50  0001 C CNN "dk"
-F 5 "LMK325B7476MM-PR" H 5950 2400 50  0001 C CNN "mfr"
-F 6 "XR7" H 5950 2400 50  0001 C CNN "rating"
-F 7 "10+" H 5950 2400 50  0001 C CNN "maxV"
-	1    5950 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 2250 5950 2250
-Connection ~ 5950 2250
 Connection ~ 7000 2250
 Wire Wire Line
 	5200 3000 5350 3000
@@ -649,7 +629,6 @@ Wire Wire Line
 Connection ~ 5350 3000
 Wire Wire Line
 	5950 2850 5950 2550
-Connection ~ 5950 2550
 $Comp
 L adampsu-rescue:GND-power #PWR0119
 U 1 1 5DD453F5
@@ -680,16 +659,15 @@ U 1 1 5DC2BAB0
 P 5300 2700
 F 0 "D2" V 5254 2779 50  0000 L CNN
 F 1 "D_Schottky" V 5345 2779 50  0000 L CNN
-F 2 "Diode_SMD:D_SMC_Handsoldering" H 5300 2700 50  0001 C CNN
-F 3 "http://www.comchiptech.com/admin/files/product/CDBC520-HF%20Thru195217.%20CDBC5100-HF%20RevB.pdf" H 5300 2700 50  0001 C CNN
-F 4 "641-1126-1-ND" H 5300 2700 50  0001 C CNN "dk"
+F 2 "adampsu:D_SOD-128" H 5300 2700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/916/PMEG4050EP-1320387.pdf" H 5300 2700 50  0001 C CNN
+F 4 "1727-5842-1-ND" H 5300 2700 50  0001 C CNN "dk"
 F 5 "40" H 5300 2700 50  0001 C CNN "maxV"
-F 6 "CDBC540-G" H 5300 2700 50  0001 C CNN "mfr"
+F 6 "PMEG4050EP,115" H 5300 2700 50  0001 C CNN "mfr"
+F 7 "963-EMK325B7226MM-TR " H 5300 2700 50  0001 C CNN "mouser"
 	1    5300 2700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6350 2250 6850 2250
 $Comp
 L adampsu-rescue:C-Device C15
 U 1 1 5DB83167
@@ -701,6 +679,7 @@ F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C103M5RACTU.pd
 F 4 "399-7842-1-ND" H 6850 2400 50  0001 C CNN "dk"
 F 5 "C0603C103M5RACTU" H 6850 2400 50  0001 C CNN "mfr"
 F 6 "XR7" H 6850 2400 50  0001 C CNN "rating"
+F 7 "80-C0603C103M5R" H 6850 2400 50  0001 C CNN "mouser"
 	1    6850 2400
 	1    0    0    -1  
 $EndComp
@@ -731,12 +710,13 @@ U 1 1 5DB88A33
 P 2200 3000
 F 0 "C3" H 2086 3046 50  0000 R CNN
 F 1 "100uF" H 2086 2955 50  0000 R CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-30_AVX-N_Pad2.25x2.55mm_HandSolder" H 2238 2850 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder" H 2238 2850 50  0001 C CNN
 F 3 "http://datasheets.avx.com/TAJ_AUTO.pdf" H 2200 3000 50  0001 C CNN
 F 4 "1189-1659-1-ND" H 2200 3000 50  0001 C CNN "dk"
 F 5 "TAJD107K016TNJV" H 2200 3000 50  0001 C CNN "mfr"
 F 6 "XR7" H 2200 3000 50  0001 C CNN "rating"
 F 7 "16" H 2200 3000 50  0001 C CNN "maxV"
+F 8 " 581-TAJD107K016TNJV" H 2200 3000 50  0001 C CNN "mouser"
 	1    2200 3000
 	1    0    0    -1  
 $EndComp
@@ -746,12 +726,13 @@ U 1 1 5DBC2BBC
 P 2650 3000
 F 0 "C4" H 2536 3046 50  0000 R CNN
 F 1 "4.7uF" H 2536 2955 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2688 2850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2688 2850 50  0001 C CNN
 F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=UMK316AB7475KL-T%20%20&u=M" H 2650 3000 50  0001 C CNN
-F 4 "GRM32ER71H475KA88L" H 2650 3000 50  0001 C CNN "dk"
-F 5 "UMK316AB7475KL-T" H 2650 3000 50  0001 C CNN "mfr"
+F 4 " 490-14466-2-ND" H 2650 3000 50  0001 C CNN "dk"
+F 5 "GRM21BR71C475KE51L" H 2650 3000 50  0001 C CNN "mfr"
 F 6 "XR7" H 2650 3000 50  0001 C CNN "rating"
 F 7 "50" H 2650 3000 50  0001 C CNN "maxV"
+F 8 "81-GRM21BR71C475KE1L" H 2650 3000 50  0001 C CNN "mouser"
 	1    2650 3000
 	1    0    0    -1  
 $EndComp
@@ -765,16 +746,12 @@ Wire Wire Line
 	3600 2850 3950 2850
 Connection ~ 3600 2850
 Wire Wire Line
-	7000 2700 6400 2700
+	7000 3450 6200 3450
 Wire Wire Line
-	7000 2250 7000 2700
-Wire Wire Line
-	6400 3300 6200 3300
-Wire Wire Line
-	6200 3300 6200 3850
+	6200 3450 6200 3850
 Wire Wire Line
 	6200 3850 5200 3850
-Connection ~ 6400 3300
+Connection ~ 7000 3450
 $Comp
 L Custom:HandLabel_SN LB1
 U 1 1 5DB90AE2
@@ -789,60 +766,60 @@ $EndComp
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5DB93DBC
-P 7950 3250
-F 0 "TP1" V 7904 3438 50  0000 L CNN
-F 1 "TestPoint" V 7995 3438 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8150 3250 50  0001 C CNN
-F 3 "~" H 8150 3250 50  0001 C CNN
-	1    7950 3250
+P 7950 3200
+F 0 "TP1" V 7904 3388 50  0000 L CNN
+F 1 "+12VL/Orange" V 7995 3388 50  0000 L CNN
+F 2 "adampsu:TestPoint_Labeled" H 8150 3200 50  0001 C CNN
+F 3 "~" H 8150 3200 50  0001 C CNN
+	1    7950 3200
 	0    1    1    0   
 $EndComp
 Text Label 7700 1500 0    50   ~ 0
 +5V
 Wire Wire Line
-	7950 3250 7700 3250
+	7950 3200 7700 3200
 Wire Wire Line
 	7950 3350 7700 3350
 Wire Wire Line
-	7950 3550 7700 3550
+	7950 3650 7700 3650
 Wire Wire Line
-	7950 3850 7700 3850
-Text Label 7700 3250 0    50   ~ 0
+	7950 4250 7700 4250
+Text Label 7700 3200 0    50   ~ 0
 +12VL
 Text Label 7700 3350 0    50   ~ 0
 RESET
-Text Label 7700 3450 0    50   ~ 0
+Text Label 7700 3500 0    50   ~ 0
 +12VI
-Text Label 7700 3550 0    50   ~ 0
+Text Label 7700 3650 0    50   ~ 0
 DATA
-Text Label 7700 3750 0    50   ~ 0
+Text Label 7700 3950 0    50   ~ 0
 GND
-Text Label 7700 3850 0    50   ~ 0
+Text Label 7700 4250 0    50   ~ 0
 -5V
 Wire Wire Line
-	7700 3750 7950 3750
+	7700 3950 7950 3950
 $Comp
 L adampsu-rescue:+5V-power #PWR0121
 U 1 1 5DBAFCDE
-P 7600 3650
-F 0 "#PWR0121" H 7600 3500 50  0001 C CNN
-F 1 "+5V" H 7615 3823 50  0000 C CNN
-F 2 "" H 7600 3650 50  0001 C CNN
-F 3 "" H 7600 3650 50  0001 C CNN
-	1    7600 3650
+P 7600 3800
+F 0 "#PWR0121" H 7600 3650 50  0001 C CNN
+F 1 "+5V" H 7615 3973 50  0000 C CNN
+F 2 "" H 7600 3800 50  0001 C CNN
+F 3 "" H 7600 3800 50  0001 C CNN
+	1    7600 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 3650 7950 3650
-Text Label 7700 3650 0    50   ~ 0
+	7600 3800 7950 3800
+Text Label 7700 3800 0    50   ~ 0
 +5V
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5DBBA2C9
 P 7950 3350
 F 0 "TP2" V 7904 3538 50  0000 L CNN
-F 1 "TestPoint" V 7995 3538 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8150 3350 50  0001 C CNN
+F 1 "RESET/Black" V 7995 3538 50  0000 L CNN
+F 2 "adampsu:TestPoint_Labeled" H 8150 3350 50  0001 C CNN
 F 3 "~" H 8150 3350 50  0001 C CNN
 	1    7950 3350
 	0    1    1    0   
@@ -850,575 +827,519 @@ $EndComp
 $Comp
 L Connector:TestPoint TP3
 U 1 1 5DBBA671
-P 7950 3450
-F 0 "TP3" V 7904 3638 50  0000 L CNN
-F 1 "TestPoint" V 7995 3638 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8150 3450 50  0001 C CNN
-F 3 "~" H 8150 3450 50  0001 C CNN
-	1    7950 3450
+P 7950 3500
+F 0 "TP3" V 7904 3688 50  0000 L CNN
+F 1 "+12VI/Yellow" V 7995 3688 50  0000 L CNN
+F 2 "adampsu:TestPoint_Labeled" H 8150 3500 50  0001 C CNN
+F 3 "~" H 8150 3500 50  0001 C CNN
+	1    7950 3500
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint TP4
 U 1 1 5DBBA974
-P 7950 3550
-F 0 "TP4" V 7904 3738 50  0000 L CNN
-F 1 "TestPoint" V 7995 3738 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8150 3550 50  0001 C CNN
-F 3 "~" H 8150 3550 50  0001 C CNN
-	1    7950 3550
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5DBBAC81
 P 7950 3650
-F 0 "TP5" V 7904 3838 50  0000 L CNN
-F 1 "TestPoint" V 7995 3838 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8150 3650 50  0001 C CNN
+F 0 "TP4" V 7904 3838 50  0000 L CNN
+F 1 "DATA/Brown" V 7995 3838 50  0000 L CNN
+F 2 "adampsu:TestPoint_Labeled" H 8150 3650 50  0001 C CNN
 F 3 "~" H 8150 3650 50  0001 C CNN
 	1    7950 3650
 	0    1    1    0   
 $EndComp
 $Comp
+L Connector:TestPoint TP5
+U 1 1 5DBBAC81
+P 7950 3800
+F 0 "TP5" V 7904 3988 50  0000 L CNN
+F 1 "+5V/Red" V 7995 3988 50  0000 L CNN
+F 2 "adampsu:TestPoint_Labeled" H 8150 3800 50  0001 C CNN
+F 3 "~" H 8150 3800 50  0001 C CNN
+	1    7950 3800
+	0    1    1    0   
+$EndComp
+$Comp
 L Connector:TestPoint TP6
 U 1 1 5DBBAFC4
-P 7950 3750
-F 0 "TP6" V 7904 3938 50  0000 L CNN
-F 1 "TestPoint" V 7995 3938 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8150 3750 50  0001 C CNN
-F 3 "~" H 8150 3750 50  0001 C CNN
-	1    7950 3750
+P 7950 3950
+F 0 "TP6" V 7904 4138 50  0000 L CNN
+F 1 "GND/Green" V 7995 4138 50  0000 L CNN
+F 2 "adampsu:TestPoint_Labeled" H 8150 3950 50  0001 C CNN
+F 3 "~" H 8150 3950 50  0001 C CNN
+	1    7950 3950
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint TP7
 U 1 1 5DBBB3BE
-P 7950 3850
-F 0 "TP7" V 7904 4038 50  0000 L CNN
-F 1 "TestPoint" V 7995 4038 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8150 3850 50  0001 C CNN
-F 3 "~" H 8150 3850 50  0001 C CNN
-	1    7950 3850
+P 7950 4250
+F 0 "TP7" V 7904 4438 50  0000 L CNN
+F 1 "-5V/Blue" V 7995 4438 50  0000 L CNN
+F 2 "adampsu:TestPoint_Labeled" H 8150 4250 50  0001 C CNN
+F 3 "~" H 8150 4250 50  0001 C CNN
+	1    7950 4250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7700 3450 7950 3450
+	7700 3500 7950 3500
 Text Notes 7750 3050 0    50   ~ 0
-Test Ponits
-$Comp
-L Custom:TPS54531DDAR U1
-U 1 1 5DCB7543
-P 4700 4900
-F 0 "U1" H 4700 5367 50  0000 C CNN
-F 1 "TPS54531DDAR" H 4700 5276 50  0000 C CNN
-F 2 "Package_SO:TI_SO-PowerPAD-8_ThermalVias" H 4750 4550 50  0001 L CIN
-F 3 "http://www.ti.com/lit/ds/symlink/tps54531.pdf" H 4700 4900 50  0001 C CNN
-F 4 "296-40801-2-ND" H 4700 4900 50  0001 C CNN "dk"
-F 5 "TPS54531DDAR" H 4700 4900 50  0001 C CNN "mfr"
-	1    4700 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L adampsu-rescue:C-Device C5
-U 1 1 5DCB754D
-P 3100 5000
-F 0 "C5" H 2986 5046 50  0000 R CNN
-F 1 "4.7uF" H 2986 4955 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3138 4850 50  0001 C CNN
-F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=UMK316AB7475KL-T%20%20&u=M" H 3100 5000 50  0001 C CNN
-F 4 "GRM32ER71H475KA88L" H 3100 5000 50  0001 C CNN "dk"
-F 5 "UMK316AB7475KL-T" H 3100 5000 50  0001 C CNN "mfr"
-F 6 "XR7" H 3100 5000 50  0001 C CNN "rating"
-F 7 "50" H 3100 5000 50  0001 C CNN "maxV"
-	1    3100 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 4850 3600 4850
-Wire Wire Line
-	3950 4850 4200 4850
-Connection ~ 3100 4850
-$Comp
-L adampsu-rescue:C-Device C6
-U 1 1 5DCB7559
-P 3600 5000
-F 0 "C6" H 3486 5046 50  0000 R CNN
-F 1 "0.01uF" H 3486 4955 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3638 4850 50  0001 C CNN
-F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C103M5RACTU.pdf" H 3600 5000 50  0001 C CNN
-F 4 "399-7842-1-ND" H 3600 5000 50  0001 C CNN "dk"
-F 5 "C0603C103M5RACTU" H 3600 5000 50  0001 C CNN "mfr"
-F 6 "XR7" H 3600 5000 50  0001 C CNN "rating"
-	1    3600 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 5150 3100 5150
-Connection ~ 3100 5150
-Connection ~ 3000 5150
-Wire Wire Line
-	3000 5150 3100 5150
-$Comp
-L Device:R R1
-U 1 1 5DCB756C
-P 3950 5100
-F 0 "R1" H 3881 5146 50  0000 R CNN
-F 1 "665k" H 3881 5055 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3880 5100 50  0001 C CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 3950 5100 50  0001 C CNN
-F 4 "311-665KHRCT-ND" H 3950 5100 50  0001 C CNN "dk"
-F 5 "RC0603FR-07665KL" H 3950 5100 50  0001 C CNN "mfr"
-	1    3950 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5DCB7574
-P 3950 5400
-F 0 "R2" H 3881 5446 50  0000 R CNN
-F 1 "130k" H 3881 5355 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3880 5400 50  0001 C CNN
-F 3 "http://www.koaspeer.com/catimages/Products/RK73B/RK73B.pdf" H 3950 5400 50  0001 C CNN
-F 4 "2019-RK73B1JTTD134JCT-ND" H 3950 5400 50  0001 C CNN "dk"
-F 5 "RK73B1JTTD134J" H 3950 5400 50  0001 C CNN "mfr"
-	1    3950 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 4850 3950 4950
-Connection ~ 3950 4850
-Wire Wire Line
-	3950 5250 4100 5250
-Wire Wire Line
-	4100 5250 4100 5000
-Wire Wire Line
-	4100 5000 4200 5000
-Connection ~ 3950 5250
-$Comp
-L adampsu-rescue:C-Device C18
-U 1 1 5DCB7589
-P 4200 5450
-F 0 "C18" H 4315 5496 50  0000 L CNN
-F 1 "0.01uF" H 4315 5405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4238 5300 50  0001 C CNN
-F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C103M5RACTU.pdf" H 4200 5450 50  0001 C CNN
-F 4 "399-7842-1-ND" H 4200 5450 50  0001 C CNN "dk"
-F 5 "C0603C103M5RACTU" H 4200 5450 50  0001 C CNN "mfr"
-F 6 "XR7" H 4200 5450 50  0001 C CNN "rating"
-	1    4200 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 5150 4200 5300
-$Comp
-L Device:C C17
-U 1 1 5DCB75A0
-P 4100 4400
-F 0 "C17" H 4215 4446 50  0000 L CNN
-F 1 "0.1uF" H 4215 4355 50  0000 L CNN
-F 2 "adampsu:C_0508_1220Metric_Pad1.40x1.15mm_HandSolder" H 4138 4250 50  0001 C CNN
-F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/LLL216R71E104MA01-01.pdf" H 4100 4400 50  0001 C CNN
-F 4 "25" H 4100 4400 50  0001 C CNN "maxV"
-F 5 "XR7" H 4100 4400 50  0001 C CNN "rating"
-F 6 "490-4346-1-ND" H 4100 4400 50  0001 C CNN "dk"
-F 7 "LLL216R71E104MA01L" H 4100 4400 50  0001 C CNN "mfr"
-	1    4100 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 4550 4100 4700
-Wire Wire Line
-	4100 4700 4200 4700
-Wire Wire Line
-	4100 4250 5200 4250
-Wire Wire Line
-	5200 4250 5200 4700
-Wire Wire Line
-	5200 4250 5300 4250
-Connection ~ 5200 4250
-$Comp
-L pspice:INDUCTOR L2
-U 1 1 5DCB75AF
-P 5650 4250
-F 0 "L2" H 5650 4465 50  0000 C CNN
-F 1 "4.7uH" H 5650 4374 50  0000 C CNN
-F 2 "adampsu:L_11.5x10.3_H4.8" H 5650 4250 50  0001 C CNN
-F 3 "http://productfinder.pulseeng.com/products/datasheets/P769.pdf" H 5650 4250 50  0001 C CNN
-F 4 "553-3001-1-ND" H 5650 4250 50  0001 C CNN "dk"
-F 5 "PA4342.472NLT" H 5650 4250 50  0001 C CNN "mfr"
-F 6 "15.5mOhm" H 5650 4250 50  0001 C CNN "rating"
-	1    5650 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 4250 5400 4250
-Connection ~ 5300 4250
-$Comp
-L Device:R R12
-U 1 1 5DCB75C5
-P 6400 4850
-F 0 "R12" H 6470 4896 50  0000 L CNN
-F 1 "51.1" H 6470 4805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6330 4850 50  0001 C CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 6400 4850 50  0001 C CNN
-F 4 "311-51.1HRCT-ND" H 6400 4850 50  0001 C CNN "dk"
-F 5 "RC0603FR-0751R1L" H 6400 4850 50  0001 C CNN "mfr"
-	1    6400 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R14
-U 1 1 5DCB75CD
-P 6400 5450
-F 0 "R14" H 6470 5496 50  0000 L CNN
-F 1 "1.96k" H 6470 5405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6330 5450 50  0001 C CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 6400 5450 50  0001 C CNN
-F 4 "311-1.96KHRCT-ND" H 6400 5450 50  0001 C CNN "dk"
-F 5 "RC0603FR-071K96L" H 6400 5450 50  0001 C CNN "mfr"
-	1    6400 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R13
-U 1 1 5DCB75D5
-P 6400 5150
-F 0 "R13" H 6470 5196 50  0000 L CNN
-F 1 "10.2k" H 6470 5105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6330 5150 50  0001 C CNN
-F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 6400 5150 50  0001 C CNN
-F 4 "RMCF0603FT10K2CT-ND" H 6400 5150 50  0001 C CNN "dk"
-F 5 "RMCF0603FT10K2" H 6400 5150 50  0001 C CNN "mfr"
-	1    6400 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C19
-U 1 1 5DCB75E5
-P 5350 5150
-F 0 "C19" H 5465 5196 50  0000 L CNN
-F 1 "2200pF" H 5465 5105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5388 5000 50  0001 C CNN
-F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C222K5RAC7411.pdf" H 5350 5150 50  0001 C CNN
-F 4 "XR7" H 5350 5150 50  0001 C CNN "rating"
-F 5 "399-17586-1-ND" H 5350 5150 50  0001 C CNN "dk"
-F 6 "50" H 5350 5150 50  0001 C CNN "maxV"
-F 7 "C0603C222K5RAC7411" H 5350 5150 50  0001 C CNN "mfr"
-	1    5350 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 5DCB75ED
-P 5350 5450
-F 0 "R11" H 5420 5496 50  0000 L CNN
-F 1 "37.4k" H 5420 5405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5280 5450 50  0001 C CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 5350 5450 50  0001 C CNN
-F 4 "311-37.4KHRCT-ND" H 5350 5450 50  0001 C CNN "dk"
-F 5 "RC0603FR-0737K4L" H 5350 5450 50  0001 C CNN "mfr"
-	1    5350 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 5150 5200 5850
-$Comp
-L Device:C C20
-U 1 1 5DCB75F8
-P 5750 5350
-F 0 "C20" H 5865 5396 50  0000 L CNN
-F 1 "22pF" H 5865 5305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5788 5200 50  0001 C CNN
-F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 5750 5350 50  0001 C CNN
-F 4 "XR7" H 5750 5350 50  0001 C CNN "rating"
-F 5 "478-6204-1-ND" H 5750 5350 50  0001 C CNN "dk"
-F 6 "50" H 5750 5350 50  0001 C CNN "maxV"
-F 7 "06035C220JAT2A" H 5750 5350 50  0001 C CNN "mfr"
-	1    5750 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 4550 5950 4550
-Wire Wire Line
-	5950 4250 6350 4250
-$Comp
-L adampsu-rescue:C-Device C22
-U 1 1 5DCB7604
-P 6350 4400
-F 0 "C22" H 6236 4446 50  0000 R CNN
-F 1 "47uF" H 6236 4355 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 6388 4250 50  0001 C CNN
-F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=LMK325B7476MM-PR%20&u=M" H 6350 4400 50  0001 C CNN
-F 4 "587-5922-1-ND" H 6350 4400 50  0001 C CNN "dk"
-F 5 "LMK325B7476MM-PR" H 6350 4400 50  0001 C CNN "mfr"
-F 6 "XR7" H 6350 4400 50  0001 C CNN "rating"
-F 7 "10+" H 6350 4400 50  0001 C CNN "maxV"
-	1    6350 4400
-	1    0    0    -1  
-$EndComp
-Connection ~ 6350 4250
-Connection ~ 6350 4550
-Wire Wire Line
-	6350 4550 6850 4550
-$Comp
-L adampsu-rescue:C-Device C21
-U 1 1 5DCB7611
-P 5950 4400
-F 0 "C21" H 5836 4446 50  0000 R CNN
-F 1 "47uF" H 5836 4355 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 5988 4250 50  0001 C CNN
-F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=LMK325B7476MM-PR%20&u=M" H 5950 4400 50  0001 C CNN
-F 4 "587-5922-1-ND" H 5950 4400 50  0001 C CNN "dk"
-F 5 "LMK325B7476MM-PR" H 5950 4400 50  0001 C CNN "mfr"
-F 6 "XR7" H 5950 4400 50  0001 C CNN "rating"
-F 7 "10+" H 5950 4400 50  0001 C CNN "maxV"
-	1    5950 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 4250 5950 4250
-Connection ~ 5950 4250
-Wire Wire Line
-	5200 5000 5350 5000
-Wire Wire Line
-	5350 5000 5750 5000
-Wire Wire Line
-	5750 5000 5750 5200
-Connection ~ 5350 5000
-Connection ~ 5950 4550
-Wire Wire Line
-	5750 5500 5750 5600
-Wire Wire Line
-	5750 5600 5350 5600
-Wire Wire Line
-	6350 4250 6850 4250
-$Comp
-L adampsu-rescue:C-Device C23
-U 1 1 5DCB763B
-P 6850 4400
-F 0 "C23" H 6736 4446 50  0000 R CNN
-F 1 "0.01uF" H 6736 4355 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6888 4250 50  0001 C CNN
-F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C103M5RACTU.pdf" H 6850 4400 50  0001 C CNN
-F 4 "399-7842-1-ND" H 6850 4400 50  0001 C CNN "dk"
-F 5 "C0603C103M5RACTU" H 6850 4400 50  0001 C CNN "mfr"
-F 6 "XR7" H 6850 4400 50  0001 C CNN "rating"
-	1    6850 4400
-	1    0    0    -1  
-$EndComp
-Connection ~ 6850 4250
-Wire Wire Line
-	6850 4250 7000 4250
-Connection ~ 2200 4850
-Wire Wire Line
-	2200 4750 2200 4850
-$Comp
-L adampsu-rescue:+12V-power #PWR0109
-U 1 1 5DCB7645
-P 2200 4750
-F 0 "#PWR0109" H 2200 4600 50  0001 C CNN
-F 1 "+12V" H 2215 4923 50  0000 C CNN
-F 2 "" H 2200 4750 50  0001 C CNN
-F 3 "" H 2200 4750 50  0001 C CNN
-	1    2200 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 5150 2650 5150
-Wire Wire Line
-	3100 4850 2650 4850
-$Comp
-L adampsu-rescue:C-Device C1
-U 1 1 5DCB7651
-P 2200 5000
-F 0 "C1" H 2086 5046 50  0000 R CNN
-F 1 "100uF" H 2086 4955 50  0000 R CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-30_AVX-N_Pad2.25x2.55mm_HandSolder" H 2238 4850 50  0001 C CNN
-F 3 "http://datasheets.avx.com/TAJ_AUTO.pdf" H 2200 5000 50  0001 C CNN
-F 4 "1189-1659-1-ND" H 2200 5000 50  0001 C CNN "dk"
-F 5 "TAJD107K016TNJV" H 2200 5000 50  0001 C CNN "mfr"
-F 6 "XR7" H 2200 5000 50  0001 C CNN "rating"
-F 7 "16" H 2200 5000 50  0001 C CNN "maxV"
-	1    2200 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L adampsu-rescue:C-Device C2
-U 1 1 5DCB765B
-P 2650 5000
-F 0 "C2" H 2536 5046 50  0000 R CNN
-F 1 "4.7uF" H 2536 4955 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2688 4850 50  0001 C CNN
-F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=UMK316AB7475KL-T%20%20&u=M" H 2650 5000 50  0001 C CNN
-F 4 "GRM32ER71H475KA88L" H 2650 5000 50  0001 C CNN "dk"
-F 5 "UMK316AB7475KL-T" H 2650 5000 50  0001 C CNN "mfr"
-F 6 "XR7" H 2650 5000 50  0001 C CNN "rating"
-F 7 "50" H 2650 5000 50  0001 C CNN "maxV"
-	1    2650 5000
-	1    0    0    -1  
-$EndComp
-Connection ~ 2650 4850
-Wire Wire Line
-	2650 4850 2200 4850
-Connection ~ 2650 5150
-Wire Wire Line
-	2650 5150 3000 5150
-Wire Wire Line
-	3600 4850 3950 4850
-Connection ~ 3600 4850
-Wire Wire Line
-	6400 5300 6200 5300
-Wire Wire Line
-	6200 5300 6200 5850
-Wire Wire Line
-	6200 5850 5200 5850
-Connection ~ 6400 5300
-Text Label 5950 4850 0    50   ~ 0
--5V
-Wire Wire Line
-	7000 4700 6400 4700
-Wire Wire Line
-	5950 4850 5950 4550
-Wire Wire Line
-	5300 4850 5950 4850
-Wire Wire Line
-	5300 4250 5300 4550
-$Comp
-L Device:D_Schottky D3
-U 1 1 5DCB7631
-P 5300 4700
-F 0 "D3" V 5254 4779 50  0000 L CNN
-F 1 "D_Schottky" V 5345 4779 50  0000 L CNN
-F 2 "Diode_SMD:D_SMC_Handsoldering" H 5300 4700 50  0001 C CNN
-F 3 "http://www.comchiptech.com/admin/files/product/CDBC520-HF%20Thru195217.%20CDBC5100-HF%20RevB.pdf" H 5300 4700 50  0001 C CNN
-F 4 "641-1126-1-ND" H 5300 4700 50  0001 C CNN "dk"
-F 5 "40" H 5300 4700 50  0001 C CNN "maxV"
-F 6 "CDBC540-G" H 5300 4700 50  0001 C CNN "mfr"
-	1    5300 4700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5200 4850 5300 4850
-Connection ~ 5300 4850
-Wire Wire Line
-	4700 5300 4700 5600
-Wire Wire Line
-	4700 5600 5100 5600
-Connection ~ 5350 5600
-Wire Wire Line
-	4200 5600 4700 5600
-Connection ~ 4700 5600
-Wire Wire Line
-	4200 5600 3950 5600
-Wire Wire Line
-	3950 5600 3950 5550
-Connection ~ 4200 5600
-Wire Wire Line
-	3950 5600 3000 5600
-Wire Wire Line
-	3000 5150 3000 5600
-Connection ~ 3950 5600
-Text Label 4700 5600 0    50   ~ 0
--5V
-Wire Wire Line
-	5750 5600 5950 5600
-Wire Wire Line
-	5950 5600 5950 4850
-Connection ~ 5750 5600
-Connection ~ 5950 4850
-Wire Wire Line
-	6400 5600 6400 5950
-Wire Wire Line
-	6400 5950 5100 5950
-Wire Wire Line
-	5100 5950 5100 5600
-Connection ~ 5100 5600
-Wire Wire Line
-	5100 5600 5350 5600
-Wire Wire Line
-	7000 4250 7000 4700
-$Comp
-L adampsu-rescue:GND-power #PWR0110
-U 1 1 5DD7B18C
-P 7000 4700
-F 0 "#PWR0110" H 7000 4450 50  0001 C CNN
-F 1 "GND" H 7005 4527 50  0000 C CNN
-F 2 "" H 7000 4700 50  0001 C CNN
-F 3 "" H 7000 4700 50  0001 C CNN
-	1    7000 4700
-	1    0    0    -1  
-$EndComp
-Connection ~ 7000 4700
-Text Label 7200 2650 0    50   ~ 0
+Test Points
+Text Label 4350 2100 0    50   ~ 0
 GND
 Wire Wire Line
-	7200 2650 7450 2650
+	4350 2100 4600 2100
 $Comp
 L adampsu-rescue:+5V-power #PWR0111
 U 1 1 5DDD3517
-P 7100 2550
-F 0 "#PWR0111" H 7100 2400 50  0001 C CNN
-F 1 "+5V" H 7115 2723 50  0000 C CNN
-F 2 "" H 7100 2550 50  0001 C CNN
-F 3 "" H 7100 2550 50  0001 C CNN
-	1    7100 2550
+P 4250 2000
+F 0 "#PWR0111" H 4250 1850 50  0001 C CNN
+F 1 "+5V" H 4265 2173 50  0000 C CNN
+F 2 "" H 4250 2000 50  0001 C CNN
+F 3 "" H 4250 2000 50  0001 C CNN
+	1    4250 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7100 2550 7450 2550
-Text Label 7200 2550 0    50   ~ 0
+	4250 2000 4600 2000
+Text Label 4350 2000 0    50   ~ 0
 +5V
-$Comp
-L Connector:TestPoint TP10
-U 1 1 5DDD3525
-P 7450 2550
-F 0 "TP10" V 7404 2738 50  0000 L CNN
-F 1 "TestPoint" V 7495 2738 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 7650 2550 50  0001 C CNN
-F 3 "~" H 7650 2550 50  0001 C CNN
-	1    7450 2550
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector:TestPoint TP11
 U 1 1 5DDD352B
-P 7450 2650
-F 0 "TP11" V 7404 2838 50  0000 L CNN
-F 1 "TestPoint" V 7495 2838 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 7650 2650 50  0001 C CNN
-F 3 "~" H 7650 2650 50  0001 C CNN
-	1    7450 2650
+P 4600 2100
+F 0 "TP11" V 4554 2288 50  0000 L CNN
+F 1 "GND" V 4645 2288 50  0000 L CNN
+F 2 "adampsu:TestPoint_Labeled" H 4800 2100 50  0001 C CNN
+F 3 "~" H 4800 2100 50  0001 C CNN
+	1    4600 2100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7350 4550 7100 4550
-Text Label 7100 4450 0    50   ~ 0
+	6300 4300 6050 4300
+Text Label 6050 4200 0    50   ~ 0
 GND
-Text Label 7100 4550 0    50   ~ 0
+Text Label 6050 4300 0    50   ~ 0
 -5V
 Wire Wire Line
-	7100 4450 7350 4450
+	6050 4200 6300 4200
 $Comp
 L Connector:TestPoint TP8
 U 1 1 5DDEE6C0
-P 7350 4450
-F 0 "TP8" V 7304 4638 50  0000 L CNN
-F 1 "TestPoint" V 7395 4638 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 7550 4450 50  0001 C CNN
-F 3 "~" H 7550 4450 50  0001 C CNN
-	1    7350 4450
+P 6300 4200
+F 0 "TP8" V 6254 4388 50  0000 L CNN
+F 1 "GND" V 6345 4388 50  0000 L CNN
+F 2 "adampsu:TestPoint_Labeled" H 6500 4200 50  0001 C CNN
+F 3 "~" H 6500 4200 50  0001 C CNN
+	1    6300 4200
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint TP9
 U 1 1 5DDEE6CA
-P 7350 4550
-F 0 "TP9" V 7304 4738 50  0000 L CNN
-F 1 "TestPoint" V 7395 4738 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 7550 4550 50  0001 C CNN
-F 3 "~" H 7550 4550 50  0001 C CNN
-	1    7350 4550
+P 6300 4300
+F 0 "TP9" V 6254 4488 50  0000 L CNN
+F 1 "-5V" V 6345 4488 50  0000 L CNN
+F 2 "adampsu:TestPoint_Labeled" H 6500 4300 50  0001 C CNN
+F 3 "~" H 6500 4300 50  0001 C CNN
+	1    6300 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5DC314BB
+P 4850 5200
+F 0 "#PWR03" H 4850 4950 50  0001 C CNN
+F 1 "GND" H 4855 5027 50  0000 C CNN
+F 2 "" H 4850 5200 50  0001 C CNN
+F 3 "" H 4850 5200 50  0001 C CNN
+	1    4850 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5DC33A4F
+P 4850 5050
+F 0 "R1" H 4780 5004 50  0000 R CNN
+F 1 "10k" H 4780 5095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4780 5050 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 4850 5050 50  0001 C CNN
+F 4 "311-1.96KHRCT-ND" H 4850 5050 50  0001 C CNN "dk"
+F 5 "RC0603FR-071K96L" H 4850 5050 50  0001 C CNN "mfr"
+F 6 "603-RC0603FR-071K96L" H 4850 5050 50  0001 C CNN "mouser"
+	1    4850 5050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 4900 4850 4900
+$Comp
+L Device:C C6
+U 1 1 5DC53C0F
+P 6000 4800
+F 0 "C6" H 6115 4846 50  0000 L CNN
+F 1 "0.1uF" H 6115 4755 50  0000 L CNN
+F 2 "adampsu:C_0508_1220Metric_Pad1.40x1.15mm_HandSolder" H 6038 4650 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/LLL216R71E104MA01-01.pdf" H 6000 4800 50  0001 C CNN
+F 4 "25" H 6000 4800 50  0001 C CNN "maxV"
+F 5 "XR7" H 6000 4800 50  0001 C CNN "rating"
+F 6 "490-4346-1-ND" H 6000 4800 50  0001 C CNN "dk"
+F 7 "LLL216R71E104MA01L" H 6000 4800 50  0001 C CNN "mfr"
+F 8 " 81-LLL216R71E104MA1L" H 6000 4800 50  0001 C CNN "mouser"
+	1    6000 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 4800 5850 4800
+Wire Wire Line
+	6250 4800 6250 4700
+Wire Wire Line
+	6250 4700 5750 4700
+Wire Wire Line
+	6150 4800 6250 4800
+$Comp
+L pspice:INDUCTOR L2
+U 1 1 5DC80C16
+P 6500 4700
+F 0 "L2" H 6500 4915 50  0000 C CNN
+F 1 "4.7uH" H 6500 4824 50  0000 C CNN
+F 2 "adampsu:L_11.5x10.3_H4.8" H 6500 4700 50  0001 C CNN
+F 3 "http://productfinder.pulseeng.com/products/datasheets/P769.pdf" H 6500 4700 50  0001 C CNN
+F 4 "553-3001-1-ND" H 6500 4700 50  0001 C CNN "dk"
+F 5 "PA4342.472NLT" H 6500 4700 50  0001 C CNN "mfr"
+F 6 "673-PA4342.472NLT" H 6500 4700 50  0001 C CNN "mouser"
+	1    6500 4700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 4700
+$Comp
+L Device:C C17
+U 1 1 5DC83166
+P 6900 4850
+F 0 "C17" H 7015 4896 50  0000 L CNN
+F 1 "22uF" H 7015 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6938 4700 50  0001 C CNN
+F 3 "~" H 6900 4850 50  0001 C CNN
+F 4 "1276-2728-1-ND" H 6900 4850 50  0001 C CNN "dk"
+F 5 "EMK316ABJ226ML-T" H 6900 4850 50  0001 C CNN "mfr"
+F 6 "963-EMK316ABJ226ML-T" H 6900 4850 50  0001 C CNN "mouser"
+	1    6900 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4700 6900 4700
+$Comp
+L Device:C C18
+U 1 1 5DC886C0
+P 7350 4850
+F 0 "C18" H 7465 4896 50  0000 L CNN
+F 1 "22uF" H 7465 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7388 4700 50  0001 C CNN
+F 3 "~" H 7350 4850 50  0001 C CNN
+F 4 "1276-2728-1-ND" H 7350 4850 50  0001 C CNN "dk"
+F 5 "EMK316ABJ226ML-T" H 7350 4850 50  0001 C CNN "mfr"
+F 6 "963-EMK316ABJ226ML-T" H 7350 4850 50  0001 C CNN "mouser"
+	1    7350 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4700 7350 4700
+Connection ~ 6900 4700
+$Comp
+L Device:R R11
+U 1 1 5DC8EB82
+P 6500 5000
+F 0 "R11" V 6293 5000 50  0000 C CNN
+F 1 "54.9k" V 6384 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6430 5000 50  0001 C CNN
+F 3 "~" H 6500 5000 50  0001 C CNN
+F 4 "CR0603-FX-5492ELF" H 6500 5000 50  0001 C CNN "mfr"
+F 5 "652-CR0603FX-5492ELF" H 6500 5000 50  0001 C CNN "mouser"
+	1    6500 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 5000 6750 5000
+Wire Wire Line
+	6750 5000 6750 4700
+Connection ~ 6750 4700
+$Comp
+L Device:R R2
+U 1 1 5DC924F4
+P 6150 5150
+F 0 "R2" H 6080 5104 50  0000 R CNN
+F 1 "10k" H 6080 5195 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6080 5150 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 6150 5150 50  0001 C CNN
+F 4 "311-1.96KHRCT-ND" H 6150 5150 50  0001 C CNN "dk"
+F 5 "RC0603FR-071K96L" H 6150 5150 50  0001 C CNN "mfr"
+F 6 "603-RC0603FR-071K96L" H 6150 5150 50  0001 C CNN "mouser"
+	1    6150 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 5000 6150 5000
+Wire Wire Line
+	6150 5000 5750 5000
+Wire Wire Line
+	5750 5000 5750 4900
+Connection ~ 6150 5000
+Connection ~ 7350 4700
+$Comp
+L adampsu-rescue:GND-power #PWR04
+U 1 1 5DCB9187
+P 7750 4700
+F 0 "#PWR04" H 7750 4450 50  0001 C CNN
+F 1 "GND" H 7755 4527 50  0000 C CNN
+F 2 "" H 7750 4700 50  0001 C CNN
+F 3 "" H 7750 4700 50  0001 C CNN
+	1    7750 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4700 7750 4700
+Wire Wire Line
+	7350 5000 6900 5000
+Wire Wire Line
+	6900 5000 6900 5300
+Connection ~ 6900 5000
+Wire Wire Line
+	6150 5300 5350 5300
+Wire Wire Line
+	5350 5300 5350 5100
+Connection ~ 6150 5300
+Text Label 6900 5300 0    50   ~ 0
+-5V
+$Comp
+L adampsu-rescue:+12V-power #PWR01
+U 1 1 5DD04FC8
+P 3700 4700
+F 0 "#PWR01" H 3700 4550 50  0001 C CNN
+F 1 "+12V" H 3715 4873 50  0000 C CNN
+F 2 "" H 3700 4700 50  0001 C CNN
+F 3 "" H 3700 4700 50  0001 C CNN
+	1    3700 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5300 6900 5300
+$Comp
+L Device:C C2
+U 1 1 5DD275F7
+P 4100 4850
+F 0 "C2" H 4215 4896 50  0000 L CNN
+F 1 "10uF" H 4215 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4138 4700 50  0001 C CNN
+F 3 "~" H 4100 4850 50  0001 C CNN
+F 4 "490-10498-1-ND" H 4100 4850 50  0001 C CNN "dk"
+F 5 "GRM21BC81C106KE15L" H 4100 4850 50  0001 C CNN "mfr"
+F 6 "81-GRM21BC81C106KE5L" H 4100 4850 50  0001 C CNN "mouser"
+	1    4100 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 4700
+Wire Wire Line
+	4100 4700 3700 4700
+Connection ~ 3700 4700
+$Comp
+L power:GND #PWR02
+U 1 1 5DD378F1
+P 4100 5000
+F 0 "#PWR02" H 4100 4750 50  0001 C CNN
+F 1 "GND" H 4105 4827 50  0000 C CNN
+F 2 "" H 4100 5000 50  0001 C CNN
+F 3 "" H 4100 5000 50  0001 C CNN
+	1    4100 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5000 4100 5000
+Connection ~ 4100 5000
+Wire Wire Line
+	4100 5000 3700 5000
+Wire Wire Line
+	4100 4700 4500 4700
+$Comp
+L Device:C C5
+U 1 1 5DBDBA0C
+P 4500 4850
+F 0 "C5" H 4615 4896 50  0000 L CNN
+F 1 "0.1uF" H 4615 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4538 4700 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10F104ZB8NNNC.jsp" H 4500 4850 50  0001 C CNN
+F 4 "25" H 4500 4850 50  0001 C CNN "maxV"
+F 5 "XR7" H 4500 4850 50  0001 C CNN "rating"
+F 6 "1276-1012-2-ND" H 4500 4850 50  0001 C CNN "dk"
+F 7 "CL10F104ZB8NNNC" H 4500 4850 50  0001 C CNN "mfr"
+F 8 "603-CC603KRX7R9BB104" H 4500 4850 50  0001 C CNN "mouser"
+	1    4500 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 4700
+Wire Wire Line
+	4500 4700 4950 4700
+Wire Wire Line
+	7000 2250 7000 2850
+Wire Wire Line
+	5900 2250 5950 2250
+$Comp
+L Device:C C13
+U 1 1 5DC2E509
+P 5950 2400
+F 0 "C13" H 5836 2446 50  0000 R CNN
+F 1 "22uF" H 5836 2355 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5988 2250 50  0001 C CNN
+F 3 "~" H 5950 2400 50  0001 C CNN
+F 4 "1276-2728-1-ND" H 5950 2400 50  0001 C CNN "dk"
+F 5 "EMK316ABJ226ML-T" H 5950 2400 50  0001 C CNN "mfr"
+F 6 "963-EMK316ABJ226ML-T" H 5950 2400 50  0001 C CNN "mouser"
+	1    5950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C19
+U 1 1 5DC2E516
+P 6350 2400
+F 0 "C19" H 6236 2446 50  0000 R CNN
+F 1 "22uF" H 6236 2355 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6388 2250 50  0001 C CNN
+F 3 "~" H 6350 2400 50  0001 C CNN
+F 4 "1276-2728-1-ND" H 6350 2400 50  0001 C CNN "dk"
+F 5 "EMK316ABJ226ML-T" H 6350 2400 50  0001 C CNN "mfr"
+F 6 "963-EMK316ABJ226ML-T" H 6350 2400 50  0001 C CNN "mouser"
+	1    6350 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 5950 2250
+Connection ~ 5950 2550
+Wire Wire Line
+	5950 2550 6100 2550
+Wire Wire Line
+	5950 2250 6350 2250
+Connection ~ 6350 2250
+Connection ~ 6350 2550
+Wire Wire Line
+	6350 2250 6850 2250
+Wire Wire Line
+	6350 2550 6550 2550
+$Comp
+L Device:C C14
+U 1 1 5DC66307
+P 6100 2700
+F 0 "C14" H 6215 2746 50  0000 L CNN
+F 1 "22uF" H 6215 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6138 2550 50  0001 C CNN
+F 3 "~" H 6100 2700 50  0001 C CNN
+F 4 "1276-2728-1-ND" H 6100 2700 50  0001 C CNN "dk"
+F 5 "EMK316ABJ226ML-T" H 6100 2700 50  0001 C CNN "mfr"
+F 6 "963-EMK316ABJ226ML-T" H 6100 2700 50  0001 C CNN "mouser"
+	1    6100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 5DC66314
+P 6550 2700
+F 0 "C20" H 6665 2746 50  0000 L CNN
+F 1 "22uF" H 6665 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6588 2550 50  0001 C CNN
+F 3 "~" H 6550 2700 50  0001 C CNN
+F 4 "1276-2728-1-ND" H 6550 2700 50  0001 C CNN "dk"
+F 5 "EMK316ABJ226ML-T" H 6550 2700 50  0001 C CNN "mfr"
+F 6 "963-EMK316ABJ226ML-T" H 6550 2700 50  0001 C CNN "mouser"
+	1    6550 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 2550
+Wire Wire Line
+	6100 2550 6350 2550
+Connection ~ 6550 2550
+Wire Wire Line
+	6550 2550 6850 2550
+Wire Wire Line
+	7000 2850 6550 2850
+Connection ~ 7000 2850
+Wire Wire Line
+	6550 2850 6100 2850
+Connection ~ 6550 2850
+$Comp
+L Device:C C1
+U 1 1 5DD320D9
+P 3700 4850
+F 0 "C1" H 3815 4896 50  0000 L CNN
+F 1 "10uF" H 3815 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3738 4700 50  0001 C CNN
+F 3 "~" H 3700 4850 50  0001 C CNN
+F 4 "490-10498-1-ND" H 3700 4850 50  0001 C CNN "dk"
+F 5 "GRM21BC81C106KE15L" H 3700 4850 50  0001 C CNN "mfr"
+F 6 "81-GRM21BC81C106KE5L" H 3700 4850 50  0001 C CNN "mouser"
+	1    3700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom:TPS561201 U1
+U 1 1 5DC28F0B
+P 5350 4800
+F 0 "U1" H 5350 5167 50  0000 C CNN
+F 1 "TPS561201" H 5350 5076 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 5400 4550 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps561201.pdf" H 5350 4800 50  0001 C CNN
+F 4 " 296-47885-1-ND" H 5350 4800 50  0001 C CNN "dk"
+F 5 "TPS561201DDCR" H 5350 4800 50  0001 C CNN "mfr"
+F 6 "TPS561201DDCR" H 5350 4800 50  0001 C CNN "mouser"
+	1    5350 4800
+	1    0    0    -1  
+$EndComp
+Text Label 5050 2250 0    50   ~ 0
+PH
+Text Label 5900 4700 0    50   ~ 0
+SW
+$Comp
+L adampsu-rescue:+12V-power #PWR0109
+U 1 1 5DD37CC0
+P 7150 1300
+F 0 "#PWR0109" H 7150 1150 50  0001 C CNN
+F 1 "+12V-power" H 7165 1473 50  0000 C CNN
+F 2 "" H 7150 1300 50  0001 C CNN
+F 3 "" H 7150 1300 50  0001 C CNN
+	1    7150 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 7150 1300
+$Comp
+L adampsu-rescue:+12V-power #PWR0110
+U 1 1 5DD39B63
+P 7550 1100
+F 0 "#PWR0110" H 7550 950 50  0001 C CNN
+F 1 "+12V-power" H 7565 1273 50  0000 C CNN
+F 2 "" H 7550 1100 50  0001 C CNN
+F 3 "" H 7550 1100 50  0001 C CNN
+	1    7550 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 1100 7950 1100
+Text Label 7700 4100 0    50   ~ 0
+GND
+Wire Wire Line
+	7700 4100 7950 4100
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5DD9877A
+P 7950 4100
+F 0 "TP12" V 7904 4288 50  0000 L CNN
+F 1 "GND/Green" V 7995 4288 50  0000 L CNN
+F 2 "adampsu:TestPoint_Labeled" H 8150 4100 50  0001 C CNN
+F 3 "~" H 8150 4100 50  0001 C CNN
+	1    7950 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5DDD3525
+P 4600 2000
+F 0 "TP10" V 4554 2188 50  0000 L CNN
+F 1 "+5V" V 4645 2188 50  0000 L CNN
+F 2 "adampsu:TestPoint_Labeled" H 4800 2000 50  0001 C CNN
+F 3 "~" H 4800 2000 50  0001 C CNN
+	1    4600 2000
 	0    1    1    0   
 $EndComp
 $EndSCHEMATC

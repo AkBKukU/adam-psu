@@ -18,4 +18,10 @@ K Step-Down DC-DC Switching Regulator
 F http://www.ti.com/lit/ds/symlink/tps54531.pdf
 $ENDCMP
 #
+$CMP TPS561201
+D 1A Synchronous Step-Down Voltage Regulator, Adjustable Output Voltage, 4.5-17V Input Voltage, SOT-23-6
+K step-down dcdc voltage regulator
+F http://www.ti.com/lit/ds/symlink/tps561201.pdf
+$ENDCMP
+#
 #End Doc Library

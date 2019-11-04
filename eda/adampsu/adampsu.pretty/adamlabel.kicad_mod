@@ -1,4 +1,4 @@
-(module adamlabel (layer F.Cu) (tedit 5DB85959)
+(module adamlabel (layer F.Cu) (tedit 5DBDB9C5)
   (fp_text reference REF** (at 8.45 -13.8) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -9,7 +9,7 @@
   (fp_line (start 5 -10) (end -15 -10) (layer F.SilkS) (width 0.12))
   (fp_line (start -15 -10) (end -20 0) (layer F.SilkS) (width 0.12))
   (fp_line (start -20 0) (end 0 0) (layer F.SilkS) (width 0.12))
-  (fp_text user "Adam Interal" (at -6 -8) (layer F.SilkS)
+  (fp_text user "Adam Internal" (at -6 -8) (layer F.SilkS)
     (effects (font (size 1.75 1.75) (thickness 0.35)))
   )
   (fp_text user "Power Supply" (at -7.6 -4.85) (layer F.SilkS)
