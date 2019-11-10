@@ -1,0 +1,15 @@
+ 
+ - Revision needed- 
+U2 Power pad not exposed on bottom for manual assembly
+R1 connects to GND instead of +12V preventing U1 from turning on
+All touch points too small
+SW1 power switch on position reversed
+
+ - Resolvable / non-functional - 
+R4 Power switch FET Gate pull down needs to be 1k
+R7 RefDes under C11
+bottom label text duplicated
+C6 1 <-> U1 6 trace width narrow
+
+ - Unsolved -
+Q1 Power switch FET not turning off when installed. Does under discrete rail tests 
