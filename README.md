@@ -1,7 +1,5 @@
 # Coleco Adam Internal PSU
 
-## **NOTICE: THIS DESIGN IS CURRENTLY UNTESTED AND AWAITING PRODUCTION**
-
 The Coleco Adam originally shipped with a printer that contained the entire PSU 
 for the device. It generated 12V, 5V, & -5V DV voltages for the system to run on.
 Now it is increasingly difficult to find the printer to go along with the 
@@ -101,6 +99,9 @@ order directly:
 
 Digi-Key: https://www.digikey.com/short/p0tbzh
 Mouser: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=6486fe3deb 
+
+**BOM Errata**: For v0.1 boards R4 needs to be changed to 1k instead of `0k. 
+The BOM carts have not been updated to reflect this yet.
 
 The parts selection vary slightly between vendors. Equivalent performance low
 cost parts were selected in each case.
