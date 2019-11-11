@@ -11,6 +11,4 @@ R4 Power switch FET Gate pull down needs to be 1k
 R7 RefDes under C11
 bottom label text duplicated
 C6 1 <-> U1 6 trace width narrow
-
- - Unsolved -
-Q1 Power switch FET not turning off when installed. Does under discrete rail tests 
+Q1 Power switch FET detaches GND but non-isolated PSU may still provide a current path
