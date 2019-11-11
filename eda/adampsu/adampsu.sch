@@ -170,32 +170,13 @@ Wire Wire Line
 	1900 1500 1950 1500
 Wire Wire Line
 	2250 1500 2300 1500
-$Comp
-L Device:R R4
-U 1 1 5DBAB23A
-P 2300 1750
-F 0 "R4" H 2370 1796 50  0000 L CNN
-F 1 "10k" H 2370 1705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2230 1750 50  0001 C CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 2300 1750 50  0001 C CNN
-F 4 "311-10KGRCT-ND" H 2300 1750 50  0001 C CNN "dk"
-F 5 "RC0603JR-0710KL" H 2300 1750 50  0001 C CNN "mfr"
-F 6 "603-RC0603JR-0710KL" H 2300 1750 50  0001 C CNN "mouser"
-	1    2300 1750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2300 1500 2300 1600
 Connection ~ 2300 1500
 Wire Wire Line
 	2600 1700 2600 1900
 Wire Wire Line
-	2600 1900 2300 1900
-Wire Wire Line
-	2300 1900 1900 1900
-Wire Wire Line
 	1250 1900 1250 1600
-Connection ~ 2300 1900
 Text Label 1300 1900 0    50   ~ 0
 GND-F
 Text Label 2600 1250 0    50   ~ 0
@@ -1342,4 +1323,23 @@ F 3 "~" H 4800 2000 50  0001 C CNN
 	1    4600 2000
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:R R4
+U 1 1 5DCAA07F
+P 2300 1750
+F 0 "R4" H 2370 1796 50  0000 L CNN
+F 1 "1k" H 2370 1705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2230 1750 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 2300 1750 50  0001 C CNN
+F 4 "311-1.0KGRCT-ND" H 2300 1750 50  0001 C CNN "dk"
+F 5 "RC0603JR-071KL" H 2300 1750 50  0001 C CNN "mfr"
+F 6 "603-RC0603JR-071KL" H 2300 1750 50  0001 C CNN "mouser"
+	1    2300 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1900 2300 1900
+Connection ~ 2300 1900
+Wire Wire Line
+	2300 1900 2600 1900
 $EndSCHEMATC
