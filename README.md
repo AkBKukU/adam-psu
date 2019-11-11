@@ -1,7 +1,7 @@
 # Coleco Adam Internal PSU
 
 The Coleco Adam originally shipped with a printer that contained the entire PSU 
-for the device. It generated 12V, 5V, & -5V DV voltages for the system to run on.
+for the device. It generated 12V, 5V, & -5V DC voltages for the system to run on.
 Now it is increasingly difficult to find the printer to go along with the 
 system. This renders them unusable.
 
@@ -13,7 +13,7 @@ used outside of the system as well.
 ## Installation 
 
 This part was designed specifically to be non-destructive and once you have an
-assemble part does not require any soldering. The DB9 connector on the standalone
+assembled part, does not require any soldering. The DB9 connector on the standalone
 Adam is on a small cabled PCB. This board mounts in place of that and you 
 internally connect that cable to the new PSU. Optionally, you could cut or 
 desolder the DB9 connector and directly bridge across to the available pads.
@@ -24,7 +24,7 @@ a much less common model and the design hasn't been optimized for this use. You
 may need to extend the DB9 connection to have enough clearance. A solid DB9
 male to female adapter is encouraged over a cable for its better current 
 capacity. If you do opt to use a DB9 extension cable **make sure it is not a 
-null modem cable!**. Pins 3 & 3 on a null model cable are swapped which will 
+null modem cable!**. Pins 3 & 3 on a null modem cable are swapped which will 
 swap 12V and 5V going to your system which will **severely damage** crucial 
 components.
 
