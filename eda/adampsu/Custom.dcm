@@ -6,6 +6,12 @@ K Power MOSFET N-MOS
 F https://assets.nexperia.com/documents/data-sheet/BUK7880-55A.pdf
 $ENDCMP
 #
+$CMP Si4447ADY
+D 12V Vds, TrenchFET N-Channel Power MOSFET, SC-70-6
+K TrenchFET N-Channel Power MOSFET
+F http://www.vishay.com/docs/67189/si4447ad.pdf
+$ENDCMP
+#
 $CMP TPS5431DDA
 D 3A, Step Down Swift Converter, Adjustable Output Voltage, 5.5-23V Input Voltage, PowerSO-8
 K Step-Down DC-DC Switching Regulator

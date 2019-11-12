@@ -31,15 +31,15 @@ $EndComp
 $Comp
 L adampsu-rescue:SW_Push_SPDT-Switch SW1
 U 1 1 5DAFC797
-P 1700 1400
-F 0 "SW1" H 1700 1685 50  0000 C CNN
-F 1 "30V 300mA Latching Switch" H 1700 1594 50  0000 C CNN
-F 2 "adampsu:Switch-LC1258EENP" H 1700 1400 50  0001 C CNN
-F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/36/LC.pdf" H 1700 1400 50  0001 C CNN
-F 4 "EG5886-ND" H 1700 1400 50  0001 C CNN "dk"
-F 5 "LC1258EENP" H 1700 1400 50  0001 C CNN "mfr"
-F 6 "612-LC1258EENP" H 1700 1400 50  0001 C CNN "mouser"
-	1    1700 1400
+P 2850 1700
+F 0 "SW1" H 2850 1985 50  0000 C CNN
+F 1 "30V 300mA Latching Switch" H 3450 1700 50  0000 C CNN
+F 2 "adampsu:Switch-LC1258EENP" H 2850 1700 50  0001 C CNN
+F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/36/LC.pdf" H 2850 1700 50  0001 C CNN
+F 4 "EG5886-ND" H 2850 1700 50  0001 C CNN "dk"
+F 5 "LC1258EENP" H 2850 1700 50  0001 C CNN "mfr"
+F 6 "612-LC1258EENP" H 2850 1700 50  0001 C CNN "mouser"
+	1    2850 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -95,19 +95,8 @@ Wire Wire Line
 	7150 1600 7950 1600
 Wire Wire Line
 	7150 1300 7950 1300
-Text Notes 3600 2050 0    50   ~ 0
+Text Notes 3700 2050 0    50   ~ 0
 +5V Regulator
-$Comp
-L adampsu-rescue:GND-power #PWR0101
-U 1 1 5DB45BB6
-P 2600 1200
-F 0 "#PWR0101" H 2600 950 50  0001 C CNN
-F 1 "GND" H 2605 1027 50  0000 C CNN
-F 2 "" H 2600 1200 50  0001 C CNN
-F 3 "" H 2600 1200 50  0001 C CNN
-	1    2600 1200
-	-1   0    0    1   
-$EndComp
 $Comp
 L adampsu-rescue:GND-power #PWR0103
 U 1 1 5DB47D97
@@ -122,12 +111,12 @@ $EndComp
 $Comp
 L adampsu-rescue:+12V-power #PWR0104
 U 1 1 5DB4B022
-P 1350 1100
-F 0 "#PWR0104" H 1350 950 50  0001 C CNN
-F 1 "+12V" H 1365 1273 50  0000 C CNN
-F 2 "" H 1350 1100 50  0001 C CNN
-F 3 "" H 1350 1100 50  0001 C CNN
-	1    1350 1100
+P 2300 1300
+F 0 "#PWR0104" H 2300 1150 50  0001 C CNN
+F 1 "+12V" H 2315 1473 50  0000 C CNN
+F 2 "" H 2300 1300 50  0001 C CNN
+F 3 "" H 2300 1300 50  0001 C CNN
+	1    2300 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -143,65 +132,26 @@ F 3 "" H 7600 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7600 1500 7950 1500
-Wire Wire Line
-	1250 1400 1350 1400
-Wire Wire Line
-	1350 1400 1350 1100
-Wire Wire Line
-	1350 1400 1500 1400
-Connection ~ 1350 1400
-Wire Wire Line
-	2600 1200 2600 1300
 $Comp
 L Device:R R3
 U 1 1 5DB74A11
-P 2100 1500
-F 0 "R3" V 1893 1500 50  0000 C CNN
-F 1 "1k" V 1984 1500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2030 1500 50  0001 C CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 2100 1500 50  0001 C CNN
-F 4 "311-1.0KGRCT-ND" H 2100 1500 50  0001 C CNN "dk"
-F 5 "RC0603JR-071KL" H 2100 1500 50  0001 C CNN "mfr"
-F 6 "603-RC0603JR-071KL" H 2100 1500 50  0001 C CNN "mouser"
-	1    2100 1500
+P 2500 1700
+F 0 "R3" V 2293 1700 50  0000 C CNN
+F 1 "1k" V 2384 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2430 1700 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 2500 1700 50  0001 C CNN
+F 4 "311-1.0KGRCT-ND" H 2500 1700 50  0001 C CNN "dk"
+F 5 "RC0603JR-071KL" H 2500 1700 50  0001 C CNN "mfr"
+F 6 "603-RC0603JR-071KL" H 2500 1700 50  0001 C CNN "mouser"
+	1    2500 1700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1900 1500 1950 1500
-Wire Wire Line
-	2250 1500 2300 1500
-$Comp
-L Device:R R4
-U 1 1 5DBAB23A
-P 2300 1750
-F 0 "R4" H 2370 1796 50  0000 L CNN
-F 1 "10k" H 2370 1705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2230 1750 50  0001 C CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 2300 1750 50  0001 C CNN
-F 4 "311-10KGRCT-ND" H 2300 1750 50  0001 C CNN "dk"
-F 5 "RC0603JR-0710KL" H 2300 1750 50  0001 C CNN "mfr"
-F 6 "603-RC0603JR-0710KL" H 2300 1750 50  0001 C CNN "mouser"
-	1    2300 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 1500 2300 1600
-Connection ~ 2300 1500
-Wire Wire Line
-	2600 1700 2600 1900
-Wire Wire Line
-	2600 1900 2300 1900
-Wire Wire Line
-	2300 1900 1900 1900
-Wire Wire Line
-	1250 1900 1250 1600
-Connection ~ 2300 1900
-Text Label 1300 1900 0    50   ~ 0
-GND-F
-Text Label 2600 1250 0    50   ~ 0
+	1250 1750 1250 1600
+Text Label 1250 1700 0    50   ~ 0
 GND
-Text Notes 1250 850  0    50   ~ 0
-12V Power in and low side switch
+Text Notes 1350 900  0    50   ~ 0
+12V Power in and high side switch
 Text Notes 7050 1700 1    50   ~ 0
 Inductive load \nflyback diode
 Text Notes 7250 850  0    50   ~ 0
@@ -416,20 +366,6 @@ F 3 "" H 4700 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Custom:BUK7880-55A_CUX Q1
-U 1 1 5DB2BA3D
-P 2500 1500
-F 0 "Q1" H 2706 1546 50  0000 L CNN
-F 1 "BUK7880-55A_CUX" H 2706 1455 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2700 1425 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BUK7880-55A.pdf" V 2500 1500 50  0001 L CNN
-F 4 "1727-2222-1-ND" H 2500 1500 50  0001 C CNN "dk"
-F 5 "BUK7880-55A/CUX" H 2500 1500 50  0001 C CNN "mfr"
-F 6 "771-BUK7880-55A/CUX" H 2500 1500 50  0001 C CNN "mouser"
-	1    2500 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C9
 U 1 1 5DBFC63B
 P 4100 2400
@@ -456,25 +392,19 @@ Wire Wire Line
 $Comp
 L Device:C C16
 U 1 1 5DC1DB46
-P 1900 1650
-F 0 "C16" H 2015 1696 50  0000 L CNN
-F 1 "0.1uF" H 2015 1605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1938 1500 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10F104ZB8NNNC.jsp" H 1900 1650 50  0001 C CNN
-F 4 "25" H 1900 1650 50  0001 C CNN "maxV"
-F 5 "XR7" H 1900 1650 50  0001 C CNN "rating"
-F 6 "1276-1012-2-ND" H 1900 1650 50  0001 C CNN "dk"
-F 7 "CL10F104ZB8NNNC" H 1900 1650 50  0001 C CNN "mfr"
-F 8 "603-CC603KRX7R9BB104" H 1900 1650 50  0001 C CNN "mouser"
-	1    1900 1650
+P 2350 1850
+F 0 "C16" H 2465 1896 50  0000 L CNN
+F 1 "0.1uF" H 2465 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2388 1700 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10F104ZB8NNNC.jsp" H 2350 1850 50  0001 C CNN
+F 4 "25" H 2350 1850 50  0001 C CNN "maxV"
+F 5 "XR7" H 2350 1850 50  0001 C CNN "rating"
+F 6 "1276-1012-2-ND" H 2350 1850 50  0001 C CNN "dk"
+F 7 "CL10F104ZB8NNNC" H 2350 1850 50  0001 C CNN "mfr"
+F 8 "603-CC603KRX7R9BB104" H 2350 1850 50  0001 C CNN "mouser"
+	1    2350 1850
 	1    0    0    -1  
 $EndComp
-Connection ~ 1900 1500
-Wire Wire Line
-	1900 1800 1900 1900
-Connection ~ 1900 1900
-Wire Wire Line
-	1900 1900 1250 1900
 Wire Wire Line
 	5200 2250 5300 2250
 Connection ~ 5200 2250
@@ -944,32 +874,21 @@ F 3 "~" H 6500 4300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR03
-U 1 1 5DC314BB
-P 4850 5200
-F 0 "#PWR03" H 4850 4950 50  0001 C CNN
-F 1 "GND" H 4855 5027 50  0000 C CNN
-F 2 "" H 4850 5200 50  0001 C CNN
-F 3 "" H 4850 5200 50  0001 C CNN
-	1    4850 5200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R1
 U 1 1 5DC33A4F
-P 4850 5050
-F 0 "R1" H 4780 5004 50  0000 R CNN
-F 1 "10k" H 4780 5095 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4780 5050 50  0001 C CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 4850 5050 50  0001 C CNN
-F 4 "311-1.96KHRCT-ND" H 4850 5050 50  0001 C CNN "dk"
-F 5 "RC0603FR-071K96L" H 4850 5050 50  0001 C CNN "mfr"
-F 6 "603-RC0603FR-071K96L" H 4850 5050 50  0001 C CNN "mouser"
-	1    4850 5050
+P 4950 5100
+F 0 "R1" H 4880 5054 50  0000 R CNN
+F 1 "10k" H 4880 5145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4880 5100 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 4950 5100 50  0001 C CNN
+F 4 "311-1.96KHRCT-ND" H 4950 5100 50  0001 C CNN "dk"
+F 5 "RC0603FR-071K96L" H 4950 5100 50  0001 C CNN "mfr"
+F 6 "603-RC0603FR-071K96L" H 4950 5100 50  0001 C CNN "mouser"
+	1    4950 5100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4950 4900 4850 4900
+	4950 4900 4950 4950
 $Comp
 L Device:C C6
 U 1 1 5DC53C0F
@@ -1081,20 +1000,17 @@ Wire Wire Line
 Wire Wire Line
 	5750 5000 5750 4900
 Connection ~ 6150 5000
-Connection ~ 7350 4700
 $Comp
 L adampsu-rescue:GND-power #PWR04
 U 1 1 5DCB9187
-P 7750 4700
-F 0 "#PWR04" H 7750 4450 50  0001 C CNN
-F 1 "GND" H 7755 4527 50  0000 C CNN
-F 2 "" H 7750 4700 50  0001 C CNN
-F 3 "" H 7750 4700 50  0001 C CNN
-	1    7750 4700
+P 8600 4700
+F 0 "#PWR04" H 8600 4450 50  0001 C CNN
+F 1 "GND" H 8605 4527 50  0000 C CNN
+F 2 "" H 8600 4700 50  0001 C CNN
+F 3 "" H 8600 4700 50  0001 C CNN
+	1    8600 4700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7350 4700 7750 4700
 Wire Wire Line
 	7350 5000 6900 5000
 Wire Wire Line
@@ -1174,7 +1090,7 @@ F 8 "603-CC603KRX7R9BB104" H 4500 4850 50  0001 C CNN "mouser"
 $EndComp
 Connection ~ 4500 4700
 Wire Wire Line
-	4500 4700 4950 4700
+	4500 4700 4850 4700
 Wire Wire Line
 	7000 2250 7000 2850
 Wire Wire Line
@@ -1342,4 +1258,207 @@ F 3 "~" H 4800 2000 50  0001 C CNN
 	1    4600 2000
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	4950 5250 4850 5250
+Wire Wire Line
+	4850 5250 4850 4700
+Connection ~ 4850 4700
+Wire Wire Line
+	4850 4700 4950 4700
+$Comp
+L Device:C C21
+U 1 1 5DD7E6C8
+P 7750 4850
+F 0 "C21" H 7865 4896 50  0000 L CNN
+F 1 "22uF" H 7865 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7788 4700 50  0001 C CNN
+F 3 "~" H 7750 4850 50  0001 C CNN
+F 4 "1276-2728-1-ND" H 7750 4850 50  0001 C CNN "dk"
+F 5 "EMK316ABJ226ML-T" H 7750 4850 50  0001 C CNN "mfr"
+F 6 "963-EMK316ABJ226ML-T" H 7750 4850 50  0001 C CNN "mouser"
+	1    7750 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 5DD7E6D2
+P 8200 4850
+F 0 "C22" H 8315 4896 50  0000 L CNN
+F 1 "22uF" H 8315 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8238 4700 50  0001 C CNN
+F 3 "~" H 8200 4850 50  0001 C CNN
+F 4 "1276-2728-1-ND" H 8200 4850 50  0001 C CNN "dk"
+F 5 "EMK316ABJ226ML-T" H 8200 4850 50  0001 C CNN "mfr"
+F 6 "963-EMK316ABJ226ML-T" H 8200 4850 50  0001 C CNN "mouser"
+	1    8200 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 4700 8200 4700
+Connection ~ 7750 4700
+Connection ~ 8200 4700
+Wire Wire Line
+	8200 5000 7750 5000
+Wire Wire Line
+	8200 4700 8600 4700
+Wire Wire Line
+	7350 4700 7750 4700
+Connection ~ 7350 4700
+Wire Wire Line
+	7350 5000 7750 5000
+Connection ~ 7350 5000
+Connection ~ 7750 5000
+$Comp
+L adampsu-rescue:GND-power #PWR0101
+U 1 1 5DDC9343
+P 1250 1750
+F 0 "#PWR0101" H 1250 1500 50  0001 C CNN
+F 1 "GND" H 1255 1577 50  0000 C CNN
+F 2 "" H 1250 1750 50  0001 C CNN
+F 3 "" H 1250 1750 50  0001 C CNN
+	1    1250 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1400 1400 1400
+$Comp
+L adampsu-rescue:GND-power #PWR0112
+U 1 1 5DE43FAC
+P 3100 1950
+F 0 "#PWR0112" H 3100 1700 50  0001 C CNN
+F 1 "GND" H 3105 1777 50  0000 C CNN
+F 2 "" H 3100 1950 50  0001 C CNN
+F 3 "" H 3100 1950 50  0001 C CNN
+	1    3100 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1800 3100 1800
+Wire Wire Line
+	3100 1800 3100 1950
+$Comp
+L Device:R R4
+U 1 1 5DE503BC
+P 1500 1550
+F 0 "R4" H 1570 1596 50  0000 L CNN
+F 1 "100k" H 1570 1505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1430 1550 50  0001 C CNN
+F 3 "~" H 1500 1550 50  0001 C CNN
+	1    1500 1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1400 1400
+Wire Wire Line
+	2300 1350 2300 1300
+Wire Wire Line
+	1850 1700 1850 1850
+$Comp
+L adampsu-rescue:GND-power #PWR0113
+U 1 1 5DE96349
+P 1850 2250
+F 0 "#PWR0113" H 1850 2000 50  0001 C CNN
+F 1 "GND" H 1855 2077 50  0000 C CNN
+F 2 "" H 1850 2250 50  0001 C CNN
+F 3 "" H 1850 2250 50  0001 C CNN
+	1    1850 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1400 1400 1000
+Wire Wire Line
+	1400 1000 3050 1000
+$Comp
+L Device:R R12
+U 1 1 5DED8A47
+P 3050 1300
+F 0 "R12" H 3120 1346 50  0000 L CNN
+F 1 "100k" H 3120 1255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2980 1300 50  0001 C CNN
+F 3 "~" H 3050 1300 50  0001 C CNN
+	1    3050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L adampsu-rescue:GND-power #PWR0114
+U 1 1 5DF3FA11
+P 2350 2000
+F 0 "#PWR0114" H 2350 1750 50  0001 C CNN
+F 1 "GND" H 2355 1827 50  0000 C CNN
+F 2 "" H 2350 2000 50  0001 C CNN
+F 3 "" H 2350 2000 50  0001 C CNN
+	1    2350 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1700 2150 1700
+Wire Wire Line
+	2150 1700 2150 2050
+Connection ~ 2350 1700
+Wire Wire Line
+	3050 1450 3050 1600
+Wire Wire Line
+	3050 1150 3050 1000
+Wire Wire Line
+	1850 1600 1850 1700
+Connection ~ 1850 1700
+Wire Wire Line
+	1400 1400 1500 1400
+Wire Wire Line
+	2150 1350 2150 1450
+Connection ~ 2150 1350
+Wire Wire Line
+	2150 1350 2300 1350
+$Comp
+L Device:Q_NPN_BEC Q2
+U 1 1 5E06FC06
+P 1950 2050
+F 0 "Q2" H 2141 2096 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 2141 2005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2150 2150 50  0001 C CNN
+F 3 "https://www.mccsemi.com/pdf/Products/MMBT3904(SOT-23).pdf" H 1950 2050 50  0001 C CNN
+F 4 "MMBT3904TPMSCT-ND" H 1950 2050 50  0001 C CNN "dk"
+F 5 "MMBT3904-TP" H 1950 2050 50  0001 C CNN "mfr"
+	1    1950 2050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1150 2150 1250
+Wire Wire Line
+	1600 1200 1600 1300
+$Comp
+L Custom:Si4447ADY Q1
+U 1 1 5E08BCD9
+P 1850 1400
+F 0 "Q1" V 2100 1400 50  0000 C CNN
+F 1 "Si4447ADY" V 1650 1150 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 2000 650 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/67189/si4447ad.pdf" H 1850 1400 50  0001 C CNN
+F 4 "SI4447ADY-T1-GE3DKR-ND" H 1950 850 50  0001 C CNN "dk"
+F 5 "SI4447ADY-T1-GE3" H 1950 750 50  0001 C CNN "mfr"
+	1    1850 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 1300 1600 1400
+Connection ~ 1600 1300
+Connection ~ 1600 1400
+Wire Wire Line
+	2150 1250 2150 1350
+Connection ~ 2150 1250
+$Comp
+L Custom:Cuts U3
+U 1 1 5E0C6685
+P 7300 5850
+F 0 "U3" H 7469 5896 50  0000 L CNN
+F 1 "Cuts" H 7469 5805 50  0000 L CNN
+F 2 "adampsu:DB9-SpotMount" H 7300 5850 50  0001 C CNN
+F 3 "" H 7300 5850 50  0001 C CNN
+	1    7300 5850
+	1    0    0    -1  
+$EndComp
+Connection ~ 1500 1400
+Wire Wire Line
+	1500 1400 1600 1400
+Wire Wire Line
+	1500 1700 1850 1700
 $EndSCHEMATC

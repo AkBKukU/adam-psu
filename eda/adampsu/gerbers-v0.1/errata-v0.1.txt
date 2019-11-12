@@ -12,3 +12,6 @@ R7 RefDes under C11
 bottom label text duplicated
 C6 1 <-> U1 6 trace width narrow
 Q1 Power switch FET detaches GND but non-isolated PSU may still provide a current path
+
+ - Performance - 
+-5V Rail ripple higher than I would like
