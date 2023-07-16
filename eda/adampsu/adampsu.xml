@@ -1,376 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<export version="D">
+<export version="E">
   <design>
-    <source>/opt/videos/shortcut/2019-10-20_ColecoAdamPSU/projects/adampsu/eda/adampsu/adampsu.sch</source>
-    <date>Sat 02 Nov 2019 01:46:33 PM MST</date>
-    <tool>Eeschema 5.1.4-3.fc30</tool>
+    <source>/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.kicad_sch</source>
+    <date>Sun 16 Jul 2023 11:30:38 AM MST</date>
+    <tool>Eeschema 6.0.2+dfsg-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>AdamPSU</title>
         <company>AkBKukU</company>
         <rev>1</rev>
         <date>2019-10-23</date>
-        <source>adampsu.sch</source>
+        <source>adampsu.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
       </title_block>
     </sheet>
   </design>
   <components>
-    <comp ref="J1">
-      <value>Barrel_Jack_Switch</value>
-      <footprint>adampsu:BarrelJack_CUI_PJ-047AH_Horizontal</footprint>
-      <datasheet>https://www.cuidevices.com/product/resource/pj-047ah.pdf</datasheet>
-      <fields>
-        <field name="dk">CP-047AH-ND</field>
-        <field name="mfr">PJ-047AH</field>
-        <field name="mouser"> 490-PJ-047AH</field>
-      </fields>
-      <libsource lib="adampsu-rescue" part="Barrel_Jack_Switch-Connector" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DAFBEFA</tstamp>
-    </comp>
-    <comp ref="SW1">
-      <value>30V 300mA Latching Switch</value>
-      <footprint>adampsu:Switch-LC1258EENP</footprint>
-      <datasheet>https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/36/LC.pdf</datasheet>
-      <fields>
-        <field name="dk">EG5886-ND</field>
-        <field name="mfr">LC1258EENP</field>
-        <field name="mouser">612-LC1258EENP</field>
-      </fields>
-      <libsource lib="adampsu-rescue" part="SW_Push_SPDT-Switch" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DAFC797</tstamp>
-    </comp>
-    <comp ref="D1">
-      <value>D_Schottky</value>
-      <footprint>adampsu:D_SOD-128</footprint>
-      <datasheet>https://www.mouser.com/datasheet/2/916/PMEG4050EP-1320387.pdf</datasheet>
-      <fields>
-        <field name="dk">1727-5842-1-ND</field>
-        <field name="maxV">40</field>
-        <field name="mfr">PMEG4050EP,115</field>
-        <field name="mouser">963-EMK325B7226MM-TR </field>
-      </fields>
-      <libsource lib="adampsu-rescue" part="B240-Diode" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DAFD20D</tstamp>
-    </comp>
-    <comp ref="J3">
-      <value>DB9_Female</value>
-      <footprint>Connector_Dsub:DSUB-9_Female_Vertical_P2.77x2.84mm_MountingHoles</footprint>
-      <datasheet>http://www.assmann-wsw.com/fileadmin/datasheets/ASS_4885_CO.pdf</datasheet>
-      <fields>
-        <field name="dk">AE10928-ND</field>
-        <field name="mfr">A-DF 09 PP/Z</field>
-        <field name="mouser">636-171-009-203L001</field>
-      </fields>
-      <libsource lib="adampsu-rescue" part="DB9_Female-Connector" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DAFDC17</tstamp>
-    </comp>
-    <comp ref="R3">
-      <value>1k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
-      <fields>
-        <field name="dk">311-1.0KGRCT-ND</field>
-        <field name="mfr">RC0603JR-071KL</field>
-        <field name="mouser">603-RC0603JR-071KL</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DB74A11</tstamp>
-    </comp>
-    <comp ref="R4">
-      <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
-      <fields>
-        <field name="dk">311-10KGRCT-ND</field>
-        <field name="mfr">RC0603JR-0710KL</field>
-        <field name="mouser">603-RC0603JR-0710KL</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DBAB23A</tstamp>
-    </comp>
-    <comp ref="J2">
-      <value>Conn_2Rows-09Pins</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="dk">1849-1002-ND</field>
-        <field name="mfr">PR20205VBDN</field>
-      </fields>
-      <libsource lib="adampsu-rescue" part="Conn_2Rows-09Pins-Connector_Generic" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DB0152B</tstamp>
-    </comp>
-    <comp ref="PC1">
-      <value>PlungerCap</value>
-      <footprint>adampsu:PlungerCap-4JWHT</footprint>
-      <datasheet>https://www.digikey.com/product-detail/en/e-switch/4JWHT/EG1077-ND/45809</datasheet>
-      <fields>
-        <field name="dk">EG1077-ND</field>
-        <field name="mfr">4JWHT</field>
-        <field name="mouser"> 612-4J-WH</field>
-      </fields>
-      <libsource lib="Custom" part="PlungerCap" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DB6E86E</tstamp>
-    </comp>
-    <comp ref="U2">
-      <value>TPS54531DDAR</value>
-      <footprint>Package_SO:TI_SO-PowerPAD-8_ThermalVias</footprint>
-      <datasheet>http://www.ti.com/lit/ds/symlink/tps54531.pdf</datasheet>
-      <fields>
-        <field name="dk">296-40801-2-ND</field>
-        <field name="mfr">TPS54531DDAR</field>
-        <field name="mouser">595-TPS54531DDAR</field>
-      </fields>
-      <libsource lib="Custom" part="TPS54531DDAR" description="5A, Step Down Swift Converter, Adjustable Output Voltage, 5.5-36V Input Voltage, PowerSO-8"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DB6790D</tstamp>
-    </comp>
-    <comp ref="C7">
-      <value>4.7uF</value>
+    <comp ref="C1">
+      <value>10uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=UMK316AB7475KL-T%20%20&amp;u=M</datasheet>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BC81C106KE15-01.pdf</datasheet>
       <fields>
-        <field name="dk"> 490-14466-2-ND</field>
-        <field name="maxV">50</field>
-        <field name="mfr">GRM21BR71C475KE51L</field>
-        <field name="mouser">81-GRM21BR71C475KE1L</field>
-        <field name="rating">XR7</field>
-      </fields>
-      <libsource lib="adampsu-rescue" part="C-Device" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DB79F94</tstamp>
-    </comp>
-    <comp ref="C8">
-      <value>0.01uF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0603C103M5RACTU.pdf</datasheet>
-      <fields>
-        <field name="dk">399-7842-1-ND</field>
-        <field name="mfr">C0603C103M5RACTU</field>
-        <field name="mouser">80-C0603C103M5R</field>
-        <field name="rating">XR7</field>
-      </fields>
-      <libsource lib="adampsu-rescue" part="C-Device" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DBA8FCD</tstamp>
-    </comp>
-    <comp ref="R5">
-      <value>665k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
-      <fields>
-        <field name="dk">311-665KHRCT-ND</field>
-        <field name="mfr">RC0603FR-07665KL</field>
-        <field name="mouser">603-RC0603FR-07665KL</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DBBBD9E</tstamp>
-    </comp>
-    <comp ref="R6">
-      <value>130k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>http://www.koaspeer.com/catimages/Products/RK73B/RK73B.pdf</datasheet>
-      <fields>
-        <field name="dk">2019-RK73B1JTTD134JCT-ND</field>
-        <field name="mfr">RK73B1JTTD134J</field>
-        <field name="mouser">660-RK73B1JTTD134J</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DBBC3CA</tstamp>
-    </comp>
-    <comp ref="C10">
-      <value>0.01uF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0603C103M5RACTU.pdf</datasheet>
-      <fields>
-        <field name="dk">399-7842-1-ND</field>
-        <field name="mfr">C0603C103M5RACTU</field>
-        <field name="mouser">80-C0603C103M5R</field>
-        <field name="rating">XR7</field>
-      </fields>
-      <libsource lib="adampsu-rescue" part="C-Device" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DBD72DC</tstamp>
-    </comp>
-    <comp ref="Q1">
-      <value>BUK7880-55A_CUX</value>
-      <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
-      <datasheet>https://assets.nexperia.com/documents/data-sheet/BUK7880-55A.pdf</datasheet>
-      <fields>
-        <field name="dk">1727-2222-1-ND</field>
-        <field name="mfr">BUK7880-55A/CUX</field>
-        <field name="mouser">771-BUK7880-55A/CUX</field>
-      </fields>
-      <libsource lib="Custom" part="BUK7880-55A_CUX" description="7A Id, 55V Vds, N-Channel TrenchMOS MOSFET, 80mOhm Ron, 12nC Qqd, -55 to 155 °C, SOT-223"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DB2BA3D</tstamp>
-    </comp>
-    <comp ref="C9">
-      <value>0.1uF</value>
-      <footprint>adampsu:C_0508_1220Metric_Pad1.40x1.15mm_HandSolder</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/LLL216R71E104MA01-01.pdf</datasheet>
-      <fields>
-        <field name="dk">490-4346-1-ND</field>
-        <field name="maxV">25</field>
-        <field name="mfr">LLL216R71E104MA01L</field>
-        <field name="mouser"> 81-LLL216R71E104MA1L</field>
-        <field name="rating">XR7</field>
+        <field name="dk">490-10498-1-ND</field>
+        <field name="mfr">GRM21BC81C106KE15L</field>
+        <field name="mouser">81-GRM21BC81C106KE5L</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="dk" value="490-10498-1-ND"/>
+      <property name="mfr" value="GRM21BC81C106KE15L"/>
+      <property name="mouser" value="81-GRM21BC81C106KE5L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DBFC63B</tstamp>
+      <tstamps>00000000-0000-0000-0000-00005dd320d9</tstamps>
     </comp>
-    <comp ref="C16">
-      <value>0.1uF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL10F104ZB8NNNC.jsp</datasheet>
+    <comp ref="C2">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BC81C106KE15-01.pdf</datasheet>
       <fields>
-        <field name="dk">1276-1012-2-ND</field>
-        <field name="maxV">25</field>
-        <field name="mfr">CL10F104ZB8NNNC</field>
-        <field name="mouser">603-CC603KRX7R9BB104</field>
-        <field name="rating">XR7</field>
+        <field name="dk">490-10498-1-ND</field>
+        <field name="mfr">GRM21BC81C106KE15L</field>
+        <field name="mouser">81-GRM21BC81C106KE5L</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="dk" value="490-10498-1-ND"/>
+      <property name="mfr" value="GRM21BC81C106KE15L"/>
+      <property name="mouser" value="81-GRM21BC81C106KE5L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC1DB46</tstamp>
-    </comp>
-    <comp ref="L1">
-      <value>4.7uH</value>
-      <footprint>adampsu:L_11.5x10.3_H4.8</footprint>
-      <datasheet>http://productfinder.pulseeng.com/products/datasheets/P769.pdf</datasheet>
-      <fields>
-        <field name="dk">553-3001-1-ND</field>
-        <field name="mfr">PA4342.472NLT</field>
-        <field name="mouser">673-PA4342.472NLT</field>
-        <field name="rating">15.5mOhm</field>
-      </fields>
-      <libsource lib="pspice" part="INDUCTOR" description="Inductor symbol for simulation only"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC317E4</tstamp>
-    </comp>
-    <comp ref="R8">
-      <value>51.1</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
-      <fields>
-        <field name="dk">311-51.1HRCT-ND</field>
-        <field name="mfr">RC0603FR-0751R1L</field>
-        <field name="mouser">603-RC0603FR-0751R1L</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC5FD46</tstamp>
-    </comp>
-    <comp ref="R10">
-      <value>1.96k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
-      <fields>
-        <field name="dk">311-1.96KHRCT-ND</field>
-        <field name="mfr">RC0603FR-071K96L</field>
-        <field name="mouser">603-RC0603FR-071K96L</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC62610</tstamp>
-    </comp>
-    <comp ref="R9">
-      <value>10.2k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf</datasheet>
-      <fields>
-        <field name="dk">RMCF0603FT10K2CT-ND</field>
-        <field name="mfr">RMCF0603FT10K2</field>
-        <field name="mouser">667-ERJ-3EKF1022V</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC61F6F</tstamp>
-    </comp>
-    <comp ref="C11">
-      <value>2200pF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0603C222K5RAC7411.pdf</datasheet>
-      <fields>
-        <field name="dk">399-17586-1-ND</field>
-        <field name="maxV">50</field>
-        <field name="mfr">C0603C222K5RAC7411</field>
-        <field name="mouser">80-C0603C222K5R7411</field>
-        <field name="rating">XR7</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC9AE57</tstamp>
-    </comp>
-    <comp ref="R7">
-      <value>37.4k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
-      <fields>
-        <field name="dk">311-37.4KHRCT-ND</field>
-        <field name="mfr">RC0603FR-0737K4L</field>
-        <field name="mouser">603-RC0603FR-0737K4L</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC9DC73</tstamp>
-    </comp>
-    <comp ref="C12">
-      <value>22pF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>http://datasheets.avx.com/X7RDielectric.pdf</datasheet>
-      <fields>
-        <field name="dk">478-6204-1-ND</field>
-        <field name="maxV">50</field>
-        <field name="mfr">06035C220JAT2A</field>
-        <field name="mouser"> 581-06035C220JAT2A</field>
-        <field name="rating">XR7</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DCB4969</tstamp>
-    </comp>
-    <comp ref="D2">
-      <value>D_Schottky</value>
-      <footprint>adampsu:D_SOD-128</footprint>
-      <datasheet>https://www.mouser.com/datasheet/2/916/PMEG4050EP-1320387.pdf</datasheet>
-      <fields>
-        <field name="dk">1727-5842-1-ND</field>
-        <field name="maxV">40</field>
-        <field name="mfr">PMEG4050EP,115</field>
-        <field name="mouser">963-EMK325B7226MM-TR </field>
-      </fields>
-      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC2BAB0</tstamp>
-    </comp>
-    <comp ref="C15">
-      <value>0.01uF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0603C103M5RACTU.pdf</datasheet>
-      <fields>
-        <field name="dk">399-7842-1-ND</field>
-        <field name="mfr">C0603C103M5RACTU</field>
-        <field name="mouser">80-C0603C103M5R</field>
-        <field name="rating">XR7</field>
-      </fields>
-      <libsource lib="adampsu-rescue" part="C-Device" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DB83167</tstamp>
+      <tstamps>00000000-0000-0000-0000-00005dd275f7</tstamps>
     </comp>
     <comp ref="C3">
       <value>100uF</value>
@@ -384,8 +72,15 @@
         <field name="rating">XR7</field>
       </fields>
       <libsource lib="adampsu-rescue" part="C-Device" description=""/>
+      <property name="dk" value="1189-1659-1-ND"/>
+      <property name="mfr" value="TAJD107K016TNJV"/>
+      <property name="rating" value="XR7"/>
+      <property name="maxV" value="16"/>
+      <property name="mouser" value=" 581-TAJD107K016TNJV"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DB88A33</tstamp>
+      <tstamps>00000000-0000-0000-0000-00005db88a33</tstamps>
     </comp>
     <comp ref="C4">
       <value>4.7uF</value>
@@ -399,200 +94,15 @@
         <field name="rating">XR7</field>
       </fields>
       <libsource lib="adampsu-rescue" part="C-Device" description=""/>
+      <property name="dk" value=" 490-14466-2-ND"/>
+      <property name="mfr" value="GRM21BR71C475KE51L"/>
+      <property name="rating" value="XR7"/>
+      <property name="maxV" value="50"/>
+      <property name="mouser" value="81-GRM21BR71C475KE1L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DBC2BBC</tstamp>
-    </comp>
-    <comp ref="LB1">
-      <value>HandLabel_SN</value>
-      <footprint>adampsu:adamlabel</footprint>
-      <libsource lib="Custom" part="HandLabel_SN" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DB90AE2</tstamp>
-    </comp>
-    <comp ref="TP1">
-      <value>+12VL/Orange</value>
-      <footprint>adampsu:TestPoint_Labeled</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DB93DBC</tstamp>
-    </comp>
-    <comp ref="TP2">
-      <value>RESET/Black</value>
-      <footprint>adampsu:TestPoint_Labeled</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DBBA2C9</tstamp>
-    </comp>
-    <comp ref="TP3">
-      <value>+12VI/Yellow</value>
-      <footprint>adampsu:TestPoint_Labeled</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DBBA671</tstamp>
-    </comp>
-    <comp ref="TP4">
-      <value>DATA/Brown</value>
-      <footprint>adampsu:TestPoint_Labeled</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DBBA974</tstamp>
-    </comp>
-    <comp ref="TP5">
-      <value>+5V/Red</value>
-      <footprint>adampsu:TestPoint_Labeled</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DBBAC81</tstamp>
-    </comp>
-    <comp ref="TP6">
-      <value>GND/Green</value>
-      <footprint>adampsu:TestPoint_Labeled</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DBBAFC4</tstamp>
-    </comp>
-    <comp ref="TP7">
-      <value>-5V/Blue</value>
-      <footprint>adampsu:TestPoint_Labeled</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DBBB3BE</tstamp>
-    </comp>
-    <comp ref="TP11">
-      <value>GND</value>
-      <footprint>adampsu:TestPoint_Labeled</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DDD352B</tstamp>
-    </comp>
-    <comp ref="TP8">
-      <value>GND</value>
-      <footprint>adampsu:TestPoint_Labeled</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DDEE6C0</tstamp>
-    </comp>
-    <comp ref="TP9">
-      <value>-5V</value>
-      <footprint>adampsu:TestPoint_Labeled</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DDEE6CA</tstamp>
-    </comp>
-    <comp ref="R1">
-      <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
-      <fields>
-        <field name="dk">311-1.96KHRCT-ND</field>
-        <field name="mfr">RC0603FR-071K96L</field>
-        <field name="mouser">603-RC0603FR-071K96L</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC33A4F</tstamp>
-    </comp>
-    <comp ref="C6">
-      <value>0.1uF</value>
-      <footprint>adampsu:C_0508_1220Metric_Pad1.40x1.15mm_HandSolder</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/LLL216R71E104MA01-01.pdf</datasheet>
-      <fields>
-        <field name="dk">490-4346-1-ND</field>
-        <field name="maxV">25</field>
-        <field name="mfr">LLL216R71E104MA01L</field>
-        <field name="mouser"> 81-LLL216R71E104MA1L</field>
-        <field name="rating">XR7</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC53C0F</tstamp>
-    </comp>
-    <comp ref="L2">
-      <value>4.7uH</value>
-      <footprint>adampsu:L_11.5x10.3_H4.8</footprint>
-      <datasheet>http://productfinder.pulseeng.com/products/datasheets/P769.pdf</datasheet>
-      <fields>
-        <field name="dk">553-3001-1-ND</field>
-        <field name="mfr">PA4342.472NLT</field>
-        <field name="mouser">673-PA4342.472NLT</field>
-      </fields>
-      <libsource lib="pspice" part="INDUCTOR" description="Inductor symbol for simulation only"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC80C16</tstamp>
-    </comp>
-    <comp ref="C17">
-      <value>22uF</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="dk">1276-6780-1-ND </field>
-        <field name="mfr">EMK316ABJ226ML-T</field>
-        <field name="mouser">963-EMK316ABJ226ML-T</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC83166</tstamp>
-    </comp>
-    <comp ref="C18">
-      <value>22uF</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="dk">1276-6780-1-ND </field>
-        <field name="mfr">EMK316ABJ226ML-T</field>
-        <field name="mouser">963-EMK316ABJ226ML-T</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC886C0</tstamp>
-    </comp>
-    <comp ref="R11">
-      <value>54.9k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="mfr">CR0603-FX-5492ELF</field>
-        <field name="mouser">652-CR0603FX-5492ELF</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC8EB82</tstamp>
-    </comp>
-    <comp ref="R2">
-      <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
-      <fields>
-        <field name="dk">311-1.96KHRCT-ND</field>
-        <field name="mfr">RC0603FR-071K96L</field>
-        <field name="mouser">603-RC0603FR-071K96L</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC924F4</tstamp>
-    </comp>
-    <comp ref="C2">
-      <value>10uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="dk">490-10498-1-ND</field>
-        <field name="mfr">GRM21BC81C106KE15L</field>
-        <field name="mouser">81-GRM21BC81C106KE5L</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DD275F7</tstamp>
+      <tstamps>00000000-0000-0000-0000-00005dbc2bbc</tstamps>
     </comp>
     <comp ref="C5">
       <value>0.1uF</value>
@@ -606,73 +116,855 @@
         <field name="rating">XR7</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="maxV" value="25"/>
+      <property name="rating" value="XR7"/>
+      <property name="dk" value="1276-1012-2-ND"/>
+      <property name="mfr" value="CL10F104ZB8NNNC"/>
+      <property name="mouser" value="603-CC603KRX7R9BB104"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DBDBA0C</tstamp>
+      <tstamps>00000000-0000-0000-0000-00005dbdba0c</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>0.1uF</value>
+      <footprint>adampsu:C_0508_1220Metric_Pad1.40x1.15mm_HandSolder</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/LLL216R71E104MA01-01.pdf</datasheet>
+      <fields>
+        <field name="dk">490-4346-1-ND</field>
+        <field name="maxV">25</field>
+        <field name="mfr">LLL216R71E104MA01L</field>
+        <field name="mouser"> 81-LLL216R71E104MA1L</field>
+        <field name="rating">XR7</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="maxV" value="25"/>
+      <property name="rating" value="XR7"/>
+      <property name="dk" value="490-4346-1-ND"/>
+      <property name="mfr" value="LLL216R71E104MA01L"/>
+      <property name="mouser" value=" 81-LLL216R71E104MA1L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc53c0f</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=UMK316AB7475KL-T%20%20&amp;u=M</datasheet>
+      <fields>
+        <field name="dk"> 490-14466-2-ND</field>
+        <field name="maxV">50</field>
+        <field name="mfr">GRM21BR71C475KE51L</field>
+        <field name="mouser">81-GRM21BR71C475KE1L</field>
+        <field name="rating">XR7</field>
+      </fields>
+      <libsource lib="adampsu-rescue" part="C-Device" description=""/>
+      <property name="dk" value=" 490-14466-2-ND"/>
+      <property name="mfr" value="GRM21BR71C475KE51L"/>
+      <property name="rating" value="XR7"/>
+      <property name="maxV" value="50"/>
+      <property name="mouser" value="81-GRM21BR71C475KE1L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005db79f94</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>0.01uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0603C103M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="dk">399-7842-1-ND</field>
+        <field name="mfr">C0603C103M5RACTU</field>
+        <field name="mouser">80-C0603C103M5R</field>
+        <field name="rating">XR7</field>
+      </fields>
+      <libsource lib="adampsu-rescue" part="C-Device" description=""/>
+      <property name="dk" value="399-7842-1-ND"/>
+      <property name="mfr" value="C0603C103M5RACTU"/>
+      <property name="rating" value="XR7"/>
+      <property name="mouser" value="80-C0603C103M5R"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dba8fcd</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>0.1uF</value>
+      <footprint>adampsu:C_0508_1220Metric_Pad1.40x1.15mm_HandSolder</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/LLL216R71E104MA01-01.pdf</datasheet>
+      <fields>
+        <field name="dk">490-4346-1-ND</field>
+        <field name="maxV">25</field>
+        <field name="mfr">LLL216R71E104MA01L</field>
+        <field name="mouser"> 81-LLL216R71E104MA1L</field>
+        <field name="rating">XR7</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="maxV" value="25"/>
+      <property name="rating" value="XR7"/>
+      <property name="dk" value="490-4346-1-ND"/>
+      <property name="mfr" value="LLL216R71E104MA01L"/>
+      <property name="mouser" value=" 81-LLL216R71E104MA1L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dbfc63b</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>0.01uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0603C103M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="dk">399-7842-1-ND</field>
+        <field name="mfr">C0603C103M5RACTU</field>
+        <field name="mouser">80-C0603C103M5R</field>
+        <field name="rating">XR7</field>
+      </fields>
+      <libsource lib="adampsu-rescue" part="C-Device" description=""/>
+      <property name="dk" value="399-7842-1-ND"/>
+      <property name="mfr" value="C0603C103M5RACTU"/>
+      <property name="rating" value="XR7"/>
+      <property name="mouser" value="80-C0603C103M5R"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dbd72dc</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>2200pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0603C222K5RAC7411.pdf</datasheet>
+      <fields>
+        <field name="dk">399-17586-1-ND</field>
+        <field name="maxV">50</field>
+        <field name="mfr">C0603C222K5RAC7411</field>
+        <field name="mouser">80-C0603C222K5R7411</field>
+        <field name="rating">XR7</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="rating" value="XR7"/>
+      <property name="dk" value="399-17586-1-ND"/>
+      <property name="maxV" value="50"/>
+      <property name="mfr" value="C0603C222K5RAC7411"/>
+      <property name="mouser" value="80-C0603C222K5R7411"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc9ae57</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>22pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>http://datasheets.avx.com/X7RDielectric.pdf</datasheet>
+      <fields>
+        <field name="dk">478-6204-1-ND</field>
+        <field name="maxV">50</field>
+        <field name="mfr">06035C220JAT2A</field>
+        <field name="mouser"> 581-06035C220JAT2A</field>
+        <field name="rating">XR7</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="rating" value="XR7"/>
+      <property name="dk" value="478-6204-1-ND"/>
+      <property name="maxV" value="50"/>
+      <property name="mfr" value="06035C220JAT2A"/>
+      <property name="mouser" value=" 581-06035C220JAT2A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dcb4969</tstamps>
     </comp>
     <comp ref="C13">
       <value>22uF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
       <fields>
-        <field name="dk">1276-6780-1-ND </field>
+        <field name="dk">1276-2728-1-ND</field>
         <field name="mfr">EMK316ABJ226ML-T</field>
         <field name="mouser">963-EMK316ABJ226ML-T</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="dk" value="1276-2728-1-ND"/>
+      <property name="mfr" value="EMK316ABJ226ML-T"/>
+      <property name="mouser" value="963-EMK316ABJ226ML-T"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC2E509</tstamp>
-    </comp>
-    <comp ref="C19">
-      <value>22uF</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="dk">1276-6780-1-ND </field>
-        <field name="mfr">EMK316ABJ226ML-T</field>
-        <field name="mouser">963-EMK316ABJ226ML-T</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC2E516</tstamp>
+      <tstamps>00000000-0000-0000-0000-00005dc2e509</tstamps>
     </comp>
     <comp ref="C14">
       <value>22uF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
       <fields>
-        <field name="dk">1276-6780-1-ND </field>
+        <field name="dk">1276-2728-1-ND</field>
         <field name="mfr">EMK316ABJ226ML-T</field>
         <field name="mouser">963-EMK316ABJ226ML-T</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="dk" value="1276-2728-1-ND"/>
+      <property name="mfr" value="EMK316ABJ226ML-T"/>
+      <property name="mouser" value="963-EMK316ABJ226ML-T"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC66307</tstamp>
+      <tstamps>00000000-0000-0000-0000-00005dc66307</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>0.01uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0603C103M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="dk">399-7842-1-ND</field>
+        <field name="mfr">C0603C103M5RACTU</field>
+        <field name="mouser">80-C0603C103M5R</field>
+        <field name="rating">XR7</field>
+      </fields>
+      <libsource lib="adampsu-rescue" part="C-Device" description=""/>
+      <property name="dk" value="399-7842-1-ND"/>
+      <property name="mfr" value="C0603C103M5RACTU"/>
+      <property name="rating" value="XR7"/>
+      <property name="mouser" value="80-C0603C103M5R"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005db83167</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL10F104ZB8NNNC.jsp</datasheet>
+      <fields>
+        <field name="dk">1276-1012-2-ND</field>
+        <field name="maxV">25</field>
+        <field name="mfr">CL10F104ZB8NNNC</field>
+        <field name="mouser">603-CC603KRX7R9BB104</field>
+        <field name="rating">XR7</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="maxV" value="25"/>
+      <property name="rating" value="XR7"/>
+      <property name="dk" value="1276-1012-2-ND"/>
+      <property name="mfr" value="CL10F104ZB8NNNC"/>
+      <property name="mouser" value="603-CC603KRX7R9BB104"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc1db46</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <fields>
+        <field name="dk">1276-2728-1-ND</field>
+        <field name="mfr">EMK316ABJ226ML-T</field>
+        <field name="mouser">963-EMK316ABJ226ML-T</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="dk" value="1276-2728-1-ND"/>
+      <property name="mfr" value="EMK316ABJ226ML-T"/>
+      <property name="mouser" value="963-EMK316ABJ226ML-T"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc83166</tstamps>
+    </comp>
+    <comp ref="C18">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <fields>
+        <field name="dk">1276-2728-1-ND</field>
+        <field name="mfr">EMK316ABJ226ML-T</field>
+        <field name="mouser">963-EMK316ABJ226ML-T</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="dk" value="1276-2728-1-ND"/>
+      <property name="mfr" value="EMK316ABJ226ML-T"/>
+      <property name="mouser" value="963-EMK316ABJ226ML-T"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc886c0</tstamps>
+    </comp>
+    <comp ref="C19">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <fields>
+        <field name="dk">1276-2728-1-ND</field>
+        <field name="mfr">EMK316ABJ226ML-T</field>
+        <field name="mouser">963-EMK316ABJ226ML-T</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="dk" value="1276-2728-1-ND"/>
+      <property name="mfr" value="EMK316ABJ226ML-T"/>
+      <property name="mouser" value="963-EMK316ABJ226ML-T"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc2e516</tstamps>
     </comp>
     <comp ref="C20">
       <value>22uF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
       <fields>
-        <field name="dk">1276-6780-1-ND </field>
+        <field name="dk">1276-2728-1-ND</field>
         <field name="mfr">EMK316ABJ226ML-T</field>
         <field name="mouser">963-EMK316ABJ226ML-T</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="dk" value="1276-2728-1-ND"/>
+      <property name="mfr" value="EMK316ABJ226ML-T"/>
+      <property name="mouser" value="963-EMK316ABJ226ML-T"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC66314</tstamp>
+      <tstamps>00000000-0000-0000-0000-00005dc66314</tstamps>
     </comp>
-    <comp ref="C1">
-      <value>10uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+    <comp ref="C21">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
       <fields>
-        <field name="dk">490-10498-1-ND</field>
-        <field name="mfr">GRM21BC81C106KE15L</field>
-        <field name="mouser">81-GRM21BC81C106KE5L</field>
+        <field name="dk">1276-2728-1-ND</field>
+        <field name="mfr">EMK316ABJ226ML-T</field>
+        <field name="mouser">963-EMK316ABJ226ML-T</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="dk" value="1276-2728-1-ND"/>
+      <property name="mfr" value="EMK316ABJ226ML-T"/>
+      <property name="mouser" value="963-EMK316ABJ226ML-T"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DD320D9</tstamp>
+      <tstamps>00000000-0000-0000-0000-00005dd7e6c8</tstamps>
+    </comp>
+    <comp ref="C22">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <fields>
+        <field name="dk">1276-2728-1-ND</field>
+        <field name="mfr">EMK316ABJ226ML-T</field>
+        <field name="mouser">963-EMK316ABJ226ML-T</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="dk" value="1276-2728-1-ND"/>
+      <property name="mfr" value="EMK316ABJ226ML-T"/>
+      <property name="mouser" value="963-EMK316ABJ226ML-T"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dd7e6d2</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>D_Schottky</value>
+      <footprint>adampsu:D_SOD-128</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/916/PMEG4050EP-1320387.pdf</datasheet>
+      <fields>
+        <field name="dk">1727-5842-1-ND</field>
+        <field name="maxV">40</field>
+        <field name="mfr">PMEG4050EP,115</field>
+        <field name="mouser">963-EMK325B7226MM-TR </field>
+      </fields>
+      <libsource lib="adampsu-rescue" part="B240-Diode" description=""/>
+      <property name="dk" value="1727-5842-1-ND"/>
+      <property name="mfr" value="PMEG4050EP,115"/>
+      <property name="maxV" value="40"/>
+      <property name="mouser" value="963-EMK325B7226MM-TR "/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dafd20d</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>D_Schottky</value>
+      <footprint>adampsu:D_SOD-128</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/916/PMEG4050EP-1320387.pdf</datasheet>
+      <fields>
+        <field name="dk">1727-5842-1-ND</field>
+        <field name="maxV">40</field>
+        <field name="mfr">PMEG4050EP,115</field>
+        <field name="mouser">963-EMK325B7226MM-TR </field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="dk" value="1727-5842-1-ND"/>
+      <property name="maxV" value="40"/>
+      <property name="mfr" value="PMEG4050EP,115"/>
+      <property name="mouser" value="963-EMK325B7226MM-TR "/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc2bab0</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Barrel_Jack_Switch</value>
+      <footprint>adampsu:BarrelJack_CUI_PJ-047AH_Horizontal</footprint>
+      <datasheet>https://www.cuidevices.com/product/resource/pj-047ah.pdf</datasheet>
+      <fields>
+        <field name="dk">CP-047AH-ND</field>
+        <field name="mfr">PJ-047AH</field>
+        <field name="mouser"> 490-PJ-047AH</field>
+      </fields>
+      <libsource lib="adampsu-rescue" part="Barrel_Jack_Switch-Connector" description=""/>
+      <property name="dk" value="CP-047AH-ND"/>
+      <property name="mfr" value="PJ-047AH"/>
+      <property name="mouser" value=" 490-PJ-047AH"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dafbefa</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_2Rows-09Pins</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="dk">1849-1002-ND</field>
+        <field name="mfr">PR20205VBDN</field>
+      </fields>
+      <libsource lib="adampsu-rescue" part="Conn_2Rows-09Pins-Connector_Generic" description=""/>
+      <property name="dk" value="1849-1002-ND"/>
+      <property name="mfr" value="PR20205VBDN"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005db0152b</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>DB9_Female</value>
+      <footprint>Connector_Dsub:DSUB-9_Female_Vertical_P2.77x2.84mm_MountingHoles</footprint>
+      <datasheet>http://www.assmann-wsw.com/fileadmin/datasheets/ASS_4885_CO.pdf</datasheet>
+      <fields>
+        <field name="dk">AE10928-ND</field>
+        <field name="mfr">A-DF 09 PP/Z</field>
+        <field name="mouser">636-171-009-203L001</field>
+      </fields>
+      <libsource lib="adampsu-rescue" part="DB9_Female-Connector" description=""/>
+      <property name="dk" value="AE10928-ND"/>
+      <property name="mfr" value="A-DF 09 PP/Z"/>
+      <property name="mouser" value="636-171-009-203L001"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dafdc17</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>4.7uH</value>
+      <footprint>adampsu:L_11.5x10.3_H4.8</footprint>
+      <datasheet>http://productfinder.pulseeng.com/products/datasheets/P769.pdf</datasheet>
+      <fields>
+        <field name="dk">553-3001-1-ND</field>
+        <field name="mfr">PA4342.472NLT</field>
+        <field name="mouser">673-PA4342.472NLT</field>
+        <field name="rating">15.5mOhm</field>
+      </fields>
+      <libsource lib="pspice" part="INDUCTOR" description="Inductor symbol for simulation only"/>
+      <property name="dk" value="553-3001-1-ND"/>
+      <property name="mfr" value="PA4342.472NLT"/>
+      <property name="rating" value="15.5mOhm"/>
+      <property name="mouser" value="673-PA4342.472NLT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc317e4</tstamps>
+    </comp>
+    <comp ref="L2">
+      <value>4.7uH</value>
+      <footprint>adampsu:L_11.5x10.3_H4.8</footprint>
+      <datasheet>http://productfinder.pulseeng.com/products/datasheets/P769.pdf</datasheet>
+      <fields>
+        <field name="dk">553-3001-1-ND</field>
+        <field name="mfr">PA4342.472NLT</field>
+        <field name="mouser">673-PA4342.472NLT</field>
+      </fields>
+      <libsource lib="pspice" part="INDUCTOR" description="Inductor symbol for simulation only"/>
+      <property name="dk" value="553-3001-1-ND"/>
+      <property name="mfr" value="PA4342.472NLT"/>
+      <property name="mouser" value="673-PA4342.472NLT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc80c16</tstamps>
+    </comp>
+    <comp ref="LB1">
+      <value>HandLabel_SN</value>
+      <footprint>adampsu:adamlabel</footprint>
+      <libsource lib="Custom" part="HandLabel_SN" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005db90ae2</tstamps>
+    </comp>
+    <comp ref="PC1">
+      <value>PlungerCap</value>
+      <footprint>adampsu:PlungerCap-4JWHT</footprint>
+      <datasheet>https://www.digikey.com/product-detail/en/e-switch/4JWHT/EG1077-ND/45809</datasheet>
+      <fields>
+        <field name="dk">EG1077-ND</field>
+        <field name="mfr">4JWHT</field>
+        <field name="mouser"> 612-4J-WH</field>
+      </fields>
+      <libsource lib="Custom" part="PlungerCap" description=""/>
+      <property name="dk" value="EG1077-ND"/>
+      <property name="mfr" value="4JWHT"/>
+      <property name="mouser" value=" 612-4J-WH"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005db6e86e</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>Si4447ADY</value>
+      <footprint>Package_SO:SO-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>http://www.vishay.com/docs/67189/si4447ad.pdf</datasheet>
+      <fields>
+        <field name="dk">SI4447ADY-T1-GE3DKR-ND</field>
+        <field name="mfr">SI4447ADY-T1-GE3</field>
+      </fields>
+      <libsource lib="Custom" part="Si4447ADY" description="12V Vds, TrenchFET N-Channel Power MOSFET, SC-70-6"/>
+      <property name="dk" value="SI4447ADY-T1-GE3DKR-ND"/>
+      <property name="mfr" value="SI4447ADY-T1-GE3"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e08bcd9</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>Q_NPN_BEC</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.mccsemi.com/pdf/Products/MMBT3904(SOT-23).pdf</datasheet>
+      <fields>
+        <field name="dk">MMBT3904TPMSCT-ND</field>
+        <field name="mfr">MMBT3904-TP</field>
+      </fields>
+      <libsource lib="Device" part="Q_NPN_BEC" description="NPN transistor, base/emitter/collector"/>
+      <property name="dk" value="MMBT3904TPMSCT-ND"/>
+      <property name="mfr" value="MMBT3904-TP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e06fc06</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="dk">311-1.96KHRCT-ND</field>
+        <field name="mfr">RC0603FR-071K96L</field>
+        <field name="mouser">603-RC0603FR-071K96L</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="dk" value="311-1.96KHRCT-ND"/>
+      <property name="mfr" value="RC0603FR-071K96L"/>
+      <property name="mouser" value="603-RC0603FR-071K96L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc33a4f</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="dk">311-1.96KHRCT-ND</field>
+        <field name="mfr">RC0603FR-071K96L</field>
+        <field name="mouser">603-RC0603FR-071K96L</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="dk" value="311-1.96KHRCT-ND"/>
+      <property name="mfr" value="RC0603FR-071K96L"/>
+      <property name="mouser" value="603-RC0603FR-071K96L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc924f4</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="dk">311-1.0KGRCT-ND</field>
+        <field name="mfr">RC0603JR-071KL</field>
+        <field name="mouser">603-RC0603JR-071KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="dk" value="311-1.0KGRCT-ND"/>
+      <property name="mfr" value="RC0603JR-071KL"/>
+      <property name="mouser" value="603-RC0603JR-071KL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005db74a11</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005de503bc</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>665k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="dk">311-665KHRCT-ND</field>
+        <field name="mfr">RC0603FR-07665KL</field>
+        <field name="mouser">603-RC0603FR-07665KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="dk" value="311-665KHRCT-ND"/>
+      <property name="mfr" value="RC0603FR-07665KL"/>
+      <property name="mouser" value="603-RC0603FR-07665KL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dbbbd9e</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>130k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73B/RK73B.pdf</datasheet>
+      <fields>
+        <field name="dk">2019-RK73B1JTTD134JCT-ND</field>
+        <field name="mfr">RK73B1JTTD134J</field>
+        <field name="mouser">660-RK73B1JTTD134J</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="dk" value="2019-RK73B1JTTD134JCT-ND"/>
+      <property name="mfr" value="RK73B1JTTD134J"/>
+      <property name="mouser" value="660-RK73B1JTTD134J"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dbbc3ca</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>37.4k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="dk">311-37.4KHRCT-ND</field>
+        <field name="mfr">RC0603FR-0737K4L</field>
+        <field name="mouser">603-RC0603FR-0737K4L</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="dk" value="311-37.4KHRCT-ND"/>
+      <property name="mfr" value="RC0603FR-0737K4L"/>
+      <property name="mouser" value="603-RC0603FR-0737K4L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc9dc73</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>51.1</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="dk">311-51.1HRCT-ND</field>
+        <field name="mfr">RC0603FR-0751R1L</field>
+        <field name="mouser">603-RC0603FR-0751R1L</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="dk" value="311-51.1HRCT-ND"/>
+      <property name="mfr" value="RC0603FR-0751R1L"/>
+      <property name="mouser" value="603-RC0603FR-0751R1L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc5fd46</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>10.2k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf</datasheet>
+      <fields>
+        <field name="dk">RMCF0603FT10K2CT-ND</field>
+        <field name="mfr">RMCF0603FT10K2</field>
+        <field name="mouser">667-ERJ-3EKF1022V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="dk" value="RMCF0603FT10K2CT-ND"/>
+      <property name="mfr" value="RMCF0603FT10K2"/>
+      <property name="mouser" value="667-ERJ-3EKF1022V"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc61f6f</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>1.96k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="dk">311-1.96KHRCT-ND</field>
+        <field name="mfr">RC0603FR-071K96L</field>
+        <field name="mouser">603-RC0603FR-071K96L</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="dk" value="311-1.96KHRCT-ND"/>
+      <property name="mfr" value="RC0603FR-071K96L"/>
+      <property name="mouser" value="603-RC0603FR-071K96L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc62610</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>54.9k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</datasheet>
+      <fields>
+        <field name="dk">311-54.9KHRCT-ND</field>
+        <field name="mfr">RC0603FR-0754K9L</field>
+        <field name="mouser">603-RC0603FR-0754K9L</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="mfr" value="RC0603FR-0754K9L"/>
+      <property name="mouser" value="603-RC0603FR-0754K9L"/>
+      <property name="dk" value="311-54.9KHRCT-ND"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dc8eb82</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ded8a47</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>30V 300mA Latching Switch</value>
+      <footprint>adampsu:Switch-LC1258EENP</footprint>
+      <datasheet>https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/36/LC.pdf</datasheet>
+      <fields>
+        <field name="dk">EG5886-ND</field>
+        <field name="mfr">LC1258EENP</field>
+        <field name="mouser">612-LC1258EENP</field>
+      </fields>
+      <libsource lib="adampsu-rescue" part="SW_Push_SPDT-Switch" description=""/>
+      <property name="dk" value="EG5886-ND"/>
+      <property name="mfr" value="LC1258EENP"/>
+      <property name="mouser" value="612-LC1258EENP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dafc797</tstamps>
+    </comp>
+    <comp ref="TP1">
+      <value>+12VL/Orange</value>
+      <footprint>adampsu:TestPoint_Labeled</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005db93dbc</tstamps>
+    </comp>
+    <comp ref="TP2">
+      <value>RESET/Black</value>
+      <footprint>adampsu:TestPoint_Labeled</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dbba2c9</tstamps>
+    </comp>
+    <comp ref="TP3">
+      <value>+12VI/Yellow</value>
+      <footprint>adampsu:TestPoint_Labeled</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dbba671</tstamps>
+    </comp>
+    <comp ref="TP4">
+      <value>DATA/Brown</value>
+      <footprint>adampsu:TestPoint_Labeled</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dbba974</tstamps>
+    </comp>
+    <comp ref="TP5">
+      <value>+5V/Red</value>
+      <footprint>adampsu:TestPoint_Labeled</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dbbac81</tstamps>
+    </comp>
+    <comp ref="TP6">
+      <value>GND/Green</value>
+      <footprint>adampsu:TestPoint_Labeled</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dbbafc4</tstamps>
+    </comp>
+    <comp ref="TP7">
+      <value>-5V/Blue</value>
+      <footprint>adampsu:TestPoint_Labeled</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dbbb3be</tstamps>
+    </comp>
+    <comp ref="TP8">
+      <value>GND</value>
+      <footprint>adampsu:TestPoint_Labeled</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ddee6c0</tstamps>
+    </comp>
+    <comp ref="TP9">
+      <value>-5V</value>
+      <footprint>adampsu:TestPoint_Labeled</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ddee6ca</tstamps>
+    </comp>
+    <comp ref="TP10">
+      <value>+5V</value>
+      <footprint>adampsu:TestPoint_Labeled</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ddd3525</tstamps>
+    </comp>
+    <comp ref="TP11">
+      <value>GND</value>
+      <footprint>adampsu:TestPoint_Labeled</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ddd352b</tstamps>
+    </comp>
+    <comp ref="TP12">
+      <value>GND/Green</value>
+      <footprint>adampsu:TestPoint_Labeled</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dd9877a</tstamps>
     </comp>
     <comp ref="U1">
       <value>TPS561201</value>
@@ -684,24 +976,40 @@
         <field name="mouser">TPS561201DDCR</field>
       </fields>
       <libsource lib="Custom" part="TPS561201" description="1A Synchronous Step-Down Voltage Regulator, Adjustable Output Voltage, 4.5-17V Input Voltage, SOT-23-6"/>
+      <property name="dk" value=" 296-47885-1-ND"/>
+      <property name="mfr" value="TPS561201DDCR"/>
+      <property name="mouser" value="TPS561201DDCR"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DC28F0B</tstamp>
+      <tstamps>00000000-0000-0000-0000-00005dc28f0b</tstamps>
     </comp>
-    <comp ref="TP12">
-      <value>GND/Green</value>
-      <footprint>adampsu:TestPoint_Labeled</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
+    <comp ref="U2">
+      <value>TPS54531DDAR</value>
+      <footprint>Package_SO:TI_SO-PowerPAD-8_ThermalVias</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tps54531.pdf</datasheet>
+      <fields>
+        <field name="dk">296-40801-2-ND</field>
+        <field name="mfr">TPS54531DDAR</field>
+        <field name="mouser">595-TPS54531DDAR</field>
+      </fields>
+      <libsource lib="Custom" part="TPS54531DDAR" description="5A, Step Down Swift Converter, Adjustable Output Voltage, 5.5-36V Input Voltage, PowerSO-8"/>
+      <property name="dk" value="296-40801-2-ND"/>
+      <property name="mfr" value="TPS54531DDAR"/>
+      <property name="mouser" value="595-TPS54531DDAR"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DD9877A</tstamp>
+      <tstamps>00000000-0000-0000-0000-00005db6790d</tstamps>
     </comp>
-    <comp ref="TP10">
-      <value>+5V</value>
-      <footprint>adampsu:TestPoint_Labeled</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
+    <comp ref="U3">
+      <value>Cuts</value>
+      <footprint>adampsu:DB9-SpotMount</footprint>
+      <libsource lib="Custom" part="Cuts" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="/home/akbkuku/git/adam-psu/eda/adampsu/adampsu.sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DDD3525</tstamp>
+      <tstamps>00000000-0000-0000-0000-00005e0c6685</tstamps>
     </comp>
   </components>
   <libparts>
@@ -715,28 +1023,17 @@
       <fields>
         <field name="Reference">TP</field>
         <field name="Value">TestPoint</field>
+        <field name="Datasheet">~</field>
       </fields>
       <pins>
         <pin num="1" name="1" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Custom" part="BUK7880-55A_CUX">
-      <description>7A Id, 55V Vds, N-Channel TrenchMOS MOSFET, 80mOhm Ron, 12nC Qqd, -55 to 155 °C, SOT-223</description>
-      <docs>https://assets.nexperia.com/documents/data-sheet/BUK7880-55A.pdf</docs>
-      <footprints>
-        <fp>SOT-223*</fp>
-      </footprints>
+    <libpart lib="Custom" part="Cuts">
       <fields>
-        <field name="Reference">Q</field>
-        <field name="Value">BUK7880-55A_CUX</field>
-        <field name="Footprint">Package_TO_SOT_SMD:SOT-223-3_TabPin2</field>
+        <field name="Reference">U</field>
+        <field name="Value">Cuts</field>
       </fields>
-      <pins>
-        <pin num="1" name="G" type="passive"/>
-        <pin num="2" name="D" type="passive"/>
-        <pin num="3" name="S" type="passive"/>
-        <pin num="4" name="D" type="passive"/>
-      </pins>
     </libpart>
     <libpart lib="Custom" part="HandLabel_SN">
       <fields>
@@ -751,6 +1048,31 @@
         <field name="Value">PlungerCap</field>
       </fields>
     </libpart>
+    <libpart lib="Custom" part="Si4447ADY">
+      <description>12V Vds, TrenchFET N-Channel Power MOSFET, SC-70-6</description>
+      <docs>http://www.vishay.com/docs/67189/si4447ad.pdf</docs>
+      <footprints>
+        <fp>SOT*363*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Si4447ADY</field>
+        <field name="Footprint">Package_SO:SO-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet">http://www.vishay.com/docs/67189/si4447ad.pdf</field>
+        <field name="dk">SI4447ADY-T1-GE3DKR-ND</field>
+        <field name="mfr">SI4447ADY-T1-GE3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+        <pin num="4" name="G" type="input"/>
+        <pin num="5" name="D" type="passive"/>
+        <pin num="6" name="D" type="passive"/>
+        <pin num="7" name="D" type="passive"/>
+        <pin num="8" name="D" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Custom" part="TPS54531DDAR">
       <description>5A, Step Down Swift Converter, Adjustable Output Voltage, 5.5-36V Input Voltage, PowerSO-8</description>
       <docs>http://www.ti.com/lit/ds/symlink/tps54531.pdf</docs>
@@ -761,6 +1083,7 @@
         <field name="Reference">U</field>
         <field name="Value">TPS54531DDAR</field>
         <field name="Footprint">Package_SO:TI_SO-PowerPAD-8_ThermalVias</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tps54531.pdf</field>
       </fields>
       <pins>
         <pin num="1" name="BOOT" type="output"/>
@@ -784,6 +1107,7 @@
         <field name="Reference">U</field>
         <field name="Value">TPS561201</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tps561201.pdf</field>
       </fields>
       <pins>
         <pin num="1" name="GND" type="power_in"/>
@@ -803,10 +1127,11 @@
       <fields>
         <field name="Reference">C</field>
         <field name="Value">C</field>
+        <field name="Datasheet">~</field>
       </fields>
       <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="D_Schottky">
@@ -821,10 +1146,25 @@
       <fields>
         <field name="Reference">D</field>
         <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
       </fields>
       <pins>
         <pin num="1" name="K" type="passive"/>
         <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NPN_BEC">
+      <description>NPN transistor, base/emitter/collector</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NPN_BEC</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="R">
@@ -836,10 +1176,11 @@
       <fields>
         <field name="Reference">R</field>
         <field name="Value">R</field>
+        <field name="Datasheet">~</field>
       </fields>
       <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="adampsu-rescue" part="B240-Diode">
@@ -865,9 +1206,9 @@
         <field name="Value">Barrel_Jack_Switch-Connector</field>
       </fields>
       <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-        <pin num="3" name="~" type="passive"/>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="adampsu-rescue" part="C-Device">
@@ -879,8 +1220,8 @@
         <field name="Value">C-Device</field>
       </fields>
       <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="adampsu-rescue" part="Conn_2Rows-09Pins-Connector_Generic">
@@ -941,6 +1282,7 @@
       <fields>
         <field name="Reference">L</field>
         <field name="Value">INDUCTOR</field>
+        <field name="Datasheet">~</field>
       </fields>
       <pins>
         <pin num="1" name="1" type="input"/>
@@ -950,206 +1292,221 @@
   </libparts>
   <libraries>
     <library logical="Connector">
-      <uri>/usr/share/kicad/library/Connector.lib</uri>
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
     </library>
     <library logical="Custom">
-      <uri>/opt/videos/shortcut/2019-10-20_ColecoAdamPSU/projects/adampsu/eda/adampsu/Custom.lib</uri>
+      <uri>/home/akbkuku/git/adam-psu/eda/adampsu/Custom.lib</uri>
     </library>
     <library logical="Device">
-      <uri>/usr/share/kicad/library/Device.lib</uri>
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
     </library>
     <library logical="adampsu-rescue">
-      <uri>/opt/videos/shortcut/2019-10-20_ColecoAdamPSU/projects/adampsu/eda/adampsu/adampsu-rescue.lib</uri>
+      <uri>/home/akbkuku/git/adam-psu/eda/adampsu/adampsu-rescue.lib</uri>
     </library>
     <library logical="pspice">
-      <uri>/usr/share/kicad/library/pspice.lib</uri>
+      <uri>/usr/share/kicad/symbols//pspice.kicad_sym</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="GND">
-      <node ref="C14" pin="1"/>
-      <node ref="C2" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="U2" pin="9"/>
-      <node ref="R11" pin="1"/>
-      <node ref="U2" pin="7"/>
-      <node ref="J2" pin="8"/>
-      <node ref="J3" pin="8"/>
-      <node ref="J3" pin="5"/>
-      <node ref="D1" pin="2"/>
-      <node ref="D2" pin="2"/>
-      <node ref="C15" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C13" pin="2"/>
-      <node ref="TP12" pin="1"/>
-      <node ref="C19" pin="2"/>
-      <node ref="C20" pin="1"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C17" pin="1"/>
-      <node ref="R6" pin="2"/>
-      <node ref="C18" pin="1"/>
-      <node ref="TP6" pin="1"/>
-      <node ref="C8" pin="2"/>
-      <node ref="Q1" pin="2"/>
-      <node ref="TP11" pin="1"/>
-      <node ref="C10" pin="2"/>
-      <node ref="L2" pin="2"/>
-      <node ref="R10" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="R1" pin="1"/>
-      <node ref="TP8" pin="1"/>
-      <node ref="C12" pin="2"/>
-      <node ref="R7" pin="2"/>
+    <net code="1" name="+5V">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="TP10" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="2" name="/-5V">
-      <node ref="U1" pin="1"/>
-      <node ref="TP9" pin="1"/>
-      <node ref="R2" pin="1"/>
-      <node ref="J3" pin="4"/>
-      <node ref="C17" pin="2"/>
-      <node ref="TP7" pin="1"/>
-      <node ref="C18" pin="2"/>
+    <net code="2" name="+12V">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Q1" pin="5" pinfunction="D" pintype="passive"/>
+      <node ref="Q1" pin="6" pinfunction="D" pintype="passive"/>
+      <node ref="Q1" pin="7" pinfunction="D" pintype="passive"/>
+      <node ref="Q1" pin="8" pinfunction="D" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="VIN" pintype="power_in"/>
+      <node ref="U2" pin="2" pinfunction="VIN" pintype="power_in"/>
     </net>
-    <net code="3" name="+5V">
-      <node ref="L1" pin="2"/>
-      <node ref="C20" pin="2"/>
-      <node ref="R8" pin="1"/>
-      <node ref="C15" pin="1"/>
-      <node ref="J3" pin="3"/>
-      <node ref="C14" pin="2"/>
-      <node ref="C19" pin="1"/>
-      <node ref="TP5" pin="1"/>
-      <node ref="TP10" pin="1"/>
-      <node ref="C13" pin="1"/>
+    <net code="3" name="/-5V">
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="J3" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GND" pintype="power_in"/>
     </net>
-    <net code="4" name="/DATA">
-      <node ref="J2" pin="7"/>
-      <node ref="TP4" pin="1"/>
-      <node ref="J3" pin="7"/>
+    <net code="4" name="/12V-IN">
+      <node ref="J1" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="S" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
     </net>
-    <net code="5" name="Net-(C6-Pad1)">
-      <node ref="C6" pin="1"/>
-      <node ref="U1" pin="6"/>
+    <net code="5" name="/DATA">
+      <node ref="J2" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="J3" pin="7" pinfunction="7" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="6" name="Net-(R1-Pad2)">
-      <node ref="R1" pin="2"/>
-      <node ref="U1" pin="5"/>
+    <net code="6" name="/PH">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="U2" pin="8" pinfunction="PH" pintype="power_out"/>
     </net>
     <net code="7" name="/RESET">
-      <node ref="J2" pin="6"/>
-      <node ref="J3" pin="6"/>
-      <node ref="TP2" pin="1"/>
+      <node ref="J2" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="J3" pin="6" pinfunction="6" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="8" name="+12V">
-      <node ref="J3" pin="2"/>
-      <node ref="J3" pin="1"/>
-      <node ref="D1" pin="1"/>
-      <node ref="SW1" pin="2"/>
-      <node ref="R5" pin="1"/>
-      <node ref="TP3" pin="1"/>
-      <node ref="C4" pin="1"/>
-      <node ref="C3" pin="1"/>
-      <node ref="J1" pin="1"/>
-      <node ref="C8" pin="1"/>
-      <node ref="U2" pin="2"/>
-      <node ref="TP1" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="C5" pin="1"/>
-      <node ref="C1" pin="1"/>
-      <node ref="U1" pin="3"/>
-      <node ref="C7" pin="1"/>
+    <net code="8" name="/SW">
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="L2" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="U1" pin="2" pinfunction="SW" pintype="output"/>
     </net>
-    <net code="9" name="/SW">
-      <node ref="U1" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="L2" pin="1"/>
+    <net code="9" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="2" pintype="passive"/>
+      <node ref="J2" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="J3" pin="5" pinfunction="5" pintype="passive"/>
+      <node ref="J3" pin="8" pinfunction="8" pintype="passive"/>
+      <node ref="L2" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="Q2" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="TP11" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP12" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="9" pinfunction="GNDPAD" pintype="power_in"/>
     </net>
-    <net code="10" name="Net-(R11-Pad2)">
-      <node ref="U1" pin="4"/>
-      <node ref="R11" pin="2"/>
-      <node ref="R2" pin="2"/>
+    <net code="10" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="VBST" pintype="input"/>
     </net>
-    <net code="11" name="/GND-F">
-      <node ref="R4" pin="2"/>
-      <node ref="C16" pin="2"/>
-      <node ref="J1" pin="2"/>
-      <node ref="Q1" pin="4"/>
-      <node ref="Q1" pin="3"/>
+    <net code="11" name="Net-(C9-Pad2)">
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="BOOT" pintype="output"/>
     </net>
-    <net code="12" name="Net-(J2-Pad1)">
-      <node ref="J2" pin="1"/>
+    <net code="12" name="Net-(C10-Pad1)">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="SS" pintype="input"/>
     </net>
-    <net code="13" name="Net-(Q1-Pad1)">
-      <node ref="R4" pin="1"/>
-      <node ref="Q1" pin="1"/>
-      <node ref="R3" pin="1"/>
+    <net code="13" name="Net-(C11-Pad1)">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="COMP" pintype="output"/>
     </net>
-    <net code="14" name="Net-(C16-Pad1)">
-      <node ref="C16" pin="1"/>
-      <node ref="R3" pin="2"/>
-      <node ref="SW1" pin="3"/>
+    <net code="14" name="Net-(C11-Pad2)">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
     </net>
-    <net code="15" name="Net-(R10-Pad1)">
-      <node ref="U2" pin="5"/>
-      <node ref="R9" pin="2"/>
-      <node ref="R10" pin="1"/>
+    <net code="15" name="Net-(C16-Pad1)">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="Q2" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R3" pin="2" pintype="passive"/>
     </net>
-    <net code="16" name="Net-(C10-Pad1)">
-      <node ref="U2" pin="4"/>
-      <node ref="C10" pin="1"/>
+    <net code="16" name="Net-(Q1-Pad4)">
+      <node ref="Q1" pin="4" pinfunction="G" pintype="input"/>
+      <node ref="Q2" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
     </net>
-    <net code="17" name="Net-(R5-Pad2)">
-      <node ref="R6" pin="1"/>
-      <node ref="R5" pin="2"/>
-      <node ref="U2" pin="3"/>
+    <net code="17" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="EN" pintype="input"/>
     </net>
-    <net code="18" name="Net-(C9-Pad2)">
-      <node ref="U2" pin="1"/>
-      <node ref="C9" pin="2"/>
+    <net code="18" name="Net-(R3-Pad1)">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="B" pintype="passive"/>
     </net>
-    <net code="19" name="Net-(J2-Pad9)">
-      <node ref="J2" pin="9"/>
+    <net code="19" name="Net-(R5-Pad2)">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="EN" pintype="input"/>
     </net>
-    <net code="20" name="Net-(J2-Pad5)">
-      <node ref="J2" pin="5"/>
+    <net code="20" name="Net-(R8-Pad2)">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
     </net>
-    <net code="21" name="Net-(J2-Pad4)">
-      <node ref="J2" pin="4"/>
+    <net code="21" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="VSENSE" pintype="input"/>
     </net>
-    <net code="22" name="Net-(J2-Pad3)">
-      <node ref="J2" pin="3"/>
+    <net code="22" name="Net-(R11-Pad2)">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="VFB" pintype="input"/>
     </net>
-    <net code="23" name="Net-(J2-Pad2)">
-      <node ref="J2" pin="2"/>
+    <net code="23" name="Net-(R12-Pad2)">
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="A" pintype="passive"/>
     </net>
-    <net code="24" name="Net-(J3-Pad9)">
-      <node ref="J3" pin="9"/>
+    <net code="24" name="unconnected-(J1-Pad3)">
+      <node ref="J1" pin="3" pintype="passive"/>
     </net>
-    <net code="25" name="Net-(SW1-Pad1)">
-      <node ref="SW1" pin="1"/>
+    <net code="25" name="unconnected-(J2-Pad1)">
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
     </net>
-    <net code="26" name="Net-(J1-Pad3)">
-      <node ref="J1" pin="3"/>
+    <net code="26" name="unconnected-(J2-Pad2)">
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
     </net>
-    <net code="27" name="Net-(R8-Pad2)">
-      <node ref="R9" pin="1"/>
-      <node ref="R8" pin="2"/>
+    <net code="27" name="unconnected-(J2-Pad3)">
+      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
     </net>
-    <net code="28" name="/PH">
-      <node ref="C9" pin="1"/>
-      <node ref="U2" pin="8"/>
-      <node ref="L1" pin="1"/>
-      <node ref="D2" pin="1"/>
+    <net code="28" name="unconnected-(J2-Pad4)">
+      <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
     </net>
-    <net code="29" name="Net-(C11-Pad1)">
-      <node ref="C11" pin="1"/>
-      <node ref="C12" pin="1"/>
-      <node ref="U2" pin="6"/>
+    <net code="29" name="unconnected-(J2-Pad5)">
+      <node ref="J2" pin="5" pinfunction="Pin_5" pintype="passive"/>
     </net>
-    <net code="30" name="Net-(C11-Pad2)">
-      <node ref="R7" pin="1"/>
-      <node ref="C11" pin="2"/>
+    <net code="30" name="unconnected-(J2-Pad9)">
+      <node ref="J2" pin="9" pinfunction="Pin_9" pintype="passive"/>
+    </net>
+    <net code="31" name="unconnected-(J3-Pad9)">
+      <node ref="J3" pin="9" pinfunction="9" pintype="passive"/>
     </net>
   </nets>
 </export>
